@@ -9,10 +9,16 @@ from base import BaseHandler
 class HelloHandler(BaseHandler):
     def get(self):
         config = self.app.config
-        self.render_response('hello.html')
+        self.response.write('Hello, world!')
 
 
 class DefaultHandler(BaseHandler):
     def get(self):
         config = self.app.config
         self.render_response('default.html')
+
+
+class SigninHandler(BaseHandler):
+    def get(self):
+        config = self.app.config
+        self.render_response('signin.html')

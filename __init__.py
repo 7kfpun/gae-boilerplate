@@ -1,4 +1,4 @@
-from tests.base import *
+import tests  # nolint
 
 
 def test_test():

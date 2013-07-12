@@ -14,4 +14,5 @@ logger = logging.getLogger(__name__)
 app = webapp2.WSGIApplication(
     urls_list,
     config=app_config,
-    debug=app_config.get('debug', False))
+    debug=app_config.get('debug', False),
+)

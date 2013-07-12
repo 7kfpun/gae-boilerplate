@@ -1,5 +1,8 @@
-from ..main import app
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from webtest import TestApp
+
+from ..main import app
 
 app = TestApp(app)
 

@@ -28,16 +28,12 @@
         .footer {
           text-align: center;
           padding: 30px 0;
-          margin-top: 70px;
           border-top: 1px solid #e5e5e5;
           background-color: #f5f5f5;
         }
         .footer p {
           margin-bottom: 0;
           color: #777;
-        }
-        .footer_block {
-          text-align: justify;
         }
         .footer-links {
           margin: 10px 0;
@@ -71,6 +67,10 @@
          .container .credit {
            margin: 20px 0;
          }
+         
+         .text-justify {
+           text-align: justify;
+         }
    </style>
 {% endblock %}
 {% block content %}
@@ -87,7 +87,14 @@
         <ul class="nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#about">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="pull-right breadcrumb">
+          <li><a href="#">CN</a> <span class="divider">/</span></li>
+          <li><a href="#">HK</a> <span class="divider">/</span></li>
+          <li><a href="#">EN</a> <span class="divider">/</span></li>
+          <li><a href="#">TH</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -111,7 +118,7 @@
     <div class="span4">
       <div class="card"><a name="about"></a>
         <h3 class="card-heading simple">Examples</h3>
-        <div class="card-body">
+        <div class="card-body text-justify">
           <p>Matthew Haughey and Aaron Swartz[7] also played a significant role in the early stages of the project. In 2008, there were an estimated 130 million works licensed under the various Creative Commons licenses.[8] As of October 2011, Flickr alone hosts over 200 million Creative Commons licensed photos.[9] Creative Commons is governed by a board of directors and a technical advisory board. Their licenses have been embraced by many as a way for creators to take control of how they choose to share their copyrighted works.</p>
         </div>
         <div class="card-actions">
@@ -121,18 +128,31 @@
           </a>
         </div>
       </div>
-      <div class="card"><a name="about"></a>
+      <div class="card"><a name="lesson"></a>
+        <h3 class="card-heading simple">Thai lessons</h3>
         <div class="card-body">
-          <p>The organization was founded in 2001 by Lawrence Lessig, Hal Abelson, and Eric Eldred[3] with support of the Center for the Public Domain. The first article in a general interest publication about Creative Commons, written by Hal Plotkin, was published in February 2002.[4] The first set of copyright licenses was released in December 2002.[5] The founding management team that developed the licenses and built the Creative Commons infrastructure as we know it today included Molly Shaffer Van Houweling, Glenn Otis Brown, Neeru Paharia, and Ben Adida.[6]</p>
+          <p>Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.</p>
+        </div>
+      </div>
+      <div class="card"><a name="about"></a>
+        <h3 class="card-heading simple">Rates</h3>
+        <div class="card-body">
+          <p>Only HKD $200 per hour (One Teacher to One Student)</p>
+          <p>HKD $150 per hour per student (One Teacher to 2 Students)</p>
+          <p>HKD $100 per hour per student (One Teacher to 3-6 Students)</p>
+          <p>Please contact me at to get a precise price quote for other services!</p>
         </div>
       </div>
     </div>
 
     <div class="span4">
       <div class="card">
-        <h3 class="card-heading simple">Examples</h3>
+        <h3 class="card-heading simple">Services</h3>
         <div class="card-body">
-          <p>Bootplus provides the same basic templates form Bootstrap, adapted with the new "plus" style.</p>
+          <p>Private One on One Thai lessons or Group lessons. Lessons conducted in Mandarin, Cantonese or English.</p>
+          <p>Private One on One Home visit Thai lessons.</p>
+          <p>Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to Thai</p>
+          <p>Assistance on any jobs need Thai.</p>
         </div>
         <div class="card-actions">
           <a class="btn btn-success" href="getting-started.html#examples">
@@ -154,7 +174,7 @@
         </div>
       </div>
 
-      <div class="card"><a name="contact"></a>
+      <div class="card"></a>
         <div class="card-body">
           <h2>Built with Bootstrap.</h2>
           <p>Bootplus is built on top of <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a> as a customization that reproduce the most recent Google+ style.</p>

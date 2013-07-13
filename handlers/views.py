@@ -7,22 +7,19 @@ from base import BaseHandler
 
 class HelloHandler(BaseHandler):
     def get(self):
-        self.response.write(self.config)
+        self.response.write(self.app.config)
 
 
-class DefaultHandler(BaseHandler):
+class HomeHandler(BaseHandler):
     def get(self):
-        config = self.app.config
-        self.render_response('default.html')
+        self.render_response('index.html')
 
 
 class StarterHandler(BaseHandler):
     def get(self):
-        config = self.app.config
         self.render_response('starter.html')
 
 
 class SigninHandler(BaseHandler):
     def get(self):
-        config = self.app.config
         self.render_response('signin.html')

@@ -7,8 +7,7 @@ from base import BaseHandler
 
 class HelloHandler(BaseHandler):
     def get(self):
-        config = self.app.config
-        self.response.write('Hello, world!')
+        self.response.write(self.config)
 
 
 class DefaultHandler(BaseHandler):

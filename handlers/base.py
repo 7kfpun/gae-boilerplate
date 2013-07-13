@@ -3,6 +3,8 @@ import json
 import jinja2
 import os
 
+from config import config
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -22,6 +24,7 @@ class BaseHandler(webapp2.RequestHandler):
 
     def __init__(self, request, response):
         self.initialize(request, response)
+        self.config = config
 
     def render_response(self, _template, **context):
         template = JINJA_ENVIRONMENT.get_template(_template)

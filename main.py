@@ -4,7 +4,7 @@ import webapp2
 import logging
 
 #adjust library path before any other module gets imported...
-#import fix_path
+import fix_path
 
 from urls import urls_list
 from config import config

@@ -20,19 +20,19 @@ msgstr ""
 
 #: templates/base.html:47
 msgid "Home"
-msgstr ""
+msgstr "หน้าแรก"
 
 #: templates/base.html:48
 msgid "About"
-msgstr ""
+msgstr "เกี่ยวกับเรา"
 
 #: templates/base.html:49
 msgid "Services"
-msgstr ""
+msgstr "บริการ"
 
 #: templates/base.html:50
 msgid "Contact"
-msgstr ""
+msgstr "ติดต่อเรา"
 
 #: templates/base.html:75 templates/base.html:77 templates/base.html:82
 #: templates/base.html:86

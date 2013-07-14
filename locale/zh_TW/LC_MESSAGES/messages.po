@@ -20,30 +20,30 @@ msgstr ""
 
 #: templates/base.html:47
 msgid "Home"
-msgstr "主頁"
+msgstr "主页"
 
 #: templates/base.html:48
 msgid "About"
-msgstr "關於"
+msgstr "关于"
 
 #: templates/base.html:49
 msgid "Services"
-msgstr "服務"
+msgstr "服务"
 
 #: templates/base.html:50
 msgid "Contact"
-msgstr "聯絡"
+msgstr "联络"
 
 #: templates/base.html:75 templates/base.html:77 templates/base.html:82
 #: templates/base.html:86
 msgid "Please fill out this field."
-msgstr "請在此輸入"
+msgstr "请在此输入"
 
 #: templates/base.html:78
 msgid "Please enter an email address."
-msgstr "請輸入正確電子郵件地址"
+msgstr "请输入正确电子邮件地址"
 
 #: templates/default.html:3
 msgid "This will be your homepage :)"
-msgstr "這將是你的主頁 :)"
+msgstr "这将是你的主页 :)"
 

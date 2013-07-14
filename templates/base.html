@@ -44,16 +44,16 @@
           <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#about">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#">{{_("Home")}}</a></li>
+              <li><a href="#about">{{_("About")}}</a></li>
+              <li><a href="#service">{{_("Services")}}</a></li>
+              <li><a href="#contact">{{_("Contact")}}</a></li>
             </ul>
             <ul class="pull-right breadcrumb">
-              <li><a href="#">EN</a> <span class="divider">/</span></li>
-              <li><a href="#">HK</a> <span class="divider">/</span></li>
-              <li><a href="#">CN</a> <span class="divider">/</span></li>
-              <li><a href="#">TH</a></li>
+              <li><a href="?hl=en_US">EN</a> <span class="divider">/</span></li>
+              <li><a href="?hl=zh_TW">HK</a> <span class="divider">/</span></li>
+              <li><a href="?hl=zh_CN">CN</a> <span class="divider">/</span></li>
+              <li><a href="?hl=th_TH">TH</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,14 +71,19 @@
             <fieldset>
               <span class="help-block">Want to hire me? Get in touch!</span>
               <div class="control-group">
-                <input name="name" class="span2" type="text" required placeholder="Name...">
-                <input name="email" class="span3 pull-right" type="email" required placeholder="Email...">
+                <input class="span2" name="name" type="text" required placeholder="Name..."
+                       data-validation-required-message={{_("Please fill out this field.")}} >
+                <input class="span3 pull-right" name="email" type="email" required placeholder="Email..."
+                       data-validation-required-message={{_("Please fill out this field.")}}
+                       data-validation-email-message={{_("Please enter an email address.")}} >
               </label></div>
               <label name="subject">
-                <input name="subject" class="span5" type="text" required placeholder="Subject...">
+                <input class="span5"name="subject"  type="text" required placeholder="Subject..."
+                       data-validation-required-message={{_("Please fill out this field.")}}>
               </label>
               <label name="body">
-                <textarea name="body" class="span5" rows="3" required placeholder="Body..."></textarea>
+                <textarea class="span5" name="body" rows="3" required placeholder="Body..."
+                          data-validation-required-message={{_("Please fill out this field.")}}></textarea>
               </label>
               <button type="submit" class="btn btn-success">Send message</button>
               <button type="reset" class="btn">Clear form</button>

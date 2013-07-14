@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-14 11:33+0000\n"
+"POT-Creation-Date: 2013-07-14 14:41+0000\n"
 "PO-Revision-Date: 2013-07-14 11:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -18,9 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: handlers/base.py:37
-msgid "Hello, world!"
-msgstr "你好!!"
+#: templates/base.html:47
+msgid "Home"
+msgstr "主頁"
+
+#: templates/base.html:48
+msgid "About"
+msgstr "關於"
+
+#: templates/base.html:49
+msgid "Services"
+msgstr "服務"
+
+#: templates/base.html:50
+msgid "Contact"
+msgstr "聯絡"
+
+#: templates/base.html:75 templates/base.html:77 templates/base.html:82
+#: templates/base.html:86
+msgid "Please fill out this field."
+msgstr "請在此輸入"
+
+#: templates/base.html:78
+msgid "Please enter an email address."
+msgstr "請輸入正確電子郵件地址"
 
 #: templates/default.html:3
 msgid "This will be your homepage :)"

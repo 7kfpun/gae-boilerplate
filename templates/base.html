@@ -67,18 +67,18 @@
         <p class="muted credit pagination-centered">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
 
         <div class="span5">
-          <form id="contact_form" action="destination.html">
+          <form id="contact_form" action="contact" method="post">
             <fieldset>
               <span class="help-block">Want to hire me? Get in touch!</span>
               <div class="control-group">
-                <input class="span2" type="text" placeholder="Name...">
-                <input class="span3 pull-right" type="text" placeholder="Email...">
+                <input name="name" class="span2" type="text" required placeholder="Name...">
+                <input name="email" class="span3 pull-right" type="email" required placeholder="Email...">
               </label></div>
               <label name="subject">
-                <input class="span5" type="text" placeholder="Subject...">
+                <input name="subject" class="span5" type="text" required placeholder="Subject...">
               </label>
               <label name="body">
-                <textarea class="span5" rows="3" placeholder="Body..."></textarea>
+                <textarea name="body" class="span5" rows="3" required placeholder="Body..."></textarea>
               </label>
               <button type="submit" class="btn btn-success">Send message</button>
               <button type="reset" class="btn">Clear form</button>
@@ -97,6 +97,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../static/js/jquery.js"></script>
     <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/jqBootstrapValidation.js"></script>
     <script src="../static/js/app.js"></script>
     <!--
     <script src="../static/js/bootstrap-transition.js"></script>

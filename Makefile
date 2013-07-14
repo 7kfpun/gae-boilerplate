@@ -8,10 +8,22 @@ test:
 run:
 	/opt/google_appengine_1.8.1/dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug .
 
-extract:
+extract_locale:
 	pybabel extract -F ./locale/babel.cfg -o ./locale/messages.pot ./
 
-compile:
+init_locale:
+	pybabel init -l en_US -d ./locale -i ./locale/messages.pot
+	pybabel init -l zh_TW -d ./locale -i ./locale/messages.pot
+	pybabel init -l zh_CN -d ./locale -i ./locale/messages.pot
+	pybabel init -l th_TH -d ./locale -i ./locale/messages.pot
+
+update_locale:
+	pybabel update -l en_US -d ./locale -i ./locale/messages.pot
+	pybabel update -l zh_TW -d ./locale -i ./locale/messages.pot
+	pybabel update -l zh_CN -d ./locale -i ./locale/messages.pot
+	pybabel update -l th_TH -d ./locale -i ./locale/messages.pot
+
+compile_locale:
 	pybabel compile -f -d ./locale
 
 clean:

@@ -1,10 +1,12 @@
-import re
-import logging
-from google.appengine.api.urlfetch_errors import DownloadError
-from google.appengine.api import urlfetch
-from webapp2_extras import i18n
 from babel import Locale
+from google.appengine.api import urlfetch
+from google.appengine.api.urlfetch_errors import DownloadError
+from webapp2_extras import i18n
+import re
 
+import logging
+
+logger = logging.getLogger(__name__)
 
 def parse_accept_language_header(string, pattern='([a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})?)\s*(;\s*q\s*=\s*(1|0\.[0-9]+))?'):
     """
@@ -38,9 +40,9 @@ def get_territory_from_ip(self):
     Detect the territory code derived from IP Address location
     Returns US, CA, CL, AR, etc.
     self: self object
-    
+
     Uses lookup service http://geoip.wtanaka.com/cc/<ip>
-    You can get a flag image given the returned territory 
+    You can get a flag image given the returned territory
         with http://geoip.wtanaka.com/flag/<territory>.gif
         example: http://geoip.wtanaka.com/flag/us.gif
     """
@@ -57,17 +59,17 @@ def get_territory_from_ip(self):
                 territory = str(fetch).upper()
                 self.response.set_cookie('territory', territory, max_age = 15724800)
             else:
-                logging.warning("Ups, geoip.wtanaka.com is not working. Look what it returns: %s" % str(fetch) )
+                logger.warning("Ups, geoip.wtanaka.com is not working. Look what it returns: %s" % str(fetch) )
         else:
-            logging.warning("Ups, geoip.wtanaka.com is not working. Status Code: %s" % str(result.status_code) )
+            logger.warning("Ups, geoip.wtanaka.com is not working. Status Code: %s" % str(result.status_code) )
     except DownloadError:
-        logging.warning("Couldn't resolve http://geoip.wtanaka.com/cc/%s"% self.request.remote_addr)
+        logger.warning("Couldn't resolve http://geoip.wtanaka.com/cc/%s"% self.request.remote_addr)
     return territory
 
 def get_locale_from_accept_header(request):
     """
     Detect locale from request.header 'Accept-Language'
-    Locale with the highest quality factor that most nearly matches our 
+    Locale with the highest quality factor that most nearly matches our
     config.locales is returned.
     self: self object
 

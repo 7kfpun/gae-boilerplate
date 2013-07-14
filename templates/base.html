@@ -43,10 +43,10 @@
           </button>
           <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
+            <ul id="nav" class="nav">
               <li class="active"><a href="#">{{_("Home")}}</a></li>
               <li><a href="#about">{{_("About")}}</a></li>
-              <li><a href="#service">{{_("Services")}}</a></li>
+              <li><a href="#services">{{_("Services")}}</a></li>
               <li><a href="#contact">{{_("Contact")}}</a></li>
             </ul>
             <ul class="pull-right breadcrumb">
@@ -63,10 +63,9 @@
     {% block content %}{% endblock %}
 
     <div class="footer">
-      <div class="container"><a name="contact">
-        <p class="muted credit pagination-centered">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      <div class="container">
 
-        <div class="span5">
+        <div class="span5"><a name="contact">
           <form id="contact_form" action="contact" method="post">
             <fieldset>
               <span class="help-block">Want to hire me? Get in touch!</span>
@@ -76,15 +75,15 @@
                 <input class="span3 pull-right" name="email" type="email" required placeholder="Email..."
                        data-validation-required-message={{_("Please fill out this field.")}}
                        data-validation-email-message={{_("Please enter an email address.")}} >
-              </label></div>
-              <label name="subject">
+              </div>
+              <div class="control-group">
                 <input class="span5"name="subject"  type="text" required placeholder="Subject..."
                        data-validation-required-message={{_("Please fill out this field.")}}>
-              </label>
-              <label name="body">
+              </div>
+              <div class="control-group">
                 <textarea class="span5" name="body" rows="3" required placeholder="Body..."
                           data-validation-required-message={{_("Please fill out this field.")}}></textarea>
-              </label>
+              </div>
               <button type="submit" class="btn btn-success">Send message</button>
               <button type="reset" class="btn">Clear form</button>
             </fieldset>
@@ -93,7 +92,9 @@
         <div class="span3 text-justify">
           <p>Matthew Haughey and Aaron Swartz[7] also played a significant role in the early stages of the project. In 2008, there were an estimated 130 million works licensed under the various Creative Commons licenses.[8] As of October 2011, Flickr alone hosts over 200 million Creative Commons licensed photos.[9] Creative Commons is governed by a board of directors and a technical advisory board. Their licenses have been embraced by many as a way for creators to take control of how they choose to share their copyrighted works.</p>
         </div>
-
+        <div class="span8">
+          <p class="muted pagination-centered">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+        </div>
       </div>
     </div>
 

@@ -10,3 +10,8 @@ $('#contact_form').submit(function() {
   });
   return false;
 });
+
+$('#nav li').click(function() {
+  //$(this).siblings('li').removeClass('active');
+  //$(this).addClass('active');
+})

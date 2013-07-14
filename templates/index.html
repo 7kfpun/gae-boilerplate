@@ -14,7 +14,7 @@
          }
 
          /* Wrapper for page content to push down footer */
-         #wrap {
+         .wrap {
            min-height: 100%;
            height: auto !important;
            height: 100%;
@@ -63,9 +63,6 @@
            width: auto;
            max-width: 800px;
          }
-         .container .credit {
-           margin: 20px 0;
-         }
          
          .text-justify {
            text-align: justify;
@@ -74,7 +71,7 @@
 {% endblock %}
 {% block content %}
 <!-- Part 1: Wrap all page content here -->
-<div id="wrap">
+<div class="wrap">
   <!-- Begin page content -->
   <div class="container">
 
@@ -87,8 +84,8 @@
       </div>
     </div>
 
-    <div class="span4">
-      <div class="card"><a name="about"></a>
+    <div class="span4"><a name="about"></a>
+      <div class="card">
         <h3 class="card-heading simple">Examples</h3>
         <div class="card-body text-justify">
           <p>Matthew Haughey and Aaron Swartz[7] also played a significant role in the early stages of the project. In 2008, there were an estimated 130 million works licensed under the various Creative Commons licenses.[8] As of October 2011, Flickr alone hosts over 200 million Creative Commons licensed photos.[9] Creative Commons is governed by a board of directors and a technical advisory board. Their licenses have been embraced by many as a way for creators to take control of how they choose to share their copyrighted works.</p>
@@ -100,13 +97,13 @@
           </a>
         </div>
       </div>
-      <div class="card"><a name="lesson"></a>
+      <div class="card">
         <h3 class="card-heading simple">Thai lessons</h3>
         <div class="card-body">
           <p>Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.</p>
         </div>
       </div>
-      <div class="card"><a name="about"></a>
+      <div class="card">
         <h3 class="card-heading simple">Rates</h3>
         <div class="card-body">
           <p>Only HKD $200 per hour (One Teacher to One Student)</p>
@@ -117,7 +114,7 @@
       </div>
     </div>
 
-    <div class="span4">
+    <div class="span4"><a name="services"></a>
       <div class="card">
         <h3 class="card-heading simple">Services</h3>
         <div class="card-body">

@@ -1,4 +1,5 @@
 from babel import Locale
+from hashlib import md5
 from google.appengine.api import urlfetch
 from google.appengine.api.urlfetch_errors import DownloadError
 from webapp2_extras import i18n
@@ -16,13 +17,14 @@ def parse_accept_language_header(string, pattern='([a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,
     example output: {'en_US': 100, 'en': 80, 'es_ES': 50}
     """
     res = {}
-    if not string: return None
+    if not string:
+        return None
     for match in re.finditer(pattern, string):
         if None == match.group(4):
             q = 1
         else:
             q = match.group(4)
-        l = match.group(1).replace('-','_')
+        l = match.group(1).replace('-', '_')
         if len(l) == 2:
             l = l.lower()
         elif len(l) == 5:
@@ -30,8 +32,9 @@ def parse_accept_language_header(string, pattern='([a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,
         else:
             l = None
         if l:
-            res[l] = int(100*float(q))
+            res[l] = int(100 * float(q))
     return res
+
 
 def get_territory_from_ip(self):
     """
@@ -57,7 +60,7 @@ def get_territory_from_ip(self):
             fetch = result.content
             if len(str(fetch)) < 3:
                 territory = str(fetch).upper()
-                self.response.set_cookie('territory', territory, max_age = 15724800)
+                self.response.set_cookie('territory', territory, max_age=15724800)
             else:
                 logger.warning("Ups, geoip.wtanaka.com is not working. Look what it returns: %s" % str(fetch) )
         else:
@@ -65,6 +68,7 @@ def get_territory_from_ip(self):
     except DownloadError:
         logger.warning("Couldn't resolve http://geoip.wtanaka.com/cc/%s"% self.request.remote_addr)
     return territory
+
 
 def get_locale_from_accept_header(request):
     """
@@ -86,3 +90,7 @@ def get_locale_from_accept_header(request):
     locale_list_sorted_by_q = sorted(parsed.iterkeys(), reverse=True)
     locale = Locale.negotiate(locale_list_sorted_by_q, request.app.config.get('locales'), sep='_')
     return str(locale)
+
+
+def get_signiture(text):
+    return md5(text).hexdigest()

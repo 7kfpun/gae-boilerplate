@@ -1,4 +1,5 @@
 from babel import Locale
+from google.appengine.api import memcache
 import jinja2
 import json
 import os
@@ -11,6 +12,7 @@ from .helpers import (
     get_locale_from_accept_header,
     get_territory_from_ip,
     parse_accept_language_header,
+    get_signiture,
 )
 
 import logging
@@ -43,8 +45,10 @@ class BaseHandler(webapp2.RequestHandler):
     @property
     def locales(self):
         """
-        returns a dict of locale codes to locale display names in both the current locale and the localized locale
-        example: if the current locale is es_ES then locales['en_US'] = 'Ingles (Estados Unidos) - English (United States)'
+        returns a dict of locale codes to locale display names in both
+        the current locale and the localized locale
+        example: if the current locale is es_ES then
+        locales['en_US'] = 'Ingles (Estados Unidos) - English (United States)'
         """
         if not self.app.config.get('locales'):
             return None
@@ -54,7 +58,9 @@ class BaseHandler(webapp2.RequestHandler):
             language = current_locale.languages[l.split('_')[0]]
             territory = current_locale.territories[l.split('_')[1]]
             localized_locale_name = Locale.parse(l).display_name.capitalize()
-            locales[l] = language.capitalize() + " (" + territory.capitalize() + ") - " + localized_locale_name
+            locales[l] = language.capitalize() \
+                + " (" + territory.capitalize() + ") - " \
+                + localized_locale_name
         return locales
 
     def set_locale(self, force=None):
@@ -84,12 +90,29 @@ class BaseHandler(webapp2.RequestHandler):
         i18n.get_i18n().set_locale(locale)
         logger.info('locale is {0}'.format(locale))
         # save locale in cookie with 26 weeks expiration (in seconds)
-        self.response.set_cookie('hl', locale, max_age = 15724800)
+        self.response.set_cookie('hl', locale, max_age=15724800)
         return locale
-        
-    def render_response(self, _template, **context):
-        template = JINJA_ENVIRONMENT.get_template(_template)
-        self.response.write(template.render(**context))
+
+    def render_response(self, _template, cache_time=0, **context):
+        transliterated_text = '.'.join(
+            [_template] + context.keys() + context.values())
+        signature = get_signiture(transliterated_text)
+
+        if cache_time:
+            rendered_page = memcache.get('page {0}'.format(signature))
+            if not rendered_page:
+                template = JINJA_ENVIRONMENT.get_template(_template)
+                rendered_page = self.response.write(template.render(**context))
+
+                if not memcache.add(
+                        'page {0}'.format(signature),
+                        rendered_page, cache_time):
+                    logging.error('Memcache set failed.')
+        else:
+            template = JINJA_ENVIRONMENT.get_template(_template)
+            rendered_page = self.response.write(template.render(**context))
+
+        self.response.write(rendered_page)
 
     def render_json(self, obj):
         rv = json.dumps(obj)

@@ -1,5 +1,7 @@
 GAE="/opt/google_appengine_1.8.2/"
 APP_PATH="."
+LOCALE=en_US zh_TW zh_CN th_TH
+
 
 all:
 	@git submodule update --init --recursive
@@ -40,16 +42,14 @@ extract_locale:
 	pybabel extract -F ./locale/babel.cfg -o ./locale/messages.pot ./
 
 init_locale:
-	pybabel init -l en_US -d ./locale -i ./locale/messages.pot
-	pybabel init -l zh_TW -d ./locale -i ./locale/messages.pot
-	pybabel init -l zh_CN -d ./locale -i ./locale/messages.pot
-	pybabel init -l th_TH -d ./locale -i ./locale/messages.pot
+	for locale in $(LOCALE) ; do \
+	    pybabel init -l $$locale -d ./locale -i ./locale/messages.pot ; \
+	done
 
 update_locale:
-	pybabel update -l en_US -d ./locale -i ./locale/messages.pot
-	pybabel update -l zh_TW -d ./locale -i ./locale/messages.pot
-	pybabel update -l zh_CN -d ./locale -i ./locale/messages.pot
-	pybabel update -l th_TH -d ./locale -i ./locale/messages.pot
+	for locale in $(LOCALE) ; do \
+	    pybabel update -l $$locale -d ./locale -i ./locale/messages.pot ; \
+	done
 
 compile_locale:
 	pybabel compile -f -d ./locale

@@ -36,5 +36,23 @@ request_logs:
 	@echo "Downloading Logs"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver request_logs $(APP_PATH) appengine.log
 
+extract_locale:
+	pybabel extract -F ./locale/babel.cfg -o ./locale/messages.pot ./
+
+init_locale:
+	pybabel init -l en_US -d ./locale -i ./locale/messages.pot
+	pybabel init -l zh_TW -d ./locale -i ./locale/messages.pot
+	pybabel init -l zh_CN -d ./locale -i ./locale/messages.pot
+	pybabel init -l th_TH -d ./locale -i ./locale/messages.pot
+
+update_locale:
+	pybabel update -l en_US -d ./locale -i ./locale/messages.pot
+	pybabel update -l zh_TW -d ./locale -i ./locale/messages.pot
+	pybabel update -l zh_CN -d ./locale -i ./locale/messages.pot
+	pybabel update -l th_TH -d ./locale -i ./locale/messages.pot
+
+compile_locale:
+	pybabel compile -f -d ./locale
+
 clean:
 	find . -name "*.pyc" -exec rm -rf {} \;

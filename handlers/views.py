@@ -1,3 +1,5 @@
+from webapp2_extras.i18n import lazy_gettext as _
+
 import logging
 
 logger = logging.getLogger(__name__)

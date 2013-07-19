@@ -1,9 +1,8 @@
-from wtforms import fields
-from wtforms import Form
-from wtforms import validators
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from libs import utils
-from webapp2_extras.i18n import lazy_gettext as _
-from webapp2_extras.i18n import ngettext, gettext
+from webapp2_extras.i18n import ngettext, gettext, lazy_gettext as _
+from wtforms import fields, validators, Form
 
 
 FIELD_MAXLENGTH = 50  # intended to stop maliciously long input

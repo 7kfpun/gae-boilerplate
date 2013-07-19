@@ -3,11 +3,10 @@ from google.appengine.api import memcache
 import jinja2
 import json
 import os
-from pytz.gae import pytz
+#from pytz.gae import pytz
 import webapp2
 from webapp2_extras import i18n
 
-from config import config
 from .helpers import (
     get_locale_from_accept_header,
     get_territory_from_ip,
@@ -93,16 +92,17 @@ class BaseHandler(webapp2.RequestHandler):
         self.response.set_cookie('hl', locale, max_age=15724800)
         return locale
 
-    def render_response(self, _template, cache_time=0, **context):
-        transliterated_text = '.'.join(
-            [_template] + context.keys() + context.values())
+    def render_response(self, _template, **context):
+        cache_time = 0
+        # TODO: add session
+        transliterated_text = '.'.join([_template] + context.keys())
         signature = get_signiture(transliterated_text)
 
         if cache_time:
             rendered_page = memcache.get('page {0}'.format(signature))
             if not rendered_page:
                 template = JINJA_ENVIRONMENT.get_template(_template)
-                rendered_page = self.response.write(template.render(**context))
+                rendered_page = template.render(**context)
 
                 if not memcache.add(
                         'page {0}'.format(signature),
@@ -110,7 +110,7 @@ class BaseHandler(webapp2.RequestHandler):
                     logging.error('Memcache set failed.')
         else:
             template = JINJA_ENVIRONMENT.get_template(_template)
-            rendered_page = self.response.write(template.render(**context))
+            rendered_page = template.render(**context)
 
         self.response.write(rendered_page)
 

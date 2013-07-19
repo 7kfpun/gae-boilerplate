@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from forms import ContactForm
+from models import Contact
 from webapp2_extras.i18n import lazy_gettext as _
 
 import logging
@@ -25,3 +29,19 @@ class StarterHandler(BaseHandler):
 class SigninHandler(BaseHandler):
     def get(self):
         self.render_response('signin.html')
+
+
+class ContactHandler(BaseHandler):
+    def get(self):
+        params = {
+            'form': ContactForm(self),
+        }
+        self.render_response('contact.html', **params)
+
+    def post(self):
+        form = ContactForm(self)
+        params = {
+            'form': form,
+        }
+        self.response.write(form.validate())
+        self.render_response('contact.html', **params)

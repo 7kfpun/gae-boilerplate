@@ -10,6 +10,7 @@ urls_list = [
     (r'^/', HomeHandler),
     (r'^/starter', StarterHandler),
     (r'^/signin', SigninHandler),
+    (r'^/contact', ContactHandler),
 ]
 
 # lint_ignore=W0401

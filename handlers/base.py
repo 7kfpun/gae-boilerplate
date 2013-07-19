@@ -5,7 +5,7 @@ import json
 import os
 #from pytz.gae import pytz
 import webapp2
-from webapp2_extras import i18n
+from webapp2_extras import i18n, sessions
 
 from .helpers import (
     get_locale_from_accept_header,
@@ -112,9 +112,25 @@ class BaseHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template(_template)
             rendered_page = template.render(**context)
 
-        self.response.write(rendered_page)
+            self.response.write(rendered_page)
 
     def render_json(self, obj):
         rv = json.dumps(obj)
         self.response.headers.content_type = 'application/json'
         self.response.write(rv)
+
+    def dispatch(self):
+        # Get a session store for this request.
+        self.session_store = sessions.get_store(request=self.request)
+
+        try:
+            # Dispatch the request.
+            webapp2.RequestHandler.dispatch(self)
+        finally:
+            # Save all sessions.
+            self.session_store.save_sessions(self.response)
+
+    @webapp2.cached_property
+    def session(self):
+        # Returns a session using the default cookie key.
+        return self.session_store.get_session()

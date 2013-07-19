@@ -37,7 +37,6 @@ class ContactHandler(BaseHandler):
             'form': ContactForm(self),
         }
         self.render_response('contact.html', **params)
-        self.response.write(self.request)
 
     def post(self):
         form = ContactForm(self)
@@ -59,5 +58,4 @@ class ContactHandler(BaseHandler):
 class CheckingHandler(BaseHandler):
     def get(self):
         self.response.write(self.request)
-        self.response.write('<br />')
         self.response.write(self.locales)

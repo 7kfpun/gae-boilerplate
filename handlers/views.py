@@ -37,6 +37,14 @@ class ContactHandler(BaseHandler):
             'form': ContactForm(self),
         }
         self.render_response('contact.html', **params)
+        self.response.write(self.request)
+
+        # To set a value:
+        self.session['foo'] = 'bar'
+
+        # To get a value:
+        self.response.write(self.session.get('foo'))
+
 
     def post(self):
         form = ContactForm(self)
@@ -45,3 +53,4 @@ class ContactHandler(BaseHandler):
         }
         self.response.write(form.validate())
         self.render_response('contact.html', **params)
+        self.response.write(self.request)

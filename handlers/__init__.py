@@ -1,2 +1,1 @@
-
-from common_handler import *
+from views import *

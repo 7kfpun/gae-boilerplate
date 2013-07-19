@@ -3,10 +3,16 @@
 
 from handlers import *
 
+
 #This is the place where all of your URL mapping goes
 urls_list = [
     (r'^/hello', HelloHandler),
-    (r'^/', DefaultHandler)
+    (r'^/', HomeHandler),
+    (r'^/starter', StarterHandler),
+    (r'^/signin', SigninHandler),
+    (r'^/contact', ContactHandler),
+
+    (r'^/checking', CheckingHandler),
 ]
 
 # lint_ignore=W0401

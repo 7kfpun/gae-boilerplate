@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import cgi
 from forms import ContactForm
 from models import Contact
 from webapp2_extras.i18n import lazy_gettext as _
@@ -60,5 +59,5 @@ class ContactHandler(BaseHandler):
 class CheckingHandler(BaseHandler):
     def get(self):
         self.response.write(self.request)
-
+        self.response.write('<br />')
         self.response.write(self.locales)

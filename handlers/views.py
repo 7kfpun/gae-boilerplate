@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from webapp2_extras.i18n import lazy_gettext as _
+
 from forms import ContactForm
 from models import Contact
-from webapp2_extras.i18n import lazy_gettext as _
 
 import logging
 

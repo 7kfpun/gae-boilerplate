@@ -8,6 +8,7 @@ class Contact(ndb.Model):
     email = ndb.StringProperty()
     subject = ndb.StringProperty()
     body = ndb.TextProperty()
+    sent = ndb.BooleanProperty(default=False)
 
     created_date = ndb.DateTimeProperty(auto_now_add=True)
 

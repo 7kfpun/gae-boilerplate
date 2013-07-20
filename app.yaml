@@ -48,6 +48,10 @@ handlers:
   static_files: static/\1
   upload: static/(robots\.txt|humans\.txt|crossdomain\.xml)
 
+- url: /report/*
+  script: main.app
+  login: admin
+
 - url: .*
   script: main.app
 

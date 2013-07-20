@@ -12,7 +12,10 @@ urls_list = [
     (r'^/signin', SigninHandler),
     (r'^/contact', ContactHandler),
 
+    # admin urls
     (r'^/checking', CheckingHandler),
+    (r'^/mail/contact', MailContactHandler),
 ]
+
 
 # lint_ignore=W0401

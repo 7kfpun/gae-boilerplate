@@ -1,4 +1,4 @@
-GAE="/opt/google_appengine_1.8.2/"
+GAE="/opt/google_appengine_1.8.1/"
 APP_PATH="."
 LOCALE=en_US zh_TW zh_CN th_TH
 
@@ -12,7 +12,7 @@ test:
 
 run:
 	@echo "Running the App"
-	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug $(APP_PATH)
+	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH)
 
 update:
 	@echo "Uploading the App"

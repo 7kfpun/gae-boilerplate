@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from google.appengine.api import mail
+from google.appengine.ext import ndb
 from webapp2_extras.json import json
 
 import logging
@@ -36,6 +37,11 @@ class MailContactHandler(BaseHandler):
             logger.info(
                 'Send daily mail success, {0} new contacts'.format(count))
 
+            put_list = []
             for contact in contacts:
                 contact.sent = True
-                contact.put()
+                put_list.append(contact)
+
+            ndb.put_multi(put_list)
+
+# lint_ignore=E712

@@ -13,7 +13,7 @@ help:
 
 # target: t - Run tests
 .PHONY: t
-t:
+t: clean
 	nosetests -v --with-gae --gae-lib-root=$(GAE)
 
 # target: run - Run application server

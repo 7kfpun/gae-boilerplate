@@ -7,52 +7,77 @@ all:
 	@git submodule update --init --recursive
 	@git submodule foreach --recursive git pull origin master
 
-test:
+# target: help - Display callable targets
+help:
+	@egrep "^# target:" [Mm]akefile
+
+# target: t - Run tests
+.PHONY: t
+t:
 	nosetests -v --with-gae --gae-lib-root=$(GAE)
 
+# target: run - Run application server
+.PHONY: run
 run:
-	@echo "Running the App"
 	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH)
 
+# target: upload - Upload the App
+.PHONY: upload
 update:
-	@echo "Uploading the App"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver update $(APP_PATH)
 
+# target: update_queues - Update Task Queue Configuration
+.PHONY: update_queues
 update_queues:
-	@echo "Updating Task Queue Configuration"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver update_queues $(APP_PATH)
-
+                     
+# target: update_dos - Update the DoS Protection Configuration
+.PHONY: update_dos
 update_dos:
-	@echo "Updating the DoS Protection Configuration"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver update_dos $(APP_PATH)
 
+# target: update_cron - Manage Scheduled Tasks
+.PHONY: update_cron
 update_cron:
-	@echo "Managing Scheduled Tasks"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver update_cron $(APP_PATH)
 
+# target: cron_info - Displays a summary of the scheduled task configuration
+.PHONY: cron_info
 cron_info:
-	@echo "Displays a summary of the scheduled task configuration"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver appcfg cron_info $(APP_PATH)
 
+# target: request_logs - Download Logs
+.PHONY: request_logs
 request_logs:
 	@echo "Downloading Logs"
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver request_logs $(APP_PATH) appengine.log
-
+                    
+# target: extract_locale - Extract language files
+.PHONY: extract_locale
 extract_locale:
 	pybabel extract -F ./locale/babel.cfg -o ./locale/messages.pot ./
 
+# target: init_locale - Initialize language files
+.PHONY: init_locale
 init_locale:
 	for locale in $(LOCALE) ; do \
 	    pybabel init -l $$locale -d ./locale -i ./locale/messages.pot ; \
 	done
 
+# target: update_locale - Update language files
+.PHONY: update_locale
 update_locale:
 	for locale in $(LOCALE) ; do \
 	    pybabel update -l $$locale -d ./locale -i ./locale/messages.pot ; \
 	done
 
+# target: compile_locale - Compile language files
+.PHONY: compile_locale
 compile_locale:
 	pybabel compile -f -d ./locale
 
+# target: clean - Clean all .pyc
+.PHONY: clean
 clean:
-	find . -name "*.pyc" -exec rm -rf {} \;
+	rm -f *.py[co] *.orig
+	rm -f */*.py[co] */*.orig

@@ -22,7 +22,7 @@ run:
 	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH)
 
 # target: upload - Upload the App
-.PHONY: upload
+.PHONY: update
 update:
 	$(GAE)appcfg.py --oauth2 --noauth_local_webserver update $(APP_PATH)
 

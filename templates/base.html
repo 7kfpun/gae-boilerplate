@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">THAI in HK</a>
           <div class="nav-collapse collapse">
             <ul id="nav" class="nav">
               <li class="active"><a href="#">{{_("Home")}}</a></li>
@@ -68,24 +68,24 @@
         <div class="span5"><a name="contact">
           <form id="contact_form" action="contact" method="post">
             <fieldset>
-              <span class="help-block">Want to hire me? Get in touch!</span>
+              <span class="help-block">{{_("Want to hire me? Get in touch!")}}</span>
               <div class="control-group">
-                <input class="span2" name="name" type="text" required placeholder="Name..."
+                <input class="span2" name="name" type="text" required placeholder={{_("Name...")}}
                        data-validation-required-message={{_("Please fill out this field.")}} >
-                <input class="span3 pull-right" name="email" type="email" required placeholder="Email..."
+                <input class="span3 pull-right" name="email" type="email" required placeholder={{_("Email...")}}
                        data-validation-required-message={{_("Please fill out this field.")}}
                        data-validation-email-message={{_("Please enter an email address.")}} >
               </div>
               <div class="control-group">
-                <input class="span5"name="subject"  type="text" required placeholder="Subject..."
+                <input class="span5"name="subject"  type="text" required placeholder={{_("Subject...")}}
                        data-validation-required-message={{_("Please fill out this field.")}}>
               </div>
               <div class="control-group">
-                <textarea class="span5" name="body" rows="3" required placeholder="Body..."
+                <textarea class="span5" name="body" rows="3" required placeholder={{_("Body...")}}
                           data-validation-required-message={{_("Please fill out this field.")}}></textarea>
               </div>
-              <button type="submit" class="btn btn-success">Send message</button>
-              <button type="reset" class="btn">Clear form</button>
+              <button type="submit" class="btn btn-success">{{_("Send message")}}</button>
+              <button type="reset" class="btn">{{_("Clear form")}}</button>
             </fieldset>
           </form>
         </div>

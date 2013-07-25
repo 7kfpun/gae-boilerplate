@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Starter{% endblock %}
+{% block title %}Thai in Hong Kong{% endblock %}
 {% block head %}
    {{ super() }}
    <style>
@@ -71,6 +71,22 @@
 {% endblock %}
 {% block content %}
 <!-- Part 1: Wrap all page content here -->
+<!--
+<div class="card hovercard">
+  <div class="card-top green">
+    <img src="./images/profile.jpg" alt="profile">
+  </div>
+  <div class="card-body">
+    <p>{{_("I am a Thailand-born Chinese, native in Thai and Chinese. If you need any help in Thai, such as Thai course or Thai interpretation. Please contact me!")}}</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn btn-success" href="#contact">
+      {{_("Contact")}}
+      <i class="icon-circle-arrow-right"></i>
+    </a>
+  </div>
+</div>
+-->
 <div class="wrap">
   <!-- Begin page content -->
   <div class="container">
@@ -78,52 +94,91 @@
     <div class="span8">
       <div class="card">
         <div class="card-body">
-          <p class="">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-          <p>Use <a href="./sticky-footer-navbar.html">the sticky footer</a> with a fixed navbar if need be, too.</p>
+          <p>{{_("Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.")}}</p>
         </div>
       </div>
     </div>
 
     <div class="span4"><a name="about"></a>
       <div class="card">
-        <div class="card-body">
-          <img src="./images/profile.jpg" alt="profile" width="150">
+        <div class="card-top green">
+          <!-- <img src="./images/profile.jpg" alt="profile"> -->
         </div>
-        <div class="card-actions"></div>
-      </div>
-      <!-- card -->
-      <div class="card">
-        <h3 class="card-heading simple">Thai lessons</h3>
-        <div class="card-body text-justify">
-          <p>Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="span4"><a name="services"></a>
-      <div class="card">
-        <h3 class="card-heading simple">Services</h3>
         <div class="card-body">
-          <p>Private One on One Thai lessons or Group lessons. Lessons conducted in Mandarin, Cantonese or English.</p>
-          <p>Private One on One Home visit Thai lessons.</p>
-          <p>Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to Thai</p>
-          <p>Assistance on any jobs need Thai.</p>
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">Nested media heading</h4>
+              {{_("I am a Thailand-born Chinese, native in Thai and Chinese. If you need any help in Thai, such as Thai course or Thai interpretation. Please contact me!")}}
+              <!-- Nested media object -->
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" style="width: 100px; height: 128px;" src="./images/profile.jpg">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Nested media heading</h4>
+                  {{_("I am a Thailand-born Chinese, native in Thai and Chinese. If you need any help in Thai, such as Thai course or Thai interpretation. Please contact me!")}}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="card-actions">
-          <a class="btn btn-success" href="getting-started.html#examples">
-            See the examples
+          <a class="btn btn-success" href="#contact">
+            {{_("Contact")}}
             <i class="icon-circle-arrow-right"></i>
           </a>
         </div>
       </div>
       <!-- card -->
       <div class="card">
-        <h3 class="card-heading simple">Rates</h3>
+        <h3 class="card-heading simple">{{_("Thai lessons")}}</h3>
+        <div class="card-body text-justify">
+          <p>Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.</p>
+        </div>
+        <div class="card-comments">
+          <div class="comments-collapse-toggle">
+            <a data-toggle="collapse" data-target="#c1-comments">34 comments <i class="icon-angle-down"></i></a>
+          </div>
+          <div id="c1-comments" class="comments collapse">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/28x28" alt="avatar"/>
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Comment title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="span4"><a name="services"></a>
+      <div class="card">
+        <h3 class="card-heading simple">{{_("Services")}}</h3>
         <div class="card-body">
-          <p>Only HKD $200 per hour (One Teacher to One Student)</p>
-          <p>HKD $150 per hour per student (One Teacher to 2 Students)</p>
-          <p>HKD $100 per hour per student (One Teacher to 3-6 Students)</p>
-          <p>Please contact me at to get a precise price quote for other services!</p>
+          <p>{{_("Private One on One Thai lessons or Group lessons. Lessons conducted in Mandarin, Cantonese or English.")}}</p>
+          <p>{{_("Private One on One Home visit Thai lessons.")}}</p>
+          <p>{{_("Travel Thai language lessons.")}}</p>
+          <p>{{_("Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to Thai")}}</p>
+          <p>{{_("Assistance on any jobs need Thai.")}}</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card">
+        <h3 class="card-heading simple">{{_("Rates")}}</h3>
+        <div class="card-body">
+          <p>{{_("Only HKD $180 per hour (One Teacher to One Student)")}}</p>
+          <p>{{_("HKD $120 per hour per student (One Teacher to 2 Students)")}}</p>
+          <p>{{_("HKD $100 per hour per student (One Teacher to 3-6 Students)")}}</p>
+          <p>{{_("Please contact me at to get a precise price quote for other services!")}}</p>
+        </div>
+        <div class="card-actions">
+          <a class="btn btn-success" href="#contact">
+            {{_("Contact")}}
+            <i class="icon-circle-arrow-right"></i>
+          </a>
         </div>
       </div>
       <!-- card -->

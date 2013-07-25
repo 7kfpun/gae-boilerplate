@@ -54,5 +54,7 @@ update_locale:
 compile_locale:
 	pybabel compile -f -d ./locale
 
+lupdate: extract_locale update_locale compile_locale
+
 clean:
 	find . -name "*.pyc" -exec rm -rf {} \;

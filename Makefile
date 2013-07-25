@@ -76,6 +76,10 @@ update_locale:
 compile_locale:
 	pybabel compile -f -d ./locale
 
+# target: lupdate - Update all locale files
+.PHONY: lupdate
+lupdate: extract_locale update_locale compile_locale
+
 # target: clean - Clean all .pyc
 .PHONY: clean
 clean:

@@ -9,8 +9,8 @@ from webapp2_extras import i18n, sessions
 
 from .helpers import (
     get_locale_from_accept_header,
-    get_territory_from_ip,
-    parse_accept_language_header,
+    #get_territory_from_ip,
+    #parse_accept_language_header,
     get_signiture,
 )
 
@@ -77,11 +77,11 @@ class BaseHandler(webapp2.RequestHandler):
                 locale = self.request.cookies.get('hl', None)
                 if locale not in locales:
                     # 4. retrieve locale from accept language header
-                    #locale = get_locale_from_accept_header(self.request)
+                    locale = get_locale_from_accept_header(self.request)
                     if locale not in locales:
                         # 5. detect locale from IP address location
-                        territory = get_territory_from_ip(self) or 'ZZ'
-                        locale = str(Locale.negotiate(territory, locales))
+                        #territory = get_territory_from_ip(self) or 'ZZ'
+                        #locale = str(Locale.negotiate(territory, locales))
                         if locale not in locales:
                             # 6. use default locale
                             locale = self.request.GET.get('locale', 'en_US')

@@ -1,3 +1,7 @@
+{% set home = "Communication is about having a great idea and getting it across in time.<br /><br />Getmewrite was established to facilitate effective communication.<br /><br />As a freelance writer, I have worked with groups and individuals across all industries:from the arts, to fashion, to beauty, to hospitality and others. They had unique products or fantastic ideas, yet few managed to distil those qualities into words. Often, the key message was lost in translation and time.<br /><br />To illustrate, a Chinese-to-English translation is half the length of the original text is a sure indication that the original meaning has been regrettably abbreviated to a similar degree. And of course, it need not be said that a painstakingly crafted piece of copywriting is a Pyrrhic victory if it arrives a week after the product launch.<br /><br />Therefore, if you have a great or important idea, the key to nurturing, sharing and promoting the idea lies in effective communication. Good writing enables effective communication. With it, your idea will take root organically in the minds of your readers.<br /><br />It is my pleasure to help you get ideas across. I do so with the following guarantees:<br /><br />• To be efficient and timely, always.<br /><br />• To be concise and precise with the use of words. Further editing of what I submit will not be necessary.<br /><br />• To lend originality of ideas when required.<br /><br />• Most importantly of all, to give the greatest care to every word I write. This, ultimately, makes all the difference." %}
+{% set about = "Based in London, I established Getmewrite in August 2013 to provide professional freelance writing, editing and translation services. I am fortunate to have received a bilingual and multicultural upbringing, having grown up in Hong Kong whilst receiving a thorough education in Western liberal arts in London. The ability to think and write effectively in Chinese and English comes naturally to me.<br /><br />Getmewrite is a project that grew directly from my passion in life for writing. I have always loved words, both spoken and written. The world around us is a rich and inexhaustible well of ideas and inspiration. In our imagination, we draw them together, mould and combine them into something original and creative before finally setting it into words, so that that concept or vision can germinate in the minds of readers." %}
+{% set services = "<strong>Writing and editing</strong><br />I basically write and edit anything. Here are some types of writings I have done before, but I am open for further suggestions:" %}
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -60,26 +64,23 @@
         <li class="container_16">
           <div class="grid_4 bdr">
             <h2>welcome</h2>
-            <p>Lorem ipsum dolor sit consectetue adicing elit. Pellentesqused dolor. Aliqua ngue fermentum ns accuml dia. Sed in lacus ut enim apiscing aliqIn pde aliquet sit amet euismod inuctor ut ligula.</p>
-            <p>Aliquam dapibus tincidun tsentusto dolor lobortis quis lobortiis simulvi nar ac lorem. Vestibulum sed ante. Donec sagittis euismod purus ut perspiciatis unde omis iste natus error sit voluptatem accusa.</p>
+            <p>{{ home|truncate(390) }}</p>
             <a href="#readmore" class="more" rel="nav">more</a> </div>
           <div class="grid_4 bdr">
             <h2>services</h2>
+            <p>{{ services }}</p>
             <ul class="list p1 wrapper">
-              <li><a href="#">Lorem ipsum dolor sit</a></li>
-              <li><a href="#">Consectetue adicing elit</a></li>
-              <li><a href="#">Pellentesqused dolor</a></li>
-              <li><a href="#">Aliqua ngue fermentum ns</a></li>
-              <li><a href="#">Sed in lacus ut enipisci</a></li>
-              <li><a href="#">Aliquam dapibus tincidunt</a></li>
-              <li><a href="#">Vestibulum sed ante</a></li>
-              <li><a href="#">Donec sagittis euismod</a></li>
-              <li><a href="#">Eoloremque laudantiu</a></li>
-              <li><a href="#">Totam rem aperiaque ipsa</a></li>
+              <li><a href="#">Product/ Artwork description</a></li>
+              <li><a href="#">Press releases</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li><a href="#">Websites</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li><a href="#">Catalogues</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li><a href="#">Interviews</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li><a href="#">Featured articles</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li><a href="#">Speeches</a></li>
             </ul>
             <a href="#readmore" class="more" rel="nav">more</a> </div>
           <div class="grid_4 bdr">
-            <h2>works</h2>
+            <h2>portfolio</h2>
             <ul class="p2 wrapper">
               <li><a href="#"><img src="images/page1-img1.jpg" alt=""></a></li>
               <li><a href="#"><img src="images/page1-img2.jpg" alt=""></a></li>
@@ -87,10 +88,9 @@
             </ul>
             <a href="#readmore" class="more" rel="nav">more</a> </div>
           <div class="grid_4">
-            <h2>our   view</h2>
-            <p>Aliquam dapibus tincidun tsentusto dolor lobortis quis lobortiis simulvi nar ac lorem. Vestibulum sed ante. Donec sagittis euismod purus ut perspiciatis unde omis iste natus error sit voluptatem accusa.</p>
-            <p>Lorem ipsum dolor sit consectetue adicing elit. Pellentesqused dolor. Aliqua ngue fermentum ns accuml dia. Sed in lacus ut enim apiscing aliqIn pde aliquet sit amet euismod inuctor ut ligula.</p>
-            <a href="#readmore" class="more" rel="nav">more</a> </div>
+            <h2>About</h2>
+            <p>{{ about|truncate(420) }}</p>
+            <a href="#readmore_about" class="more" rel="nav">more</a> </div>
         </li>
         <li class="container_16">
           <div class="grid_16">
@@ -157,13 +157,13 @@
           <div class="grid_4">
             <h2>Primary Contacts </h2>
             <dl class="address und">
-              <dt class="bold">8901 Marmora Road,<br>
-                Glasgow, D04 89GR.</dt>
-              <dd><span>Freephone:</span> +1 800 559 6580</dd>
-              <dd><span>Telephone:</span> +1 800 603 6035</dd>
-              <dd><span>FAX:</span> +1 800 889 9898 </dd>
-              <dd><span>E-mail:</span> <a href="#" class="nocolor"><strong>mail@demolink.org</strong></a></dd>
-              <dd><span>Skype:</span> <strong>@skypename</strong></dd>
+              <dt class="bold">If you have a project in mind, simply follow the steps below:</dt>
+              <dt>1. Email me at <strong>mia@getmewrite.com</strong> with your project details' needs.</dt>
+              <dt>2. We work out together the exact cost and deadline of the project.</dt>
+              <dt>3. We sign your contract or my quote Agreement.</dt>
+              <dt>4. I meet your deadline and provide one round of further editing service if you are not happy with the work.</dt>
+              <dt>5. We settle the payment (usually via direct bank transfer or cheques).</dt>
+              <dt>6. We work together in the future =)</dt>
             </dl>
           </div>
         </li>
@@ -178,11 +178,19 @@
           </div>
         </li>
         <li class="container_16" id="readmore">
-          <div class="grid_16">
+          <div class="grid_8">
             <h2>read more</h2>
-            <p><strong>Aenean nec erosstibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia</strong><br>
-              Pendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. </p>
+            <p>{{ home[:828] }}</p>
             <a href="#" class="more" rel="back">back</a> </div>
+          <div class="grid_8">
+            <p>{{ home[828:] }}</p>
+        </li>
+        <li class="container_16" id="readmore_about">
+          <div class="grid_8">
+            <h2>About</h2>
+            <p>{{ about }}</p>
+            <a href="#" class="more" rel="back">back</a> </div>
+          <div class="grid_8"></div>
         </li>
       </ul>
     </article>

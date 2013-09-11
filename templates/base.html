@@ -1,43 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
 	  {% block head %}
-      <meta charset="utf-8">
-      <title>{% block title %}{% endblock %}</title>
-      <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      <!-- Le styles -->
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-      <link href="../static/css/bootplus.css" rel="stylesheet">
-      
-      <link href="../static/css/bootplus-responsive.css" rel="stylesheet">
-      <link href="../static/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <!-- Le styles -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="../static/css/bootplus.css" rel="stylesheet">
+    <link href="../static/css/bootplus-responsive.css" rel="stylesheet">
+    
+    <link href="../static/css/bootplus-responsive.css" rel="stylesheet">
+    <link href="../static/css/font-awesome-ie7.min.css" rel="stylesheet">
 
-      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-      <script src="../static/js/html5shiv.js"></script>
-      <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../static/js/html5shiv.js"></script>
+    <![endif]-->
 
-      <!-- Fav and touch icons -->
-      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/apple-touch-icon-144-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/apple-touch-icon-72-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" href="../static/apple-touch-icon-57-precomposed.png">
-      <link rel="shortcut icon" href="../static/favicon.ico">
-      {% endblock %}
-   </head>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../static/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    {% endblock %}
+  </head>
 
   <body>
-	{% block content %}{% endblock %}
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">THAI in HK</a>
+          <div class="nav-collapse collapse">
+            <ul id="nav" class="nav">
+              <li class="active"><a href="#">{{_("Home")}}</a></li>
+              <li><a href="#about">{{_("About")}}</a></li>
+              <li><a href="#services">{{_("Services")}}</a></li>
+              <li><a href="#contact">{{_("Contact")}}</a></li>
+            </ul>
+            <ul class="pull-right breadcrumb">
+              <li><a href="?hl=zh_TW">HK</a> <span class="divider">/</span></li>
+              <li><a href="?hl=zh_CN">CN</a> <span class="divider">/</span></li>
+              <li><a href="?hl=th_TH">TH</a> <span class="divider">/</span></li>
+              <li><a href="?hl=en_US">EN</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+      <div class="container">
+
+        <div class="span5"><a name="contact">
+          <form id="contact_form" action="contact" method="post">
+            <fieldset>
+              <span class="help-block">{{_("Want to hire me? Get in touch!")}}</span>
+              <div class="control-group">
+                <input class="span2" name="name" type="text" required placeholder={{_("Name...")}}
+                       data-validation-required-message={{_("Please fill out this field.")}} >
+                <input class="span3 pull-right" name="email" type="email" required placeholder={{_("Email...")}}
+                       data-validation-required-message={{_("Please fill out this field.")}}
+                       data-validation-email-message={{_("Please enter an email address.")}} >
+              </div>
+              <div class="control-group">
+                <input class="span5"name="subject"  type="text" required placeholder={{_("Subject...")}}
+                       data-validation-required-message={{_("Please fill out this field.")}}>
+              </div>
+              <div class="control-group">
+                <textarea class="span5" name="body" rows="3" required placeholder={{_("Body...")}}
+                          data-validation-required-message={{_("Please fill out this field.")}}></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">{{_("Send message")}}</button>
+              <button type="reset" class="btn">{{_("Clear form")}}</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="span3 text-justify">
+          <p>Matthew Haughey and Aaron Swartz[7] also played a significant role in the early stages of the project. In 2008, there were an estimated 130 million works licensed under the various Creative Commons licenses.[8] As of October 2011, Flickr alone hosts over 200 million Creative Commons licensed photos.[9] Creative Commons is governed by a board of directors and a technical advisory board. Their licenses have been embraced by many as a way for creators to take control of how they choose to share their copyrighted works.</p>
+        </div>
+        <div class="span8">
+          <p class="muted pagination-centered">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+      <div class="modal-body">
+        <p>{{_("We get your message!")}}</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+      </div>
+    </div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../static/libs/jquery/jquery.js"></script>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/jqBootstrapValidation.js"></script>
+    <script src="../static/js/app.js"></script>
     <!--
     <script src="../static/js/bootstrap-transition.js"></script>
     <script src="../static/js/bootstrap-alert.js"></script>
@@ -51,6 +127,6 @@
     <script src="../static/js/bootstrap-collapse.js"></script>
     <script src="../static/js/bootstrap-carousel.js"></script>
     <script src="../static/js/bootstrap-typeahead.js"></script>
-	-->
+    -->
   </body>
 </html>

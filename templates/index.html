@@ -22,14 +22,14 @@ To find out more about my previous work, please have a look at the \"Portfolio\"
 " %}
 
 {% set service_we = "<strong>Writing and editing</strong><br /><br />
-I basically write and edit anything. Here are some types of writings I have done before, but I am open for further suggestions:<br />
-Product/Artwork description<br />
-Press releases<br />
-Websites<br />
-Catalogues<br />
-Interviews<br />
-Featured articles<br />
-Speeches" %}
+I basically write and edit anything. Here are some types of writings I have done before, but I am open for further suggestions:<br /><br />
+&#8226; Product/Artwork description<br />
+&#8226; Press releases<br />
+&#8226; Websites<br />
+&#8226; Catalogues<br />
+&#8226; Interviews<br />
+&#8226; Featured articles<br />
+&#8226; Speeches" %}
 
 {% set service_t = "<strong>Translating</strong><br /><br />
 I perform English to Chinese and Chinese to English written translations. Chinese translations can be written in traditional or simplified text as your needs require.<br /><br />
@@ -39,12 +39,12 @@ For rates, please see the rates section.
 {% set rate = "Below are the rates I charge for different types of tasks. These prices are set according to my past projects and the <a href=\"http://www.the-efa.org/res/rates.php\" >Freelancers Association table of rates</a>.<br /><br />
 Prices may be negotiable depending on volume, time frame etc. Please contact me at to get a precise quote for your project!<br /><br />
 Proofreading and Editing:<br />
-0.6 HKD per word<br /><br />
+&#8226; 0.6 HKD per word<br /><br />
 Writing:<br />
-2 to 5 HKD per words<br /><br />
+&#8226; 2 to 5 HKD per words<br /><br />
 Translation:<br />
-- 0.9 HKD per word for over 5000 words<br />
-- 0.9 - 1.0 HKD per word for below 5000 words
+&#8226; 0.9 HKD per word for over 5000 words<br />
+&#8226; 0.9 - 1.0 HKD per word for below 5000 words
 " %}
 
 {% set contact = "
@@ -67,6 +67,7 @@ We work together in the future =)
 <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../static/css/grid.css" rel="stylesheet" type="text/css" />
 <link href="../static/css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Cherry+Swash' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="../static/js/jquery.min.js"></script>
 <script type="text/javascript" src="../static/js/cufon-yui.js"></script>
 <script type="text/javascript" src="../static/js/cufon-replace.js"></script>
@@ -97,11 +98,10 @@ We work together in the future =)
     <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
     <nav>
       <ul class="sf">
-        <li class="nav1"><a href="#"><span>home</span></a></li>
-        <li class="nav2"><a href="#"><span>about</span></a></li>
+        <li class="nav1"><a href="#home"><span>home</span></a></li>
+        <li class="nav2"><a href="#about"><span>about</span></a></li>
         <li class="nav3"><a href="#rate" rel="nav"><span>works</span></a>
           <ul>
-            <li><a href="#rate" rel="nav000">service & rate</a></li>
             <!--
             <li><a href="#readmore" rel="nav">print</a>
               <ul>
@@ -111,22 +111,29 @@ We work together in the future =)
               </ul>
             </li>
             -->
-            <li class="lst"><a href="#portfolio" rel="nav">portfolio</a></li>
+            <li><a href="#portfolio" rel="nav">portfolio</a>
+              <ul>
+                <li><a href="#art_writing" rel="nav">art writing</a></li>
+                <li><a href="#translation" rel="nav">translation</a></li>
+                <li class="lst"><a href="#speeches" rel="nav">speeches</a></li>
+              </ul>
+            </li>
+            <li class="lst"><a href="#rate" rel="nav">service & rate</a></li>
           </ul>
         </li>
-        <li class="nav4"><a href="#"><span>contacts</span></a></li>
+        <li class="nav4"><a href="#contacts"><span>contacts</span></a></li>
       </ul>
     </nav>
     <a href="#" class="backBu"></a>
     <article id="content">
       <ul>
-        <li class="container_16">
+        <li class="container_16" id="home">
           <div class="grid_16">
-            <h2>welcome</h2>
+            <h2>welcome!!</h2>
             <p>{{ home }}</p>
             <!-- <a href="#readmore" class="more" rel="nav">more</a> --> </div>
         </li>
-        <li class="container_16">
+        <li class="container_16" id="about">
           <div class="grid_12 bdr">
             <h2>About</h2>
             <p>{{ about }}</p> </div>
@@ -135,31 +142,10 @@ We work together in the future =)
             <p>{{ about|truncate(440) }}</p>
             <!-- <a href="#readmore_about" class="more" rel="nav">more</a> --> </div>
         </li>
-        <li class="container_16" id="rate">
-          <div class="grid_4">
-            <!--
-            <div class="scroll-wrap">
-              <ul>
-                <li><a href="../images/image_blank_white.jpg"><img src="../images/works1.jpg" alt=""></a></li>
-                <li><a href="../images/image_blank_white.jpg"><img src="../images/works2.jpg" alt=""></a></li>
-                <li><a href="../images/image_blank_white.jpg"><img src="../images/works3.jpg" alt=""></a></li>
-              </ul>
-              <div class="track"><a href="#" class="lf"></a>
-                <div></div>
-                <a href="#" class="rg"></a></div>
-            </div>
-            -->
-            <h2>Service</h2>
-            <p>{{ service_we }}</p>
-          </div>
-          <div class="grid_4 bdr">
-            <h2>&nbsp; </h2>
-            <p>{{ service_t }}</p>
-          </div>
-          <div class="grid_8">
-            <h2>Rate</h2>
-            <p>{{ rate }}</p>
-          </div>
+        <li class="container_16" id="portfolio">
+          <div class="grid_16">
+            <h2>Portfolio</h2>
+            <p>{{ portfolio }}</p> </div>
         </li>
         <!--
         <li class="container_16">
@@ -191,9 +177,9 @@ We work together in the future =)
           </div>
         </li>
         -->
-        <li class="container_16">
+        <li class="container_16" id="contacts">
           <div class="grid_5">
-            <h2>feedback</h2>
+            <h2>mail me</h2>
             <form action="#" id="form1">
               <label>
                 <input type="text" class="name" value="Your Name:">
@@ -218,7 +204,7 @@ We work together in the future =)
           </div>
           -->
           <div class="grid_11">
-            <h2>Primary Contacts </h2>
+            <h2>contact or hire</h2>
             <p>
               <strong>If you have a project in mind, simply follow the steps below:</strong><br /><br />
               1. Email me at <strong>mia@getmewrite.com</strong> with your project details' needs.<br /><br />
@@ -230,10 +216,58 @@ We work together in the future =)
             </p>
           </div>
         </li>
-        <li class="container_16" id="portfolio">
+        <li class="container_16" id="rate">
+          <div class="grid_4">
+            <!--
+            <div class="scroll-wrap">
+              <ul>
+                <li><a href="../images/image_blank_white.jpg"><img src="../images/works1.jpg" alt=""></a></li>
+                <li><a href="../images/image_blank_white.jpg"><img src="../images/works2.jpg" alt=""></a></li>
+                <li><a href="../images/image_blank_white.jpg"><img src="../images/works3.jpg" alt=""></a></li>
+              </ul>
+              <div class="track"><a href="#" class="lf"></a>
+                <div></div>
+                <a href="#" class="rg"></a></div>
+            </div>
+            -->
+            <h2>Service</h2>
+            <p>{{ service_we }}</p>
+          </div>
+          <div class="grid_4 bdr">
+            <h2>&middot; &middot;</h2>
+            <p>{{ service_t }}</p>
+          </div>
+          <div class="grid_8">
+            <h2>Rate</h2>
+            <p>{{ rate }}</p>
+          </div>
+        </li>
+        <li class="container_16" id="art_writing">
           <div class="grid_16">
-            <h2>Portfolio</h2>
-            <p>{{ portfolio }}</p> </div>
+            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
+              <p>It appears you don't have a PDF plugin for this browser.
+              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
+              download the PDF file.</a></p>
+            </object>
+          </div>
+        </li>
+        <li class="container_16" id="translation">
+          <div class="grid_16">
+            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
+              <p>It appears you don't have a PDF plugin for this browser.
+              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
+              download the PDF file.</a></p>
+            </object>
+          </div>
+        </li>
+        <li class="container_16" id="speeches">
+          <div class="grid_16">
+            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
+              <p>It appears you don't have a PDF plugin for this browser.
+              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
+              download the PDF file.</a></p>
+            </object>
+          </div>
         </li>
       </ul>
     </article>

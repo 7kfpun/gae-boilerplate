@@ -8,8 +8,8 @@ $.extend(_fw.meth,{
     invalidCl:'invalid',
     errorCl:'error',
     errorMsg:'Please enter a valid values',
-    mailHandlerURL:'bin/MailHandler.php',
-    ownerEmail:'support@guardlex.com',
+    mailHandlerURL:'contact',
+    ownerEmail:'dev@getmewrite.com',
     stripHTML:true,
     smtpMailServer:'localhost',
     backBu:false,
@@ -72,7 +72,8 @@ $.extend(_fw.meth,{
         datas={
           name:$('.name',_.form).val(),
           email:$('.email',_.form).val(),
-          message:$('.message',_.form).val(),
+          subject:$('.subject',_.form).val(),
+          body:$('.body',_.form).val(),
           owner_email:_.ownerEmail,
           stripHTML:_.stripHTML
         },

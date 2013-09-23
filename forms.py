@@ -82,7 +82,7 @@ class ContactForm(EmailMixin):
         _('Name'),
         [validators.Required(),
          validators.Length(max=FIELD_MAXLENGTH, message=_(
-             "Field cannot be longer than %(max)d characters.")),])
+             "Field cannot be longer than %(max)d characters.")), ])
          #validators.regexp(utils.NAME_LASTNAME_REGEXP, message=_(
              #"Name invalid. Use only letters and numbers."))])
 
@@ -95,4 +95,3 @@ class ContactForm(EmailMixin):
         _('Body'),
         [validators.Required(),
          validators.Length(max=65536)])
-    pass

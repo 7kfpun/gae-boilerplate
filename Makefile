@@ -1,4 +1,4 @@
-GAE="/opt/google_appengine_1.8.1/"
+GAE="/opt/google_appengine_1.8.3/"
 APP_PATH="."
 LOCALE=en_US zh_TW zh_CN th_TH
 

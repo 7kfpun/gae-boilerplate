@@ -186,7 +186,7 @@ a.backBu:hover{
 
 h2{
 	/*font:24px/1.2em Arial, Helvetica, sans-serif;*/
-        font-family: 'Cherry Swash', cursive;
+        font-family: 'Alegreya', serif;
         font-size: 24px;
 	color:#fff;
 	text-transform:uppercase;
@@ -195,8 +195,8 @@ h2{
 
 p{
 	/* font:13px/18px Arial, Helvetica, sans-serif; */
-        font-family: 'Cherry Swash', cursive;
-        font-size: 15px;
+        font-family: 'Alegreya', serif;
+        font-size: 18px;
         color:#fff;
 }
 

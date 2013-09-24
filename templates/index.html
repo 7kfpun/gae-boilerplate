@@ -101,15 +101,6 @@ Translation:<br />
         <li class="nav2"><a href="#about"><span>about</span></a></li>
         <li class="nav3"><a href="#rate" rel="nav"><span>works</span></a>
           <ul>
-            <!--
-            <li><a href="#readmore" rel="nav">print</a>
-              <ul>
-                <li><a href="#readmore" rel="nav">booklets</a></li>
-                <li><a href="#readmore" rel="nav">calling cards</a></li>
-                <li class="lst"><a href="#readmore" rel="nav">calendars</a></li>
-              </ul>
-            </li>
-            -->
             <li><a href="#portfolio" rel="nav">portfolio</a>
               <ul>
                 <li><a href="#art_writing" rel="nav">art writing</a></li>
@@ -237,31 +228,45 @@ Translation:<br />
         </li>
         <li class="container_16" id="art_writing">
           <div class="grid_16">
-            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
-              <p>It appears you don't have a PDF plugin for this browser.
-              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
-              download the PDF file.</a></p>
-            </object>
+            <h2>Art Writing</h2>
+            <p>
+              {% for number in range(1, 11) %}
+              <a href="#pdf_{{ number }}" rel="nav">number {{ number }}</a><br /><br />
+              {% endfor %}
+            </p>
           </div>
         </li>
         <li class="container_16" id="translation">
           <div class="grid_16">
-            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
-              <p>It appears you don't have a PDF plugin for this browser.
-              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
-              download the PDF file.</a></p>
-            </object>
+            <h2>Translation</h2>
+            <p>
+              {% for number in range(11, 21) %}
+              <a href="#pdf_{{ number }}" rel="nav">number {{ number }}</a><br /><br />
+              {% endfor %}
+            </p>
           </div>
         </li>
         <li class="container_16" id="speeches">
           <div class="grid_16">
-            <object data="../static/files/trahk_chi.pdf" type="application/pdf" width="100%" height="440px">             
+            <h2>Speeches</h2>
+            <p>
+              {% for number in range(21, 23) %}
+              <a href="#pdf_{{ number }}" rel="nav">number {{ number }}</a><br /><br />
+              {% endfor %}
+            </p>
+          </div>
+        </li>
+        {% for number in range(1, 23) %}
+        <li class="container_16" id="pdf_{{ number }}">
+          <div class="grid_16">
+            <object data="../static/files/{{ number }}.pdf" type="application/pdf" width="100%" height="440px">             
               <p>It appears you don't have a PDF plugin for this browser.
-              No biggie... you can <a href="../static/files/trahk_chi.pdf">click here to
+              No biggie... you can <a href="../static/files/{{ number }}.pdf">click here to
               download the PDF file.</a></p>
             </object>
           </div>
         </li>
+        {% endfor %}
       </ul>
     </article>
     <footer>

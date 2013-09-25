@@ -1,0 +1,268 @@
+[
+  {
+    "organization_name": "Hong Kong Arts Centre",
+    "description": "The Hong Kong Arts Centre is an arts organisation that promotes contemporary arts and culture within Hong Kong and beyond. It provides programmes featuring local and overseas artists that cover a wide range of art forms including, media, visual and performing arts, theatre and film.",    
+    "categories": ["artwriting"],
+    "projects": [
+      {
+        "category": "artwriting",
+        "project_name": "Art@lunch Programme Leaflet (Feb 2013)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "agnes choice - Welcome's feature article for Artslink (April issue 2013)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Arts Xperience: Open Dance (Jan 2013) - House Programme Introduction",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Art of Commercials 2012",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Leaflet for Art of Commercials Festival 2012",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "House Programme of Open Dance (Aug 2012)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      }
+    ]
+  },
+  {
+    "organization_name": "Artshare HK",
+    "description": "Artshare is the first global online platform dedicated to the exhibition and sale of modern and contemporary Asian art. Artshare presents critically curated online exhibitions, and offers the opportunity for private personal viewings. Artshare also provides a private sales avenue, working with collectors to source or sell major artworks.",
+    "categories": ["artwriting", "translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "CONTINENTAL DIVIDE:  10 Chinese Artists at Home & Abroad (Exhibition) Artwork Description",
+        "reference": "1.pdf",
+        "type": "Translation (E to C)"
+      },
+      {
+        "category": "translation",
+        "project_name": "CONTINENTAL DIVIDE:  10 Chinese Artists at Home & Abroad (Exhibition):  curatorial statement",
+        "reference": "2.pdf",
+        "type": "Translation (E to C)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Post-Politics:  7 Chinese Artists from the New Generation:  Curatorial Statement",
+        "reference": "3.pdf",
+        "type": "Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Post-Politics:  7 Chinese Artists from the New Generation:  Artwork Description",
+        "reference": "4.pdf",
+        "type": "Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "Intelligence Squared Asia",
+    "description": "Intelligence Squared is the world’s premier forum for debate and intelligent discussion. Live and online we take you to the heart of the issues that matter, in the company of some of the world’s sharpest minds and most exciting orators.",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "Intelligence Squared 5th  Annual Debate at Art Basel Hong Kong\n\n“THE MARKET IS THE BEST JUDGE OF ART’S QUALITY”\n\n",
+        "reference": "5.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+    "organization_name": "The Robert HN Ho Family Foundation",
+    "description": "The Robert HN Ho Family Foundation is a private philanthropic organisation with deep roots in Chinese Culture and Buddhist philosophy. From its Hong Kong base, the Foundation supports and develops programmes throughout the world.",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "2012 Music Grant Press release",
+        "reference": "6.pdf",
+        "type": "Translation E to C translation"
+      },
+      {
+        "category": "translation",
+        "project_name": "Insight Story Janet Gyatso\n",
+        "reference": "7.pdf",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "organization_name": "Book Author",
+    "description": "",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "Topography: 12 Interviews with Contemporary Art (Book)",
+        "reference": "n/a",
+        "type": "C to E translation"
+      }
+    ]
+  },
+  {
+    "organization_name": "Edouard Malingue Gallery",
+    "description": "Based in Hong Kong, Edouard Malingue Gallery exhibits contemporary art from different cultures.",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "Artist interview with Charwei Tsai and Wu Chi-Tsung",
+        "reference": "8.pdf",
+        "type": "Translation (C to E and E to C) "
+      }
+    ]
+  },
+  {
+    "organization_name": "Independent Artist Yuni Kim Lang",
+    "description": "http: //www.yunikimlang.com/",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "Artist Statement\n",
+        "reference": "9.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+    "organization_name": "Zhuhai Free Trade Zone Neojet-Apollojet Imaging Materials Co.Ltd",
+    "description": "",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Company Statement",
+        "reference": "10.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+    "organization_name": "Precious Magazine",
+    "description": "Precious is a monthly bilingual high-end luxury lifestyle magazine distributed in Hong Kong.",
+    "categories": ["artwriting"],
+    "projects": [
+      {
+        "category": "artwriting",
+        "project_name": "Precious Magazine issue May 2013 -- Editorial on Art Basel Hong Kong",
+        "reference": "11.pdf",
+        "type": "Research and Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Interview with Tomio Koyama, Director, Tomio Koyama Gallery",
+        "reference": "12.pdf",
+        "type": "Interview and Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "From Asia to the world:  An interview with Director Glenn Scott Wright from Victoria Miro GalleryA",
+        "reference": "13.pdf",
+        "type": "Interview and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "The 59th World Statistic Congress",
+    "description": "The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.",
+    "categories": ["speeches"],
+    "projects": [
+      {
+        "category": "speeches",
+        "project_name": "59th World Statistics Congress Closing Speech",
+        "reference": "14.pdf",
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "Lazare Kaplan International Inc.",
+    "description": "Lazare Kaplan International Inc. is a premier diamond cutting company in the world. \n\n",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Press materials (bilingual) for the launch of the Wing of Hope collection",
+        "reference": ["15.pdf", "16.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "Press materials (bilingual) for the launch of Valentine’s Day Fantasy collection",
+        "reference": ["16.pdf", "17.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "Press materials (bilingual) for the launch of Chinese New Year Love Knots collection",
+        "reference": ["18.pdf", "19.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "Press materials (bilingual) for the Mothers’ Day special collection.",
+        "reference": ["20.pdf", "21.pdf"],
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "Cafe de Coral",
+    "description": "",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Press Materials (Bilingual) 5th generation flagship store opening",
+        "reference": "On request",
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "The Standard",
+    "description": "The Standard is the only free local English paper, and its magazine publications.\nTopics spanned from health, education, food and wine, wedding to business services. The paper is available at http://www.thestandard.com.hk/",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "",
+        "reference": "n/a",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "organization_name": "Hong Kong Art Talk",
+    "description": "Artalk is a pioneering website and magazine project dedicated to art review. It is the first platform in Hong Kong opened to writers of any background and education to review art exhibitions extensively.",
+    "categories": ["artwriting"],
+    "projects": [
+      {
+        "category": "artwriting",
+        "project_name": "",
+        "reference": "http://hkartalk.com/author/miaching/",
+        "type": "Writing and editing"
+      }
+    ]
+  }
+]

@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import json
+import os
 from webapp2_extras.i18n import lazy_gettext as _
 
 from forms import ContactForm
@@ -19,7 +21,10 @@ class HelloHandler(BaseHandler):
 
 class HomeHandler(BaseHandler):
     def get(self):
-        self.render_response('index.html')
+        file_location = os.path.join(
+            os.path.dirname(__file__), "../templates/portfolio.json")
+        f = open(file_location, 'rb')
+        self.render_response('index.html', clients=json.load(f))
 
 
 class StarterHandler(BaseHandler):

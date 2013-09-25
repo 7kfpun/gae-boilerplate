@@ -19,7 +19,7 @@ t: clean
 # target: run - Run application server
 .PHONY: run
 run:
-	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH)
+	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH) --skip_sdk_update_check
 
 # target: upload - Upload the App
 .PHONY: update

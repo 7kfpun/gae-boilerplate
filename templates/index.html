@@ -66,8 +66,13 @@ Translation:<br />
 
 {% set yuni_kim_lang = "<a href=\"http://www.yunikimlang.com/\" />" %}
 {% set precious_magazine = "Precious is a monthly bilingual high-end luxury lifestyle magazine distributed in Hong Kong." %}
-
+{% set zhuhai_free_trade_zone = "" %}
 {% set hong_kong_art_talk = "Artalk is a pioneering website and magazine project dedicated to art review. It is the first platform in Hong Kong opened to writers of any background and education to review art exhibitions extensively." %}
+
+{% set lazare_kaplan_international = "Lazare Kaplan International Inc. is a premier diamond cutting company in the world." %}
+{% set cafe_de_coral = "" %}
+{% set the_standard = "The Standard is the only free local English paper, and its magazine publications.<br />Topics spanned from health, education, food and wine, wedding to business services. The paper is available at http://www.thestandard.com.hk/" %}
+
 
 <!DOCTYPE HTML>
 <html lang="en">
@@ -114,9 +119,9 @@ Translation:<br />
           <ul>
             <li><a href="#portfolio" rel="nav">portfolio</a>
               <ul>
-                <li><a href="#art_writing" rel="nav">art writing</a></li>
+                <li><a href="#artwriting" rel="nav">art writing</a></li>
                 <li><a href="#translation" rel="nav">translation</a></li>
-                <li><a href="#speeches" rel="nav">copywriting</a></li>
+                <li><a href="#copywriting" rel="nav">copywriting</a></li>
                 <li class="lst"><a href="#speeches" rel="nav">speeches</a></li>
               </ul>
             </li>
@@ -200,28 +205,23 @@ Translation:<br />
 
         {# ############################## #}
 
-        <li class="container_16" id="art_writing">
+        <li class="container_16" id="artwriting">
           <div class="grid_16">
             <h2>Art Writing</h2>
             <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
             <div class="gSlider">
               <ul>
-                <li>
-                  <p><a href="#"><img src="images/services-img1.jpg" alt=""> <strong class="bg1">Hong Kong Arts Center</strong></a></p>
-                  <p>{{ hkac|truncate(160) }} <a href="#hkac" rel="nav" class="mrk bg1"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img2.jpg" alt=""> <strong class="bg2">Artshare HK</strong></a></p>
-                  <p>{{ artshare_hk|truncate(200) }} <a href="#artshare_hk" rel="nav" class="mrk bg2"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img4.jpg" alt=""> <strong class="bg3">Precious Magazine</strong></a></p>
-                  <p>{{ precious_magazine|truncate(200) }} <a href="#precious_magazine" rel="nav" class="mrk bg3"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img4.jpg" alt=""> <strong class="bg4">Hong Kong Art Talk</strong></a></p>
-                  <p>{{ hong_kong_art_talk|truncate(180) }} <a href="#hong_kong_art_talk" rel="nav" class="mrk bg4"></a></p>
-                </li>
+                {% set row_class = cycler(1, 2, 3, 4) %}
+                {{ row_class.reset() }}
+                {% for client in clients %}
+                  {% if 'artwriting' in client.categories  %}
+                  <li>
+                    {% set class = row_class.next() %}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
+                  </li>
+                  {% endif %}
+                {% endfor %}
               </ul>
             </div>
           </div>
@@ -232,174 +232,90 @@ Translation:<br />
             <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
             <div class="gSlider">
               <ul>
-                <li>
-                  <p><a href="#"><img src="images/services-img1.jpg" alt=""> <strong class="bg1">Artshare HK</strong></a></p>
-                  <p>{{ artshare_hk|truncate(195) }} <a href="#artshare_hk" rel="nav" class="mrk bg1"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img2.jpg" alt=""> <strong class="bg2">Intelligence Squared Asia</strong></a></p>
-                  <p>{{ intelligence_squared_asia|truncate(200) }} <a href="#intelligence_squared_asia" rel="nav" class="mrk bg2"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img3.jpg" alt=""> <strong class="bg3">Robert HN Ho Family</strong></a></p>
-                  <p>{{ robert_hn_ho_family_foundation|truncate(180) }} <a href="#robert_hn_ho_family_foundation" rel="nav" class="mrk bg3"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img4.jpg" alt=""> <strong class="bg4">Book Author</strong></a></p>
-                  <p>{{ book_author|truncate(200) }} <a href="#book_author" rel="nav" class="mrk bg4"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img1.jpg" alt=""> <strong class="bg1">Edouard Malingue Gallery</strong></a></p>
-                  <p>{{ edouard_malingue_gallery|truncate(200) }} <a href="#edouard_malingue_gallery" rel="nav" class="mrk bg1"></a></p>
-                </li>
-                <li>
-                  <p><a href="#"><img src="images/services-img4.jpg" alt=""> <strong class="bg1">Independent Artist Yuni Kim Lang</strong></a></p>
-                  <p>{{ yuni_kim_lang|truncate(200) }} <a href="#yuni_kim_lang" rel="nav" class="mrk bg1"></a></p>
-                </li>
+                {% set row_class = cycler(1, 2, 3, 4) %}
+                {{ row_class.reset() }}
+                {% for client in clients %}
+                  {% if 'translation' in client.categories  %}
+                  <li>
+                    {% set class = row_class.next() %}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
+                  </li>
+                  {% endif %}
+                {% endfor %}
               </ul>
             </div>
           </div>
-
         </li>
         <li class="container_16" id="copywriting">
           <div class="grid_16">
             <h2>Copywriting</h2>
-            <p>
-              &#8226; <a href="#pdf_10" rel="nav">Company Statement</a><br /><br />
-            </p>
+            <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
+            <div class="gSlider">
+              <ul>
+                {% set row_class = cycler(1, 2, 3, 4) %}
+                {{ row_class.reset() }}
+                {% for client in clients %}
+                  {% if 'copywriting' in client.categories  %}
+                  <li>
+                    {% set class = row_class.next() %}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
+                  </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
           </div>
         </li>
         <li class="container_16" id="speeches">
           <div class="grid_16">
-            <h2>Speeches</h2>
+            <h2>The 59th World Statistic Congress</h2>
             <p>
-              {% for number in range(21, 23) %}
-              <a href="#pdf_{{ number }}" rel="nav">number {{ number }}</a><br /><br />
-              {% endfor %}
+              The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.<br /><br />
+              &#8226; <a href="#pdf_14" rel="nav">59th World Statistics Congress Closing Speech</a><br /><br />
             </p>
+            <a href="#portfolio" class="more" rel="nav">Back to list</a>
           </div>
         </li>
 
         {# ############################## #}
-            {#
-            <p>
-              &#8226; <a href="#pdf_14" rel="nav">59th World Statistics Congress Closing Speech</a><br /><br />
-              Press materials (bilingual) for the launch of the Wing of Hope collection<br /><br />
-              Press materials (bilingual) for the launch of Valentine’s Day Fantasy collection<br /><br />
-              Press materials (bilingual) for the launch of Chinese New Year Love Knots collection<br /><br />
-              Press materials (bilingual) for the Mothers’ Day special collection.<br /><br />
-              Press Materials (Bilingual) 5th generation flagship store opening<br /><br />
-            </p>
-            <p>
-            </p>
 
-            #}
+        {% for client in clients %}
+        <li class="container_16" id="{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}">
+          <div class="grid_16">
+            <h2>{{ client.organization_name }}</h2>
+            <p>{{ client.description }}</p>
+            <p>
+            {% for project in client.projects %}
 
-        <li class="container_16" id="hkac">
-          <div class="grid_16">
-            <h2>Hong Kong Arts Center</h2>
-            <p>
-              {{ hkac }}<br /><br />
-              &#8226; Art@lunch Programme Leaflet (Feb 2013)<br /><br />
-              &#8226; agnes choice – Welcome’s feature article for Artslink (April issue 2013)<br /><br />
-              &#8226; Arts Xperience: Open Dance (Jan 2013) – House Programme Introduction<br /><br />
-              &#8226; Art of Commercials 2012<br /><br />
-              &#8226; Leaflet for Art of Commercials Festival 2012<br /><br />
-              &#8226; House Programme of Open Dance (Aug 2012)<br /><br />
+              {% if project.reference is sequence and project.reference is not string %}
+                &#8226; {{ project.project_name }} {% for ref in project.reference %}<a href="#{{ ref.replace('.', '_') }}" rel="nav">[{{ loop.index }}]</a> {% endfor%}<br /><br />
+              {% elif '.pdf' in project.reference %}
+                &#8226; <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br /><br />
+              {% elif 'http://' in project.reference %}
+                &#8226; Please visit <a href="{{ project.reference }}" target="_blank">{{ project.reference }}</a><br /><br />
+              {% else %}
+                &#8226; {{ project.project_name }}<br /><br />
+              {% endif %}
+            {% endfor %}
             </p>
+            <a href="#{{ client.categories[0] }}" class="more" rel="nav">Back to list</a>
           </div>
         </li>
-        <li class="container_16" id="artshare_hk">
-          <div class="grid_16">
-            <h2>Hong Kong Arts Center</h2>
-            <p>
-              {{ artshare_hk }}<br /><br />
-              &#8226; <a href="#pdf_1" rel="nav">CONTINENTAL DIVIDE: 10 Chinese Artists at Home & Abroad (Exhibition): Artwork Description</a><br /><br />
-              &#8226; <a href="#pdf_2" rel="nav">CONTINENTAL DIVIDE: 10 Chinese Artists at Home & Abroad (Exhibition): curatorial statement</a><br /><br />
-              &#8226; <a href="#pdf_3" rel="nav">Post-Politics: 7 Chinese Artists from the New Generation: Curatorial Statement</a><br /><br />
-              &#8226; <a href="#pdf_4" rel="nav">Post-Politics: 7 Chinese Artists from the New Generation: Artwork Description</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="intelligence_squared_asia">
-          <div class="grid_16">
-            <h2>Intelligence Squared Asia</h2>
-            <p>
-              {{ intelligence_squared_asia }}<br /><br />
-              &#8226; <a href="#pdf_5" rel="nav">Intelligence Squared 5th Annual Debate at Art Basel Hong Kong "THE MARKET IS THE BEST JUDGE OF ART'S QUALITY"</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="robert_hn_ho_family_foundation">
-          <div class="grid_16">
-            <h2>The Robert HN Ho Family Foundation</h2>
-            <p>
-              {{ robert_hn_ho_family_foundation }}<br /><br />
-              &#8226; <a href="#pdf_6" rel="nav">2012 Music Grant Press release</a><br /><br />
-              &#8226; <a href="#pdf_7" rel="nav">Insight Story Janet Gyatso</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="book_author">
-          <div class="grid_16">
-            <h2>Book Author</h2>
-            <p>
-              {{ book_author }}<br /><br />
-              &#8226; Topography:12 Interviews with Contemporary Art (Book)</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="edouard_malingue_gallery">
-          <div class="grid_16">
-            <h2>Edouard Malingue Gallery</h2>
-            <p>
-              {{ edouard_malingue_gallery }}<br /><br />
-              &#8226; <a href="#pdf_8" rel="nav">Artist interview with Charwei Tsai and Wu Chi-Tsung</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="yuni_kim_lang">
-          <div class="grid_16">
-            <h2>Independent Artist Yuni Kim Lang</h2>
-            <p>
-              {{ yuni_kim_lang }}<br /><br />
-              &#8226; <a href="#pdf_9" rel="nav">Artist Statement</a><br /><br />
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="precious_magazine">
-          <div class="grid_16">
-            <h2>Precious Magazine</h2>
-            <p>
-              {{ precious_magazine }}<br /><br />
-              &#8226; <a href="#pdf_11" rel="nav">Precious Magazine issue May 2013 -- Editorial on Art Basel Hong Kong</a><br /><br />
-              &#8226; <a href="#pdf_12" rel="nav">Interview with Tomio Koyama, Director, Tomio Koyama Gallery</a><br /><br />
-              &#8226; <a href="#pdf_13" rel="nav">From Asia to the world: An interview with Director Glenn Scott Wright from Victoria Miro GalleryA</a><br /><br />
-            </p>
-          </div>
-        </li>
+        {% endfor %}
 
-
-
-        <li class="container_16" id="hong_kong_art_talk">
-          <div class="grid_16">
-            <h2>Hong Kong Art Talk</h2>
-            <p>
-              {{ hong_kong_art_talk }}<br /><br />
-              &#8226; <a href="http://hkartalk.com/author/miaching/" rel="nav">Hong Kong Art Talk</a><br /><br />
-            </p>
-          </div>
-        </li>
-
+        {# ############################## #}
 
         {% for number in range(1, 23) %}
-        <li class="container_16" id="pdf_{{ number }}">
+        <li class="container_16" id="{{ number }}_pdf">
           <div class="grid_16">
             <object data="../static/files/{{ number }}.pdf" type="application/pdf" width="100%" height="440px">             
               <p>It appears you don't have a PDF plugin for this browser.
               No biggie... you can <a href="../static/files/{{ number }}.pdf">click here to
               download the PDF file.</a></p>
             </object>
+            <a href="#portfolio" class="more" rel="nav">Back to list</a>
           </div>
         </li>
         {% endfor %}

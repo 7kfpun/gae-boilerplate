@@ -95,7 +95,7 @@ Translation:<br />
 <body>
 <div class="glob-wrap">
   <div id="main">
-    <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+    <h1><a href="index.html"><img src="static/images/logo.png" alt=""></a></h1>
     <nav>
       <ul class="sf">
         <li class="nav1"><a href="#home"><span>home</span></a></li>
@@ -121,7 +121,7 @@ Translation:<br />
       <ul>
         <li class="container_16" id="home">
           <div class="grid_16">
-            <h2>welcome!!</h2>
+            <h2>welcome!</h2>
             <p>{{ home }}</p>
             <!-- <a href="#readmore" class="more" rel="nav">more</a> --> </div>
         </li>
@@ -130,8 +130,10 @@ Translation:<br />
             <h2>About</h2>
             <p>{{ about }}</p> </div>
           <div class="grid_4">
-            <h2>"""Small about"""</h2>
-            <p>{{ about|truncate(440) }}</p>
+            <p>
+              <img src="static/images/mona.jpg" border="0" height="240" width="160" alt="Profile pic" />
+            </p>
+            <p>{{ about|truncate(120) }}</p>
             <!-- <a href="#readmore_about" class="more" rel="nav">more</a> --> </div>
         </li>
         <li class="container_16" id="portfolio">
@@ -202,7 +204,7 @@ Translation:<br />
                   {% if 'artwriting' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
                     <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
                   </li>
                   {% endif %}
@@ -223,7 +225,7 @@ Translation:<br />
                   {% if 'translation' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
                     <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
                   </li>
                   {% endif %}
@@ -254,7 +256,7 @@ Translation:<br />
                   {% if 'copywriting' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
                     <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>
                   </li>
                   {% endif %}

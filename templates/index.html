@@ -203,8 +203,9 @@ Translation:<br />
                   {% if 'artwriting' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    {#<p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
                     <p>
                       {% for project in client.projects %}
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
@@ -235,8 +236,9 @@ Translation:<br />
                   {% if 'translation' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
-                    {#<p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
                     <p>
                       {% for project in client.projects %}
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
@@ -278,8 +280,9 @@ Translation:<br />
                   {% if 'copywriting' in client.categories  %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(28) }}</strong></a></p>
-                    {#<p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
+                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
+                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
                     <p>
                       {% for project in client.projects %}
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}

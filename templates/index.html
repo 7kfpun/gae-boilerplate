@@ -11,7 +11,7 @@ If you have a great or important idea, the key to nurturing, sharing and promoti
 
 {% set about = "I am fortunate to have received a bilingual and multicultural upbringing, having grown up in Hong Kong whilst receiving a thorough education in Western liberal arts in London. The ability to think and write effectively in Chinese and English comes naturally to me.<br /><br />
 Getmewrite is a project that grew directly from my passion in life for writing. I have always loved words, both spoken and written. The world around us is a rich and inexhaustible well of ideas and inspiration. In our imagination, we draw them together, mould and combine them into something original and creative before finally setting it into words, so that that concept or vision can germinate in the minds of readers.<br /><br />
-Before starting <a href=\"http://www.getmewrite.com\">Getmewrite</a>, I worked as a journalist, an editor, a copywriter, a marketing specialist and a translator.  Through this varied work experience, I developed an adeptness at different styles of writing across different subject areas (please refer to my portfolio for examples). I am keen to write press materials, product descriptions, editorials, or any other form of writing that will put your message across most effectively.<br /><br />
+Before starting <a href=\"http://www.getmewrite.com\">Get Me Write</a>, I worked as a journalist, an editor, a copywriter, a marketing specialist and a translator.  Through this varied work experience, I developed an adeptness at different styles of writing across different subject areas (please refer to my portfolio for examples). I am keen to write press materials, product descriptions, editorials, or any other form of writing that will put your message across most effectively.<br /><br />
 To find out more about my previous work, please have a look at the \"Portfolio\" Section.
 " %}
 
@@ -50,7 +50,7 @@ Translation:<br />
 
 {% set contact = "
 <strong>If you have a project in mind, simply follow the steps below:</strong><br /><br />
-1. Email me at <a href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> with your project details/ needs.<br /><br />
+1. Email me at <a href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> or whatsapp me at <a href=\"tel:+85292765601\">+852 9276 5601</a> with your project details/ needs.<br /><br />
 2. We work out together the exact cost and deadline of the project.<br /><br />
 3. We sign your contract or my quote Agreement.<br /><br />
 4. I meet your deadline and provide one round of further editing service if you are not happy with the work.<br /><br />
@@ -103,13 +103,14 @@ Translation:<br />
         <li class="nav3"><a href="#rate" rel="nav"><span>works</span></a>
           <ul>
             <li><a href="#portfolio" rel="nav">portfolio</a>
-              <ul>
+              {#<ul>
                 <li><a href="#artwriting" rel="nav">art writing</a></li>
                 <li><a href="#translation" rel="nav">translation</a></li>
                 <li><a href="#speeches" rel="nav">speeches</a></li>
                 <li class="lst"><a href="#copywriting" rel="nav">copywriting</a></li>
-              </ul>
+              </ul>#}
             </li>
+            <li><a href="#clients" rel="nav">clients</a></li>
             <li class="lst"><a href="#rate" rel="nav">service & rate</a></li>
           </ul>
         </li>
@@ -190,6 +191,30 @@ Translation:<br />
         </li>
 
         {# ############################## #}
+
+        <li class="container_16" id="clients">
+          <div class="grid_16">
+            <h2>clients</h2>
+            <div class="gSlider">
+              <ul>
+                {% set row_class = cycler(1, 2, 3, 4) %}
+                {% for category in ["art writing", "translation", "speeches", "copywriting"] %}
+                  <li>
+                    {% set class = row_class.next() %}
+                    <p><a href="#" rel="nav"><strong class="bg{{ class }}">{{ category }}</strong></a></p>
+                    <p>
+                    {% for client in clients %}
+                      {% if category.replace(" ", "") in client.categories  %}
+                      • <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').replace(':', '_').replace('(', '_').replace(')', '_').lower() }}" rel="nav">{{ client.organization_name }}</a><br />
+                      {% endif %}
+                    {% endfor %}
+                    </p>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </li>
 
         <li class="container_16" id="artwriting">
           <div class="grid_16">
@@ -305,7 +330,7 @@ Translation:<br />
         {# ############################## #}
 
         {% for client in clients %}
-        <li class="container_16" id="{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}">
+        <li class="container_16" id="{{ client.organization_name.replace(' ', '_').replace('.', '_').replace(':', '_').replace('(', '_').replace(')', '_').lower() }}">
           <div class="grid_16">
             <h2>{{ client.organization_name }}</h2>
             <p>{{ client.description }}</p>
@@ -327,7 +352,7 @@ Translation:<br />
               {% endif %}
             {% endfor %}
             </p>
-            <a href="#{{ client.categories[0] }}" class="more" rel="nav">Back to list</a>
+            <a href="#clients" class="more" rel="nav">Back to list</a>
           </div>
         </li>
         {% endfor %}
@@ -351,8 +376,8 @@ Translation:<br />
     <footer>
       <ul class="soc-ico">
         <li><a href="#">facebook</a>&bull;</li>
-        <li><a href="#">twitter</a>&bull;</li>
-        <li><a href="#">rss &nbsp; feed</a></li>
+        <li><a href=\"mailto:mona@getmewrite.com\">email</a>&bull;</li>
+        <li><a href=\"tel:+85292765601\">whatsapp</a></li>
       </ul>
       <div class="privacy"><span>www.getmewrite.com</span> &copy; <span>2013<!-- </span>&bull; <a href="#privacy" rel="nav">Privacy Policy</a><br />-->
       </div>

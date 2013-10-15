@@ -49,13 +49,13 @@
     "projects": [
       {
         "category": "translation",
-        "project_name": "CONTINENTAL DIVIDE:  10 Chinese Artists at Home & Abroad (Exhibition) Artwork Description",
+        "project_name": "Continental Divide:  10 Chinese Artists at Home & Abroad (Exhibition) Artwork Description",
         "reference": "1.pdf",
         "type": "Translation (E to C)"
       },
       {
         "category": "translation",
-        "project_name": "CONTINENTAL DIVIDE:  10 Chinese Artists at Home & Abroad (Exhibition):  curatorial statement",
+        "project_name": "Continental Divide:  10 Chinese Artists at Home & Abroad (Exhibition):  curatorial statement",
         "reference": "2.pdf",
         "type": "Translation (E to C)"
       },
@@ -133,7 +133,7 @@
   },
   {
     "organization_name": "Independent Artist Yuni Kim Lang",
-    "description": "http: //www.yunikimlang.com/",
+    "description": "http://www.yunikimlang.com/",
     "categories": ["translation"],
     "projects": [
       {
@@ -243,14 +243,7 @@
     "organization_name": "The Standard",
     "description": "The Standard is the only free local English paper, and its magazine publications.\nTopics spanned from health, education, food and wine, wedding to business services. The paper is available at http://www.thestandard.com.hk/",
     "categories": ["copywriting"],
-    "projects": [
-      {
-        "category": "copywriting",
-        "project_name": "",
-        "reference": "n/a",
-        "type": ""
-      }
-    ]
+    "projects": []
   },
   {
     "organization_name": "Hong Kong Art Talk",

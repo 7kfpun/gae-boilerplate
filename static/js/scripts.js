@@ -284,4 +284,8 @@ $(function(){
     show_splash()
     return false
   }).hide()
+
+  $('h1 a').click(function() {
+    show_splash();
+  })
 })

@@ -6,14 +6,16 @@ from handlers import *
 
 #This is the place where all of your URL mapping goes
 urls_list = [
-    (r'^/hello', HelloHandler),
+    #(r'^/hello', HelloHandler),
     (r'^/', HomeHandler),
-    (r'^/starter', StarterHandler),
-    (r'^/signin', SigninHandler),
+    #(r'^/starter', StarterHandler),
+    #(r'^/signin', SigninHandler),
     (r'^/contact', ContactHandler),
+]
 
-    # admin urls
-    (r'^/checking', CheckingHandler),
+admin_urls_list = [
+    # admin urls, remember to configure in app.yaml
+    (r'^/mail/all', MailAllHandler),
     (r'^/mail/contact', MailContactHandler),
 ]
 

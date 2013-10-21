@@ -1,5 +1,5 @@
 application: getmewrite
-version: 2_1
+version: "2dot1"
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -51,8 +51,8 @@ handlers:
   static_files: static/\1
   upload: static/(robots\.txt|humans\.txt|crossdomain\.xml)
 
-- url: /report/*
-  script: main.app
+- url: /mail/(.*)
+  script: main.admin_app
   login: admin
 
 - url: .*

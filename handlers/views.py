@@ -2,16 +2,17 @@
 # -*- coding: utf-8 -*-
 import json
 import os
-from webapp2_extras.i18n import lazy_gettext as _
+#from webapp2_extras.i18n import lazy_gettext as _
 
 from forms import ContactForm
 from models import Contact
+from handlers.mails import send_contact_mail
+
+from base import BaseHandler
 
 import logging
 
 logger = logging.getLogger(__name__)
-
-from base import BaseHandler
 
 
 class HelloHandler(BaseHandler):
@@ -58,10 +59,6 @@ class ContactHandler(BaseHandler):
                 body=self.request.get('body'),
             )
             contact.put()
-        self.render_response('contact.html', **params)
-
-
-class CheckingHandler(BaseHandler):
-    def get(self):
-        self.response.write(self.request)
-        self.response.write(self.locales)
+            send_contact_mail(self)
+        else:
+            self.render_response('contact.html', **params)

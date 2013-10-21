@@ -5,43 +5,63 @@ from google.appengine.api import mail
 from google.appengine.ext import ndb
 from webapp2_extras.json import json
 
+from models import Contact
+from base import BaseHandler
+
 import logging
 
 logger = logging.getLogger(__name__)
 
-from models import Contact
-from base import BaseHandler
+
+def send_contact_mail(self):
+    contacts = Contact.query(Contact.sent != True)
+    count = contacts.count()
+    if count:
+        datetime_handler = lambda obj: obj.isoformat() \
+            if isinstance(obj, datetime) else None
+        message = json.dumps(
+            [contact.to_dict() for contact in contacts],
+            default=datetime_handler,
+            indent=4
+        )
+
+        mail.send_mail(
+            sender="Getmewrite.com Support <getmewrite@gmail.com>",
+            to="Mona <mona@getmewrite.com>",
+            subject="You have {0} new contact(s)".format(count),
+            body=message
+        )
+
+        self.response.write(message)
+        logger.info(
+            'Send daily mail success, {0} new contacts'.format(count))
+
+        put_list = []
+        for contact in contacts:
+            contact.sent = True
+            put_list.append(contact)
+
+        ndb.put_multi(put_list)
 
 
 class MailContactHandler(BaseHandler):
     def get(self):
-        contacts = Contact.query(Contact.sent != True)
-        count = contacts.count()
-        if count:
-            datetime_handler = lambda obj: obj.isoformat() \
-                if isinstance(obj, datetime) else None
-            message = json.dumps(
-                [contact.to_dict() for contact in contacts],
-                default=datetime_handler,
-                indent=4
-            )
+        send_contact_mail(self)
 
-            mail.send_mail(
-                sender="Example.com Support <getmewrite@gmail.com>",
-                to="Mona <mona@getmewrite.com>",
-                subject="You have {0} new contacts".format(count),
-                body=message
-            )
 
-            self.response.write(message)
-            logger.info(
-                'Send daily mail success, {0} new contacts'.format(count))
+class MailAllHandler(BaseHandler):
+    def get(self):
+        contacts = Contact.query()
+        datetime_handler = lambda obj: obj.isoformat() \
+            if isinstance(obj, datetime) else None
+        message = json.dumps(
+            [contact.to_dict() for contact in contacts],
+            default=datetime_handler,
+            indent=4
+        )
 
-            put_list = []
-            for contact in contacts:
-                contact.sent = True
-                put_list.append(contact)
+        self.response.write(message)
+        logger.info('Check all {} contact(s)'.format(contacts.count()))
 
-            ndb.put_multi(put_list)
 
 # lint_ignore=E712

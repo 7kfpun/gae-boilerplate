@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-21 03:45+0000\n"
+"POT-Creation-Date: 2013-10-21 04:15+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -102,20 +102,33 @@ msgid ""
 "• Most importantly of all, to give the greatest care to every word I "
 "write.\n"
 msgstr ""
+"準確、準時地傳遞創新意念，才算得上是有效率的傳訊。<br /><br />\n"
+"<a href=\"http://www.getmewrite.com\">Get Me Write</a> "
+"是為了提供高質素文字傳訊服務而成立的。<br /><br />\n"
+"作為自由撰稿人，我曾經接觸很多不同客戶，包括藝術、時裝、美容、服務業等。客戶大都有創新有趣的意念，卻因為無法準確用文字表達，或撰稿員拖欠稿件，令意念平白流失。<br/><br"
+" />\n"
+"舉例說，如果一篇文章由中文翻譯成英文後，比原文短了一半，文意一定準確不到哪裡。反過來說，一篇精彩的產品簡介如果比原定稿期遲了一星期才出現，文字再好，也發揮不到功用。<br"
+" /><br />\n"
+"好的文字是有效傳訊的第一步，它不但讓讀者明白你的意念，也把意念植根在他們腦中。<br /><br />\n"
+"我抱持以下承諾，為客戶提供有質素的文字服務：<br /><br />\n"
+"- 快而準<br /><br />\n"
+"- 在有需要的時候，提供創新的意念<br /><br />\n"
+"- 認真專業地對待我寫的每一份稿件<br /><br />\n"
 
 #: templates/index.html:12
+#, fuzzy
 msgid ""
 "I am fortunate to have received a bilingual and multicultural upbringing,"
 " having grown up in Hong Kong whilst receiving a thorough education in "
 "Western liberal arts in London. The ability to think and write "
 "effectively in Chinese and English comes naturally to me.<br /><br />\n"
-"Getmewrite is a project that grew directly from my passion in life for "
-"writing. I have always loved words, both spoken and written. The world "
-"around us is a rich and inexhaustible well of ideas and inspiration. In "
-"our imagination, we draw them together, mould and combine them into "
-"something original and creative before finally setting it into words, so "
-"that that concept or vision can germinate in the minds of readers.<br "
-"/><br />\n"
+"<a href=\"http://www.getmewrite.com\">Get Me Write</a> is a project that "
+"grew directly from my passion in life for writing. I have always loved "
+"words, both spoken and written. The world around us is a rich and "
+"inexhaustible well of ideas and inspiration. In our imagination, we draw "
+"them together, mould and combine them into something original and "
+"creative before finally setting it into words, so that that concept or "
+"vision can germinate in the minds of readers.<br /><br />\n"
 "Before starting <a href=\"http://www.getmewrite.com\">Get Me Write</a>, I"
 " worked as a journalist, an editor, a copywriter, a marketing specialist "
 "and a translator.  Through this varied work experience, I developed an "
@@ -126,6 +139,16 @@ msgid ""
 "To find out more about my previous work, please have a look at the "
 "\"Portfolio\" Section.\n"
 msgstr ""
+"<a href=\"http://www.getmewrite.com\">Get Me Write</a> "
+"於2013年成立於倫敦，旨在提供專業的寫作、校對和翻譯服務。我很幸運生於香港，從小接受雙語教育；及後負笈倫敦進修文藝，因此練成純熟的中英文寫作技巧。<br"
+" /><br />\n"
+"對我們來說，寫作不單是一項工作，也是我樂在其中的追求。我們身處的世界包含無盡可能，如何在這些可能中獲得靈感，加以想像，重塑成獨一無二的故事，與讀者分享，是一場持續不斷的探索，也是我成立"
+" <a href=\"http://www.getmewrite.com\">Get Me Write</a> 的原因。<br /><br />"
+"\n"
+"成立 <a href=\"http://www.getmewrite.com\">Get Me Write</a> "
+"以前，我曾經從事記者、編輯、市場撰稿員和翻譯等工作，從中學會不同形式、範疇的寫作技巧。我樂意撰寫新聞稿、產品簡介、專題文章或其他切合你需要的文體。<br"
+" /><br />\n"
+"如欲了解更多我過往的工作經驗，請參考工作履歷。<br /><br />\n"
 
 #: templates/index.html:18
 msgid ""
@@ -156,6 +179,18 @@ msgid ""
 "official, I am experienced in devising creative strategies to promote "
 "products and services.\n"
 msgstr ""
+"以下是我經常接觸的創作/寫作領域一覽。如欲查詢我的其他作品，請電郵告知。<br /><br />\n"
+"- <a href=\"#artwriting\" "
+"rel=\"nav\">藝術</a>：藝術書寫是一套獨特的語言，對於沒有相關經驗的作者來說，很難掌握。由於我大學時修讀英國文學，後在倫敦進修戲劇，因此非常熟悉視覺和表演藝術相關詞彙。我曾經替畫廊和博物館編寫展覽場刊，撰寫藝評、影評、以及藝術家訪談等。<br"
+" /><br />\n"
+"- <a href=\"#translation\" rel=\"nav\">中英文翻譯</a>：提供中譯英及英譯中服務。保證傳譯準確。<br "
+"/><br />\n"
+"- <a href=\"#speeches\" "
+"rel=\"nav\">講詞</a>：曾參與多項區域性比賽，及擔任公開演說及辯論導師，對於如何遣詞用字及掌握語調有深入認識，可因應你的需要，提供文稿寫作及演說訓練。<br"
+" /><br />\n"
+"- <a href=\"#copywriting\" "
+"rel=\"nav\">商業/市場推廣文稿</a>：擁有市場推廣經驗，擅於為各類產品服務構思推廣策略，以及撰寫相關文件。<br /><br />"
+"\n"
 
 #: templates/index.html:25
 msgid ""
@@ -170,6 +205,14 @@ msgid ""
 "• Featured articles<br />\n"
 "• Speeches\n"
 msgstr ""
+"<strong>寫作/撰稿</strong><br /><br />\n"
+"以下是我曾經提供的服務，如有其他需求，歡迎致電查詢<br /><br />\n"
+"- 新聞稿<br /><br />\n"
+"- 網站內文<br /><br />\n"
+"- 各類展覽場刊<br /><br />\n"
+"- 人訪<br /><br />\n"
+"- 專題<br /><br />\n"
+"- 講詞"
 
 #: templates/index.html:36
 msgid ""
@@ -179,6 +222,8 @@ msgid ""
 " your needs require.<br /><br />\n"
 "For rates, please see the rates section.\n"
 msgstr ""
+"<strong>翻譯</strong><br /><br />\n"
+"中譯英和英譯中服務，可提供繁、簡體中文版本。"
 
 #: templates/index.html:41
 msgid ""
@@ -196,6 +241,15 @@ msgid ""
 "• 1.0 HKD per word for over 5000 words<br />\n"
 "• 1.0 - 1.1 HKD per word for below 5000 words\n"
 msgstr ""
+"以下收費參照我過往的工作項目，以及美國 <a href=\"http://www.the-efa.org/res/rates.php\" "
+">Editorial Freelancers Association</a> "
+"的標準而定，並可能因應工作數量及時限等因素調整。如欲查詢項目實際收費，請電郵聯絡。<br /><br />\n"
+"<strong>編輯校對</strong>：<br /><br />\n"
+"每字港幣 0.6 元<br /><br />\n"
+"<strong>寫作/撰稿</strong>：每字港幣 1.5 ~ 4 元<br /><br />\n"
+"<strong>翻譯</strong>：<br /><br />\n"
+"5000 字以上文稿每字 1.0 港幣<br /><br />\n"
+"5000 字以下文稿每字 1.0 ~ 1.1 港幣<br /><br />\n"
 
 #: templates/index.html:52
 msgid ""
@@ -214,112 +268,121 @@ msgid ""
 "cheques).<br /><br />\n"
 "6. We work together in the future =)\n"
 msgstr ""
+"如果你有需要幫忙的寫作項目，請參照以下做法：<br /><br />\n"
+"1. 把閣下的項目資料/需要電郵至 <a "
+"href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a>，或whatsapp至 <a"
+" href=\"tel:+85292765601\">+852 9276 5601</a>。<br /><br />\n"
+"2. 我們一同制定項目實際收費和工作限期<br /><br />\n"
+"3. 簽署合作同意書<br /><br />\n"
+"4. 我在限期前完成工作，並因應閣下需求，提供一輪免費修訂服務。<br /><br />\n"
+"5. 閣下通過銀行過戶或支票付款<br /><br />\n"
+"6. 預祝我們未來合作愉快=）<br /><br />\n"
 
 #: templates/index.html:66
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:110
+#: templates/index.html:111
 msgid "home"
 msgstr ""
 
-#: templates/index.html:111 templates/index.html:140
+#: templates/index.html:112 templates/index.html:141
 msgid "about"
 msgstr ""
 
-#: templates/index.html:112
+#: templates/index.html:113
 msgid "works"
 msgstr ""
 
-#: templates/index.html:114 templates/index.html:150
+#: templates/index.html:115 templates/index.html:151
 msgid "portfolio"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:123
 msgid "clients"
 msgstr ""
 
-#: templates/index.html:123 templates/index.html:189
+#: templates/index.html:124 templates/index.html:190
 msgid "service"
 msgstr ""
 
-#: templates/index.html:123 templates/index.html:197
+#: templates/index.html:124 templates/index.html:198
 msgid "rate"
 msgstr ""
 
-#: templates/index.html:126
+#: templates/index.html:127
 msgid "contacts"
 msgstr ""
 
-#: templates/index.html:134
+#: templates/index.html:135
 msgid "welcome"
 msgstr ""
 
-#: templates/index.html:156
+#: templates/index.html:157
 msgid "mail me"
 msgstr ""
 
-#: templates/index.html:161
+#: templates/index.html:162
 msgid "This is not a valid name."
 msgstr ""
 
-#: templates/index.html:164
+#: templates/index.html:165
 msgid "This is not a valid email address."
 msgstr ""
 
-#: templates/index.html:168
+#: templates/index.html:169
 msgid "This is not a valid subject."
 msgstr ""
 
-#: templates/index.html:170
+#: templates/index.html:171
 msgid "Body"
 msgstr ""
 
-#: templates/index.html:171
+#: templates/index.html:172
 msgid "The message is too short."
 msgstr ""
 
-#: templates/index.html:172
+#: templates/index.html:173
 msgid "reset"
 msgstr ""
 
-#: templates/index.html:172
+#: templates/index.html:173
 msgid "submit"
 msgstr ""
 
-#: templates/index.html:181
+#: templates/index.html:182
 msgid "contact or hire"
 msgstr ""
 
-#: templates/index.html:230
+#: templates/index.html:231
 msgid "art writing"
 msgstr ""
 
-#: templates/index.html:248 templates/index.html:281 templates/index.html:325
-#: templates/index.html:358
+#: templates/index.html:249 templates/index.html:282 templates/index.html:326
+#: templates/index.html:359
 msgid "Please visit"
 msgstr ""
 
-#: templates/index.html:263
+#: templates/index.html:264
 msgid "translation"
 msgstr ""
 
-#: templates/index.html:296
+#: templates/index.html:297
 msgid "The 59th World Statistic Congress"
 msgstr ""
 
-#: templates/index.html:298
+#: templates/index.html:299
 msgid ""
 "The 59th WSC provides a platform for the international statistical "
 "community to share and present the latest knowledge and innovation in "
 "statistics."
 msgstr ""
 
-#: templates/index.html:300
+#: templates/index.html:301
 msgid "59th World Statistics Congress Closing Speech"
 msgstr ""
 
-#: templates/index.html:307
+#: templates/index.html:308
 msgid "copywriting"
 msgstr ""
 

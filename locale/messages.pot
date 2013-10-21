@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-21 04:15+0000\n"
+"POT-Creation-Date: 2013-10-21 05:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,29 +131,29 @@ msgid ""
 "I am experienced writing on extensive topics. Below are niche topics that"
 " I'm particularly familiar with. If you wish to see sample writings on "
 "other topics, please email me.<br /><br />\n"
-"• <a href=\"#artwriting\" rel=\"nav\">Art writing</a> - The creative arts"
-" often rely on a language that is difficult for an unaccustomed writer to"
-" grasp. Having graduated with a BA in English Literature and Politics, "
-"and an MA in Theater and Performance Studies at King’s College London, "
-"visual and performance arts form a strong part of my academic background."
-" I have written and translated gallery and museum catalogues, artwork "
+"• <strong>Art writing</strong> - The creative arts often rely on a "
+"language that is difficult for an unaccustomed writer to grasp. Having "
+"graduated with a BA in English Literature and Politics, and an MA in "
+"Theater and Performance Studies at King’s College London, visual and "
+"performance arts form a strong part of my academic background. I have "
+"written and translated gallery and museum catalogues, artwork "
 "descriptions for art sales, art reviews and film reviews. I have also "
 "conducted and written published interviews with artists (please refer to "
 "my portfolio).<br /><br />\n"
-"• <a href=\"#translation\" rel=\"nav\">Translation between Chinese and "
-"English (both directions)</a> - As a writer with a facility and command "
-"of these two very different languages, I can ensure the meaning you want "
-"to communicate not only lives through the translation process, but is in "
+"• <strong>Translation between Chinese and English (both "
+"directions)</strong> - As a writer with a facility and command of these "
+"two very different languages, I can ensure the meaning you want to "
+"communicate not only lives through the translation process, but is in "
 "fact enhanced by it.<br /><br />\n"
-"• <a href=\"#speeches\" rel=\"nav\">Speeches</a> - As a successful "
-"participant and coach, I have been involved in debating at a regional "
-"level for many years. I have also worked as a speech trainer. Speaking "
-"your mind effectively is made easier when the words, tone and emphasis "
-"you use are shaped to your needs. The assuredness of speech takes half "
-"the stage fright away.<br /><br />\n"
-"• <a href=\"#copywriting\" rel=\"nav\">Copywriting</a> - As a former PR "
-"official, I am experienced in devising creative strategies to promote "
-"products and services.\n"
+"• <strong>Speeches</strong> - As a successful participant and coach, I "
+"have been involved in debating at a regional level for many years. I have"
+" also worked as a speech trainer. Speaking your mind effectively is made "
+"easier when the words, tone and emphasis you use are shaped to your "
+"needs. The assuredness of speech takes half the stage fright away.<br "
+"/><br />\n"
+"• <strong>Copywriting</strong> - As a former PR official, I am "
+"experienced in devising creative strategies to promote products and "
+"services.\n"
 msgstr ""
 
 #: templates/index.html:25
@@ -290,35 +290,35 @@ msgstr ""
 msgid "contact or hire"
 msgstr ""
 
-#: templates/index.html:231
+#: templates/index.html:232
 msgid "art writing"
 msgstr ""
 
-#: templates/index.html:249 templates/index.html:282 templates/index.html:326
-#: templates/index.html:359
+#: templates/index.html:250 templates/index.html:283 templates/index.html:327
+#: templates/index.html:361
 msgid "Please visit"
 msgstr ""
 
-#: templates/index.html:264
+#: templates/index.html:265
 msgid "translation"
 msgstr ""
 
-#: templates/index.html:297
+#: templates/index.html:298
 msgid "The 59th World Statistic Congress"
 msgstr ""
 
-#: templates/index.html:299
+#: templates/index.html:300
 msgid ""
 "The 59th WSC provides a platform for the international statistical "
 "community to share and present the latest knowledge and innovation in "
 "statistics."
 msgstr ""
 
-#: templates/index.html:301
+#: templates/index.html:302
 msgid "59th World Statistics Congress Closing Speech"
 msgstr ""
 
-#: templates/index.html:308
+#: templates/index.html:309
 msgid "copywriting"
 msgstr ""
 

@@ -1,5 +1,5 @@
 application: getmewrite
-version: "2dot1"
+version: "dev"
 runtime: python27
 api_version: 1
 threadsafe: true

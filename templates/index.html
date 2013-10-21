@@ -1,4 +1,4 @@
-{% set home = "Communication is about having a great idea and getting it across in time.<br /><br />
+{% set home = _("Communication is about having a great idea and getting it across in time.<br /><br />
 Established in 2013, Getmewrite provides freelance writing, editing and translation services to facilitate effective communication.<br /><br />
 As a freelance writer, I have worked with groups and individuals across all industries: from the arts, to fashion, to beauty, to hospitality and others. They had unique products or fantastic ideas, yet few managed to distil those qualities into words. Often, the key message was lost in translation and time.<br /><br />
 To illustrate, a Chinese-to-English translation half the length of the original text is a sure indication that the original meaning has been regrettably abbreviated to a similar degree. And of course, it need not be said that a painstakingly crafted piece of copywriting is a Pyrrhic victory if it arrives a week after the product launch.<br /><br />
@@ -7,22 +7,22 @@ If you have a great or important idea, the key to nurturing, sharing and promoti
 • To be concise and precise with the use of words.<br />
 • To lend originality of ideas when required.<br />
 • Most importantly of all, to give the greatest care to every word I write.
-" %}
+") %}
 
-{% set about = "I am fortunate to have received a bilingual and multicultural upbringing, having grown up in Hong Kong whilst receiving a thorough education in Western liberal arts in London. The ability to think and write effectively in Chinese and English comes naturally to me.<br /><br />
+{% set about = _("I am fortunate to have received a bilingual and multicultural upbringing, having grown up in Hong Kong whilst receiving a thorough education in Western liberal arts in London. The ability to think and write effectively in Chinese and English comes naturally to me.<br /><br />
 Getmewrite is a project that grew directly from my passion in life for writing. I have always loved words, both spoken and written. The world around us is a rich and inexhaustible well of ideas and inspiration. In our imagination, we draw them together, mould and combine them into something original and creative before finally setting it into words, so that that concept or vision can germinate in the minds of readers.<br /><br />
 Before starting <a href=\"http://www.getmewrite.com\">Get Me Write</a>, I worked as a journalist, an editor, a copywriter, a marketing specialist and a translator.  Through this varied work experience, I developed an adeptness at different styles of writing across different subject areas (please refer to my portfolio for examples). I am keen to write press materials, product descriptions, editorials, or any other form of writing that will put your message across most effectively.<br /><br />
 To find out more about my previous work, please have a look at the \"Portfolio\" Section.
-" %}
+") %}
 
-{% set portfolio = "I am experienced writing on extensive topics. Below are niche topics that I’m particularly familiar with. If you wish to see sample writings on other topics, please email me.<br /><br />
+{% set portfolio = _("I am experienced writing on extensive topics. Below are niche topics that I'm particularly familiar with. If you wish to see sample writings on other topics, please email me.<br /><br />
 • <a href=\"#artwriting\" rel=\"nav\">Art writing</a> - The creative arts often rely on a language that is difficult for an unaccustomed writer to grasp. Having graduated with a BA in English Literature and Politics, and an MA in Theater and Performance Studies at King’s College London, visual and performance arts form a strong part of my academic background. I have written and translated gallery and museum catalogues, artwork descriptions for art sales, art reviews and film reviews. I have also conducted and written published interviews with artists (please refer to my portfolio).<br /><br />
 • <a href=\"#translation\" rel=\"nav\">Translation between Chinese and English (both directions)</a> - As a writer with a facility and command of these two very different languages, I can ensure the meaning you want to communicate not only lives through the translation process, but is in fact enhanced by it.<br /><br />
 • <a href=\"#speeches\" rel=\"nav\">Speeches</a> - As a successful participant and coach, I have been involved in debating at a regional level for many years. I have also worked as a speech trainer. Speaking your mind effectively is made easier when the words, tone and emphasis you use are shaped to your needs. The assuredness of speech takes half the stage fright away.<br /><br />
 • <a href=\"#copywriting\" rel=\"nav\">Copywriting</a> - As a former PR official, I am experienced in devising creative strategies to promote products and services.
-" %}
+") %}
 
-{% set service_we = "<strong>Writing and editing</strong><br /><br />
+{% set service_we = _("<strong>Writing and editing</strong><br /><br />
 I basically write and edit anything. Here are some types of writings I have done before, but I am open for further suggestions:<br /><br />
 • Product/Artwork description<br />
 • Press releases<br />
@@ -30,14 +30,15 @@ I basically write and edit anything. Here are some types of writings I have done
 • Catalogues<br />
 • Interviews<br />
 • Featured articles<br />
-• Speeches" %}
+• Speeches
+") %}
 
-{% set service_t = "<strong>Translating</strong><br /><br />
+{% set service_t = _("<strong>Translating</strong><br /><br />
 I perform English to Chinese and Chinese to English written translations. Chinese translations can be written in traditional or simplified text as your needs require.<br /><br />
 For rates, please see the rates section.
-" %}
+") %}
 
-{% set rate = "Below are the rates I charge for different types of tasks. These prices are set according to my past projects and the <a href=\"http://www.the-efa.org/res/rates.php\" >Freelancers Association table of rates</a>.<br /><br />
+{% set rate = _("Below are the rates I charge for different types of tasks. These prices are set according to my past projects and the <a href=\"http://www.the-efa.org/res/rates.php\" >Freelancers Association table of rates</a>.<br /><br />
 Prices may be negotiable depending on volume, time frame etc. Please contact me at to get a precise quote for your project!<br /><br />
 Proofreading and Editing:<br />
 • 0.6 HKD per word<br /><br />
@@ -46,24 +47,23 @@ Writing:<br />
 Translation:<br />
 • 1.0 HKD per word for over 5000 words<br />
 • 1.0 - 1.1 HKD per word for below 5000 words
-" %}
+") %}
 
-{% set contact = "
-<strong>If you have a project in mind, simply follow the steps below:</strong><br /><br />
+{% set contact = _("<strong>If you have a project in mind, simply follow the steps below:</strong><br /><br />
 1. Email me at <a href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> or whatsapp me at <a href=\"tel:+85292765601\">+852 9276 5601</a> with your project details/ needs.<br /><br />
 2. We work out together the exact cost and deadline of the project.<br /><br />
 3. We sign your contract or my quote Agreement.<br /><br />
 4. I meet your deadline and provide one round of further editing service if you are not happy with the work.<br /><br />
 5. We settle the payment (usually via direct bank transfer or cheques).<br /><br />
 6. We work together in the future =)
-" %}
+") %}
 
 
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Get Me Write</title>
+<title>{{_("Get Me Write")}}</title>
 <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../static/css/grid.css" rel="stylesheet" type="text/css" />
 <link href="../static/css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
@@ -107,23 +107,23 @@ Translation:<br />
     <h1><a href="#"><img src="static/images/logo2.png" alt=""></a></h1>
     <nav>
       <ul class="sf">
-        <li class="nav1"><a href="#home"><span>home</span></a></li>
-        <li class="nav2"><a href="#about"><span>about</span></a></li>
-        <li class="nav3"><a href="#rate" rel="nav"><span>works</span></a>
+        <li class="nav1"><a href="#home"><span>{{_("home")}}</span></a></li>
+        <li class="nav2"><a href="#about"><span>{{_("about")}}</span></a></li>
+        <li class="nav3"><a href="#rate" rel="nav"><span>{{_("works")}}</span></a>
           <ul>
-            <li><a href="#portfolio" rel="nav">portfolio</a>
+            <li><a href="#portfolio" rel="nav">{{_("portfolio")}}</a>
               {#<ul>
-                <li><a href="#artwriting" rel="nav">art writing</a></li>
-                <li><a href="#translation" rel="nav">translation</a></li>
-                <li><a href="#speeches" rel="nav">speeches</a></li>
-                <li class="lst"><a href="#copywriting" rel="nav">copywriting</a></li>
+                <li><a href="#artwriting" rel="nav">{{_("art writing")}}</a></li>
+                <li><a href="#translation" rel="nav">{{_("translation")}}</a></li>
+                <li><a href="#speeches" rel="nav">{{_("speeches")}}</a></li>
+                <li class="lst"><a href="#copywriting" rel="nav">{{_("copywriting")}}</a></li>
               </ul>#}
             </li>
-            <li><a href="#clients" rel="nav">clients</a></li>
-            <li class="lst"><a href="#rate" rel="nav">service & rate</a></li>
+            <li><a href="#clients" rel="nav">{{_("clients")}}</a></li>
+            <li class="lst"><a href="#rate" rel="nav">{{_("service")}} & {{_("rate")}}</a></li>
           </ul>
         </li>
-        <li class="nav4"><a href="#contacts"><span>contacts</span></a></li>
+        <li class="nav4"><a href="#contacts"><span>{{_("contacts")}}</span></a></li>
       </ul>
     </nav>
     <a href="#" class="backBu backButton"></a>
@@ -131,13 +131,13 @@ Translation:<br />
       <ul>
         <li class="container_16" id="home">
           <div class="grid_16">
-            <h2>welcome!</h2>
+            <h2>{{_("welcome")}}!</h2>
             <p>{{ home }}</p>
             <!-- <a href="#readmore" class="more" rel="nav">more</a> --> </div>
         </li>
         <li class="container_16" id="about">
           <div class="grid_16">
-            <h2>About</h2>
+            <h2>{{_("about")}}</h2>
             <p>{{ about }}</p> </div>
           {#<div class="grid_4">
             <p>
@@ -147,29 +147,29 @@ Translation:<br />
         </li>
         <li class="container_16" id="portfolio">
           <div class="grid_16">
-            <h2>Portfolio</h2>
+            <h2>{{_("portfolio")}}</h2>
             <p>{{ portfolio }}</p> </div>
         </li>
 
         <li class="container_16" id="contacts">
           <div class="grid_5">
-            <h2>mail me</h2>
+            <h2>{{_("mail me")}}</h2>
             <form action="#" id="form1">
               <label>
                 <input type="text" class="name" value="Your Name:">
                 <br class="clear">
-                <span class="error">This is not a valid name.</span> </label>
+                <span class="error">{{_("This is not a valid name.")}}</span> </label>
               <label>
                 <input type="email" class="email" value="E-mail:">
-                <span class="error">This is not a valid email address.</span> </label>
+                <span class="error">{{_("This is not a valid email address.")}}</span> </label>
               <label>
                 <input type="text" class="subject" value="Subject:">
                 <br class="clear">
-                <span class="error">This is not a valid subject.</span> </label>
+                <span class="error">{{_("This is not a valid subject.")}}</span> </label>
               <label>
-                <textarea class="body">Body:</textarea>
-                <span class="error">The message is too short.</span> </label>
-              <span class="btns"><a href="#" rel="reset">reset</a><a href="#" rel="submit">submit</a></span>
+                <textarea class="body">{{_("Body")}}:</textarea>
+                <span class="error">{{_("The message is too short.")}}</span> </label>
+              <span class="btns"><a href="#" rel="reset">{{_("reset")}}</a><a href="#" rel="submit">{{_("submit")}}</a></span>
             </form>
           </div>
           <!--
@@ -178,7 +178,7 @@ Translation:<br />
           </div>
           -->
           <div class="grid_11">
-            <h2>contact or hire</h2>
+            <h2>{{_("contact or hire")}}</h2>
             <p>
               {{ contact }}
             </p>
@@ -186,7 +186,7 @@ Translation:<br />
         </li>
         <li class="container_16" id="rate">
           <div class="grid_4">
-            <h2>Service</h2>
+            <h2>{{_("service")}}</h2>
             <p>{{ service_we }}</p>
           </div>
           <div class="grid_4 bdr">
@@ -194,7 +194,7 @@ Translation:<br />
             <p>{{ service_t }}</p>
           </div>
           <div class="grid_8">
-            <h2>Rate</h2>
+            <h2>{{_("rate")}}</h2>
             <p>{{ rate }}</p>
           </div>
         </li>
@@ -227,7 +227,7 @@ Translation:<br />
 
         <li class="container_16" id="artwriting">
           <div class="grid_16">
-            <h2>Art Writing</h2>
+            <h2>{{_("art writing")}}</h2>
             <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
             <div class="gSlider">
               <ul>
@@ -245,7 +245,7 @@ Translation:<br />
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
                           • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
                         {% elif 'http://' in project.reference %}
-                          • Please visit <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
+                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
                         {% else %}
                           • {{ project.project_name }}<br />
                         {% endif %}
@@ -260,7 +260,7 @@ Translation:<br />
         </li>
         <li class="container_16" id="translation">
           <div class="grid_16">
-            <h2>Translation</h2>
+            <h2>{{_("translation")}}</h2>
             <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
             <div class="gSlider">
               <ul>
@@ -278,7 +278,7 @@ Translation:<br />
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
                           • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
                         {% elif 'http://' in project.reference %}
-                          • Please visit <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
+                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
                         {% else %}
                           • {{ project.project_name }}<br />
                         {% endif %}
@@ -293,18 +293,18 @@ Translation:<br />
         </li>
         <li class="container_16" id="speeches">
           <div class="grid_16">
-            <h2>The 59th World Statistic Congress</h2>
+            <h2>{{_("The 59th World Statistic Congress")}}</h2>
             <p>
-              The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.<br /><br />
+              {{_("The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.")}}<br /><br />
               {#• <a href="#pdf_14" rel="nav">59th World Statistics Congress Closing Speech</a><br /><br />#}
-              • 59th World Statistics Congress Closing Speech<br /><br />
+              • {{_("59th World Statistics Congress Closing Speech")}}<br /><br />
             </p>
             <a href="#portfolio" class="more" rel="nav">Back to list</a>
           </div>
         </li>
         <li class="container_16" id="copywriting">
           <div class="grid_16">
-            <h2>Copywriting</h2>
+            <h2>{{_("copywriting")}}</h2>
             <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
             <div class="gSlider">
               <ul>
@@ -322,7 +322,7 @@ Translation:<br />
                         {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
                           • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
                         {% elif 'http://' in project.reference %}
-                          • Please visit <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
+                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
                         {% else %}
                           • {{ project.project_name }}<br />
                         {% endif %}
@@ -355,7 +355,7 @@ Translation:<br />
               {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
                 • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br /><br />
               {% elif 'http://' in project.reference %}
-                • Please visit <a href="{{ project.reference }}" target="_blank">{{ project.reference }}</a><br /><br />
+                • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}</a><br /><br />
               {% else %}
                 • {{ project.project_name }}<br /><br />
               {% endif %}
@@ -388,7 +388,8 @@ Translation:<br />
         <li><a href=\"mailto:mona@getmewrite.com\">email</a>&bull;</li>
         <li><a href=\"tel:+85292765601\">whatsapp</a></li>
       </ul>
-      <div class="privacy"><span>www.getmewrite.com</span> &copy; <span>2013<!-- </span>&bull; <a href="#privacy" rel="nav">Privacy Policy</a><br />-->
+      <div class="privacy"><span>www.getmewrite.com</span> &copy; 2013<br />
+      <a href="?hl=zh_CN">CN</a>
       </div>
     </footer>
   </div>
@@ -396,6 +397,6 @@ Translation:<br />
 <div class="gspinner"></div>
 <script type="text/javascript">Cufon.now()
 </script>
-<!--coded by pleazkin-->
+<!--coded by kf-->
 </body>
 </html>

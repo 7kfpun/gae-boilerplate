@@ -28,7 +28,7 @@ class MailContactHandler(BaseHandler):
 
             mail.send_mail(
                 sender="Example.com Support <getmewrite@gmail.com>",
-                to="Albert Johnson <dev@getmewrite.com>",
+                to="Mona <mona@getmewrite.com>",
                 subject="You have {0} new contacts".format(count),
                 body=message
             )

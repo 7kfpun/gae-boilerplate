@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-09 09:43+0000\n"
-"PO-Revision-Date: 2013-07-14 13:31+0000\n"
+"POT-Creation-Date: 2013-10-21 03:45+0000\n"
+"PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -79,8 +79,9 @@ msgstr ""
 msgid ""
 "Communication is about having a great idea and getting it across in "
 "time.<br /><br />\n"
-"Established in 2013, Getmewrite provides freelance writing, editing and "
-"translation services to facilitate effective communication.<br /><br />\n"
+"Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me "
+"Write</a> provides freelance writing, editing and translation services to"
+" facilitate effective communication.<br /><br />\n"
 "As a freelance writer, I have worked with groups and individuals across "
 "all industries: from the arts, to fashion, to beauty, to hospitality and "
 "others. They had unique products or fantastic ideas, yet few managed to "
@@ -115,8 +116,8 @@ msgid ""
 "something original and creative before finally setting it into words, so "
 "that that concept or vision can germinate in the minds of readers.<br "
 "/><br />\n"
-"Before starting <a href=\"http://www.getmewrite.com\">Getmewrite</a>, I "
-"worked as a journalist, an editor, a copywriter, a marketing specialist "
+"Before starting <a href=\"http://www.getmewrite.com\">Get Me Write</a>, I"
+" worked as a journalist, an editor, a copywriter, a marketing specialist "
 "and a translator.  Through this varied work experience, I developed an "
 "adeptness at different styles of writing across different subject areas "
 "(please refer to my portfolio for examples). I am keen to write press "
@@ -192,8 +193,8 @@ msgid ""
 "Writing:<br />\n"
 "• 1.5 to 4 HKD per words<br /><br />\n"
 "Translation:<br />\n"
-"• 0.9 HKD per word for over 5000 words<br />\n"
-"• 0.9 - 1.0 HKD per word for below 5000 words\n"
+"• 1.0 HKD per word for over 5000 words<br />\n"
+"• 1.0 - 1.1 HKD per word for below 5000 words\n"
 msgstr ""
 
 #: templates/index.html:52
@@ -201,8 +202,9 @@ msgid ""
 "<strong>If you have a project in mind, simply follow the steps "
 "below:</strong><br /><br />\n"
 "1. Email me at <a "
-"href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> with your "
-"project details/ needs.<br /><br />\n"
+"href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> or whatsapp "
+"me at <a href=\"tel:+85292765601\">+852 9276 5601</a> with your project "
+"details/ needs.<br /><br />\n"
 "2. We work out together the exact cost and deadline of the project.<br "
 "/><br />\n"
 "3. We sign your contract or my quote Agreement.<br /><br />\n"
@@ -217,107 +219,107 @@ msgstr ""
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:101
+#: templates/index.html:110
 msgid "home"
 msgstr ""
 
-#: templates/index.html:102 templates/index.html:130
+#: templates/index.html:111 templates/index.html:140
 msgid "about"
 msgstr ""
 
-#: templates/index.html:103
+#: templates/index.html:112
 msgid "works"
 msgstr ""
 
-#: templates/index.html:105 templates/index.html:140
+#: templates/index.html:114 templates/index.html:150
 msgid "portfolio"
 msgstr ""
 
-#: templates/index.html:107 templates/index.html:196
-msgid "art writing"
+#: templates/index.html:122
+msgid "clients"
 msgstr ""
 
-#: templates/index.html:108 templates/index.html:229
-msgid "translation"
-msgstr ""
-
-#: templates/index.html:109
-msgid "speeches"
-msgstr ""
-
-#: templates/index.html:110 templates/index.html:273
-msgid "copywriting"
-msgstr ""
-
-#: templates/index.html:113 templates/index.html:179
+#: templates/index.html:123 templates/index.html:189
 msgid "service"
 msgstr ""
 
-#: templates/index.html:113 templates/index.html:187
+#: templates/index.html:123 templates/index.html:197
 msgid "rate"
 msgstr ""
 
-#: templates/index.html:116
+#: templates/index.html:126
 msgid "contacts"
 msgstr ""
 
-#: templates/index.html:124
+#: templates/index.html:134
 msgid "welcome"
 msgstr ""
 
-#: templates/index.html:146
+#: templates/index.html:156
 msgid "mail me"
 msgstr ""
 
-#: templates/index.html:151
+#: templates/index.html:161
 msgid "This is not a valid name."
 msgstr ""
 
-#: templates/index.html:154
+#: templates/index.html:164
 msgid "This is not a valid email address."
 msgstr ""
 
-#: templates/index.html:158
+#: templates/index.html:168
 msgid "This is not a valid subject."
 msgstr ""
 
-#: templates/index.html:160
+#: templates/index.html:170
 msgid "Body"
 msgstr ""
 
-#: templates/index.html:161
+#: templates/index.html:171
 msgid "The message is too short."
 msgstr ""
 
-#: templates/index.html:162
+#: templates/index.html:172
 msgid "reset"
 msgstr ""
 
-#: templates/index.html:162
+#: templates/index.html:172
 msgid "submit"
 msgstr ""
 
-#: templates/index.html:171
+#: templates/index.html:181
 msgid "contact or hire"
 msgstr ""
 
-#: templates/index.html:214 templates/index.html:247 templates/index.html:291
-#: templates/index.html:324
+#: templates/index.html:230
+msgid "art writing"
+msgstr ""
+
+#: templates/index.html:248 templates/index.html:281 templates/index.html:325
+#: templates/index.html:358
 msgid "Please visit"
 msgstr ""
 
-#: templates/index.html:262
+#: templates/index.html:263
+msgid "translation"
+msgstr ""
+
+#: templates/index.html:296
 msgid "The 59th World Statistic Congress"
 msgstr ""
 
-#: templates/index.html:264
+#: templates/index.html:298
 msgid ""
 "The 59th WSC provides a platform for the international statistical "
 "community to share and present the latest knowledge and innovation in "
 "statistics."
 msgstr ""
 
-#: templates/index.html:266
+#: templates/index.html:300
 msgid "59th World Statistics Congress Closing Speech"
+msgstr ""
+
+#: templates/index.html:307
+msgid "copywriting"
 msgstr ""
 

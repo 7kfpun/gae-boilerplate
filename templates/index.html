@@ -141,9 +141,7 @@ Translation:<br />
             <h2>{{_("about")}}</h2>
             <p>{{ about }}</p> </div>
           {#<div class="grid_4">
-            <p>
-              <img src="static/images/mona.jpg" border="0" height="320" width="200" alt="Profile pic" />
-            </p>
+            <p><img src="static/images/mona.jpg" border="0" height="320" width="200" alt="Profile pic" /></p>
             </div>#}
         </li>
         <li class="container_16" id="portfolio">
@@ -226,119 +224,6 @@ Translation:<br />
           </div>
         </li>
 
-        <!--
-        <li class="container_16" id="artwriting">
-          <div class="grid_16">
-            <h2>{{_("art writing")}}</h2>
-            <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
-            <div class="gSlider">
-              <ul>
-                {% set row_class = cycler(1, 2, 3, 4) %}
-                {{ row_class.reset() }}
-                {% for client in clients %}
-                  {% if 'artwriting' in client.categories  %}
-                  <li>
-                    {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
-                    <p>
-                      {% for project in client.projects %}
-                        {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
-                          • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
-                        {% elif 'http://' in project.reference %}
-                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
-                        {% else %}
-                          • {{ project.project_name }}<br />
-                        {% endif %}
-                      {% endfor %}
-                    </p>
-                  </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="container_16" id="translation">
-          <div class="grid_16">
-            <h2>{{_("translation")}}</h2>
-            <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
-            <div class="gSlider">
-              <ul>
-                {% set row_class = cycler(1, 2, 3, 4) %}
-                {{ row_class.reset() }}
-                {% for client in clients %}
-                  {% if 'translation' in client.categories  %}
-                  <li>
-                    {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
-                    <p>
-                      {% for project in client.projects %}
-                        {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
-                          • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
-                        {% elif 'http://' in project.reference %}
-                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
-                        {% else %}
-                          • {{ project.project_name }}<br />
-                        {% endif %}
-                      {% endfor %}
-                    </p>
-                  </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="container_16" id="speeches">
-          <div class="grid_16">
-            <h2>{{_("The 59th World Statistic Congress")}}</h2>
-            <p>
-              {{_("The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.")}}<br /><br />
-              {#• <a href="#pdf_14" rel="nav">59th World Statistics Congress Closing Speech</a><br /><br />#}
-              • {{_("59th World Statistics Congress Closing Speech")}}<br /><br />
-            </p>
-            <a href="#portfolio" class="more" rel="nav">Back to list</a>
-          </div>
-        </li>
-        <li class="container_16" id="copywriting">
-          <div class="grid_16">
-            <h2>{{_("copywriting")}}</h2>
-            <div class="gSlider-controls"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
-            <div class="gSlider">
-              <ul>
-                {% set row_class = cycler(1, 2, 3, 4) %}
-                {{ row_class.reset() }}
-                {% for client in clients %}
-                  {% if 'copywriting' in client.categories  %}
-                  <li>
-                    {% set class = row_class.next() %}
-                    <p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    {#<p><a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav"><img src="static/images/services-img{{ class }}.jpg" alt=""> <strong class="bg{{ class }}">{{ client.organization_name|truncate(26) }}</strong></a></p>
-                    <p>{{ client.description|truncate(170) }} <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').lower() }}" rel="nav" class="mrk bg{{ class }}"></a></p>#}
-                    <p>
-                      {% for project in client.projects %}
-                        {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
-                          • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br />
-                        {% elif 'http://' in project.reference %}
-                          • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}<br />
-                        {% else %}
-                          • {{ project.project_name }}<br />
-                        {% endif %}
-                      {% endfor %}
-                    </p>
-                  </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </li>
-        -->
-
         {# ############################## #}
 
         {% for client in clients %}
@@ -348,13 +233,6 @@ Translation:<br />
             <p>{{ client.description }}</p>
             <p>
             {% for project in client.projects %}
-              {#
-              {% if project.reference is sequence and project.reference is not string %}
-                • {{ project.project_name }} {% for ref in project.reference %}<a href="#{{ ref.replace('.', '_') }}" rel="nav">[{{ loop.index }}]</a> {% endfor%}<br /><br />
-              {% elif '.pdf' in project.reference %}
-                • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br /><br />
-              #}
-
               {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
                 • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br /><br />
               {% elif 'http://' in project.reference %}

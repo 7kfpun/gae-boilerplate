@@ -26,7 +26,8 @@ class HomeHandler(BaseHandler):
             os.path.dirname(__file__), "../templates/portfolio.json")
         f = open(file_location, 'rb')
         self.render_response(
-            'index.html', clients=json.load(f), locale=self.locale,
+            'index.html', cache_time=360000,
+            clients=json.load(f), locale=self.locale,
         )
 
 

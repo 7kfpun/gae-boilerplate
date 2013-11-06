@@ -1,5 +1,6 @@
 from babel import Locale
 from google.appengine.api import memcache
+
 import jinja2
 import json
 import os
@@ -92,13 +93,14 @@ class BaseHandler(webapp2.RequestHandler):
         self.response.set_cookie('hl', locale, max_age=15724800)
         return locale
 
-    def render_response(self, _template, **context):
-        cache_time = 0
-        # TODO: add session
-        transliterated_text = '.'.join([_template] + context.keys())
-        signature = get_signiture(transliterated_text)
-
+    def render_response(self, _template, cache_time=0, **context):
         if cache_time:
+            logger.info('cache used for {0} s'.format(cache_time))
+            # TODO: add session
+            transliterated_text = _template + json.dumps(context.values())
+            signature = get_signiture(transliterated_text)
+            logger.debug('cache key {0}'.format(signature))
+
             rendered_page = memcache.get('page {0}'.format(signature))
             if not rendered_page:
                 template = JINJA_ENVIRONMENT.get_template(_template)
@@ -112,7 +114,7 @@ class BaseHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template(_template)
             rendered_page = template.render(**context)
 
-            self.response.write(rendered_page)
+        self.response.write(rendered_page)
 
     def render_json(self, obj):
         rv = json.dumps(obj)

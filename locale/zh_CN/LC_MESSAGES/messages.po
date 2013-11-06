@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-21 05:02+0000\n"
+"POT-Creation-Date: 2013-11-06 10:09+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -78,32 +78,41 @@ msgstr ""
 #: templates/index.html:1
 msgid ""
 "Communication is about having a great idea and getting it across in "
-"time.<br /><br />\n"
+"time.<br />\n"
 "Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me "
 "Write</a> provides freelance writing, editing and translation services to"
-" facilitate effective communication.<br /><br />\n"
+" facilitate effective communication.<br />\n"
 "As a freelance writer, I have worked with groups and individuals across "
 "all industries: from the arts, to fashion, to beauty, to hospitality and "
 "others. They had unique products or fantastic ideas, yet few managed to "
 "distil those qualities into words. Often, the key message was lost in "
-"translation and time.<br /><br />\n"
+"translation and time.<br />\n"
 "To illustrate, a Chinese-to-English translation half the length of the "
 "original text is a sure indication that the original meaning has been "
 "regrettably abbreviated to a similar degree. And of course, it need not "
 "be said that a painstakingly crafted piece of copywriting is a Pyrrhic "
-"victory if it arrives a week after the product launch.<br /><br />\n"
+"victory if it arrives a week after the product launch.<br />\n"
 "If you have a great or important idea, the key to nurturing, sharing and "
 "promoting the idea lies in effective communication. Good writing enables "
 "effective communication. It is my pleasure to help you with it. I do so "
-"with the following guarantees:<br /><br />\n"
+"with the following guarantees:<br />\n"
 "• To be efficient and timely, always.<br />\n"
 "• To be concise and precise with the use of words.<br />\n"
 "• To lend originality of ideas when required.<br />\n"
 "• Most importantly of all, to give the greatest care to every word I "
-"write.\n"
+"write."
 msgstr ""
+"准确、准时地传递创新意念，才算得上是有效率的传讯。<br /><br /><a "
+"\"href=\"http://www.getmewrite.com\">Get Me Write</a> "
+"是为了提供高质素文字传讯服务而成立的。<br /><br "
+"/>作为自由撰稿人，我曾经接触很多不同客户，包括艺术、时装、美容、服务业等。客户大都有创新有趣的意念，却因为无法准确用文字表达，或撰稿员拖欠稿件，令意念平白流失。<br"
+" /><br "
+"/>举例说，如果一篇文章由中文翻译成英文后，比原文短了一半，文意一定准确不到哪里。反过来说，一篇精彩的产品简介如果比原定稿期迟了一星期才出现，文字再好，也发挥不到功用。<br"
+" /><br />好的文字是有效传讯的第一步，它不但让读者明白你的意念，也把意念植根在他们脑中。<br /><br "
+"/>我抱持以下承诺，为客户提供有质素的文字服务：<br /><br />- 快而准<br />- 在有需要的时候，提供创新的意念<br />- "
+"认真专业地对待我写的每一份稿件"
 
-#: templates/index.html:12
+#: templates/index.html:11
 msgid ""
 "I am fortunate to have received a bilingual and multicultural upbringing,"
 " having grown up in Hong Kong whilst receiving a thorough education in "
@@ -126,8 +135,16 @@ msgid ""
 "To find out more about my previous work, please have a look at the "
 "\"Portfolio\" Section.\n"
 msgstr ""
+"<a href=\"http://www.getmewrite.com\">Get Me Write</a> "
+"于2013年成立于伦敦，旨在提供专业的写作、校对和翻译服务。我很幸运生于香港，从小接受双语教育；及后负笈伦敦进修文艺，因此练成纯熟的中英文写作技巧。<br"
+" /><br "
+"/>对我们来说，写作不单是一项工作，也是我乐在其中的追求。我们身处的世界包含无尽可能，如何在这些可能中获得灵感，加以想像，重塑成独一无二的故事，与读者分享，是一场持续不断的探索，也是我成立Getmewrite"
+" 的原因。<br /><br />成立 <a href=\"http://www.getmewrite.com\">Get Me "
+"Write</a> "
+"以前，我曾经从事记者、编辑、市场撰稿员和翻译等工作，从中学会不同形式、范畴的写作技巧。我乐意撰写新闻稿、产品简介、专题文章或其他切合你需要的文体。<br"
+" /><br />如欲了解更多我过往的工作经验，请参考工作履历。"
 
-#: templates/index.html:18
+#: templates/index.html:17
 msgid ""
 "I am experienced writing on extensive topics. Below are niche topics that"
 " I'm particularly familiar with. If you wish to see sample writings on "
@@ -156,8 +173,13 @@ msgid ""
 "experienced in devising creative strategies to promote products and "
 "services.\n"
 msgstr ""
+"以下是我经常接触的创作/写作领域一览。如欲查询我的其他作品，请电邮告知。<br /><br />- "
+"<strong>艺术</strong>：艺术书写是一套独特的语言，对于没有相关经验的作者来说，很难掌握。由于我大学时修读英国文学，后在伦敦进修戏剧，因此非常熟悉视觉和表演艺术相关词汇。我曾经替画廊和博物馆编写展览场刊，撰写艺评、影评、以及艺术家访谈等。<br"
+" /><br />- <strong>中英文翻译</strong>：提供中译英及英译中服务。保证传译准确。<br /><br />- "
+"<strong>讲词</strong>：曾参与多项区域性比赛，及担任公开演说及辩论导师，对于如何遣词用字及掌握语调有深入认识，可因应你的需要，提供文稿写作及演说训练。<br"
+" /><br />- <strong>商业/市场推广文稿</strong>：拥有市场推广经验，擅于为各类产品服务构思推广策略，以及撰写相关文件。"
 
-#: templates/index.html:25
+#: templates/index.html:24
 msgid ""
 "<strong>Writing and editing</strong><br /><br />\n"
 "I basically write and edit anything. Here are some types of writings I "
@@ -170,17 +192,19 @@ msgid ""
 "• Featured articles<br />\n"
 "• Speeches\n"
 msgstr ""
+"<strong>写作/撰稿</strong><br /><br />以下是我曾经提供的服务，如有其他需求，欢迎致电查询<br /><br />\n"
+"新闻稿<br />网站内文<br />各类展览场刊<br />人访<br />专题<br />讲词"
 
-#: templates/index.html:36
+#: templates/index.html:35
 msgid ""
 "<strong>Translating</strong><br /><br />\n"
 "I perform English to Chinese and Chinese to English written translations."
 " Chinese translations can be written in traditional or simplified text as"
 " your needs require.<br /><br />\n"
 "For rates, please see the rates section.\n"
-msgstr ""
+msgstr "<strong>翻译</strong><br /><br />中译英和英译中服务，可提供繁、简体中文版本。"
 
-#: templates/index.html:41
+#: templates/index.html:40
 msgid ""
 "Below are the rates I charge for different types of tasks. These prices "
 "are set according to my past projects and the <a href=\"http://www.the-"
@@ -196,8 +220,13 @@ msgid ""
 "• 1.0 HKD per word for over 5000 words<br />\n"
 "• 1.0 - 1.1 HKD per word for below 5000 words\n"
 msgstr ""
+"以下收费参照我过往的工作项目，以及美国 <a href=\"http://www.the-efa.org/res/rates.php\" "
+">Freelancers Association table of rates</a> "
+"的标准而定，并可能因应工作数量及时限等因素调整。如欲查询项目实际收费，请电邮联络。<br /><br />编辑校对：每字港币0.6元<br "
+"/><br />写作/撰稿：每字港币1.5~4元<br /><br />翻译：<br />5000字以上文稿每字 1.0 港币<br "
+"/>5000字以下文稿每字 1.0 - 1.1 港币"
 
-#: templates/index.html:52
+#: templates/index.html:51
 msgid ""
 "<strong>If you have a project in mind, simply follow the steps "
 "below:</strong><br /><br />\n"
@@ -214,50 +243,59 @@ msgid ""
 "cheques).<br /><br />\n"
 "6. We work together in the future =)\n"
 msgstr ""
+"如果你有需要帮忙的写作项目，请参照以下做法：<br /><br />\n"
+"1. 把阁下的项目资料/需要电邮至 <a "
+"\"href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a>，或whatsapp至 "
+"<a href=\"tel:+85292765601\">+852 9276 5601</a>。<br />\n"
+"2. 我们一同制定项目实际收费和工作限期<br />\n"
+"3. 签署合作同意书<br />\n"
+"4. 我在限期前完成工作，并因应阁下需求，提供一轮免费修订服务。<br />\n"
+"5. 阁下通过银行过户或支票付款<br />\n"
+"6. 预祝我们未来合作愉快=）"
 
-#: templates/index.html:66
+#: templates/index.html:65
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:111
-msgid "home"
-msgstr ""
-
-#: templates/index.html:112 templates/index.html:141
-msgid "about"
-msgstr ""
-
 #: templates/index.html:113
+msgid "home"
+msgstr "主页"
+
+#: templates/index.html:114 templates/index.html:143
+msgid "about"
+msgstr "关于我"
+
+#: templates/index.html:115
 msgid "works"
-msgstr ""
+msgstr "工作"
 
-#: templates/index.html:115 templates/index.html:151
+#: templates/index.html:117 templates/index.html:151
 msgid "portfolio"
-msgstr ""
+msgstr "履历"
 
-#: templates/index.html:123
+#: templates/index.html:125 templates/index.html:207
 msgid "clients"
-msgstr ""
+msgstr "过往客户"
 
-#: templates/index.html:124 templates/index.html:190
+#: templates/index.html:126 templates/index.html:190
 msgid "service"
-msgstr ""
+msgstr "服务"
 
-#: templates/index.html:124 templates/index.html:198
+#: templates/index.html:126 templates/index.html:198
 msgid "rate"
-msgstr ""
+msgstr "收费"
 
-#: templates/index.html:127
+#: templates/index.html:129
 msgid "contacts"
-msgstr ""
+msgstr "联络方法"
 
-#: templates/index.html:135
+#: templates/index.html:137
 msgid "welcome"
 msgstr ""
 
 #: templates/index.html:157
 msgid "mail me"
-msgstr ""
+msgstr "联络我"
 
 #: templates/index.html:162
 msgid "This is not a valid name."
@@ -281,96 +319,17 @@ msgstr ""
 
 #: templates/index.html:173
 msgid "reset"
-msgstr ""
+msgstr "重置"
 
 #: templates/index.html:173
 msgid "submit"
-msgstr ""
+msgstr "发送"
 
 #: templates/index.html:182
 msgid "contact or hire"
-msgstr ""
+msgstr "联络方法"
 
-#: templates/index.html:232
-msgid "art writing"
-msgstr ""
-
-#: templates/index.html:250 templates/index.html:283 templates/index.html:327
-#: templates/index.html:361
+#: templates/index.html:241
 msgid "Please visit"
 msgstr ""
-
-#: templates/index.html:265
-msgid "translation"
-msgstr ""
-
-#: templates/index.html:298
-msgid "The 59th World Statistic Congress"
-msgstr ""
-
-#: templates/index.html:300
-msgid ""
-"The 59th WSC provides a platform for the international statistical "
-"community to share and present the latest knowledge and innovation in "
-"statistics."
-msgstr ""
-
-#: templates/index.html:302
-msgid "59th World Statistics Congress Closing Speech"
-msgstr ""
-
-#: templates/index.html:309
-msgid "copywriting"
-msgstr ""
-
-#~ msgid ""
-#~ "I am experienced writing on extensive"
-#~ " topics. Below are niche topics that"
-#~ " I'm particularly familiar with. If "
-#~ "you wish to see sample writings on"
-#~ " other topics, please email me.<br "
-#~ "/><br />\n"
-#~ "• <a href=\"#artwriting\" rel=\"nav\">Art "
-#~ "writing</a> - The creative arts often"
-#~ " rely on a language that is "
-#~ "difficult for an unaccustomed writer to"
-#~ " grasp. Having graduated with a BA"
-#~ " in English Literature and Politics, "
-#~ "and an MA in Theater and "
-#~ "Performance Studies at King’s College "
-#~ "London, visual and performance arts form"
-#~ " a strong part of my academic "
-#~ "background. I have written and "
-#~ "translated gallery and museum catalogues, "
-#~ "artwork descriptions for art sales, art"
-#~ " reviews and film reviews. I have "
-#~ "also conducted and written published "
-#~ "interviews with artists (please refer to"
-#~ " my portfolio).<br /><br />\n"
-#~ "• <a href=\"#translation\" rel=\"nav\">Translation"
-#~ " between Chinese and English (both "
-#~ "directions)</a> - As a writer with "
-#~ "a facility and command of these "
-#~ "two very different languages, I can "
-#~ "ensure the meaning you want to "
-#~ "communicate not only lives through the"
-#~ " translation process, but is in fact"
-#~ " enhanced by it.<br /><br />\n"
-#~ "• <a href=\"#speeches\" rel=\"nav\">Speeches</a> "
-#~ "- As a successful participant and "
-#~ "coach, I have been involved in "
-#~ "debating at a regional level for "
-#~ "many years. I have also worked as"
-#~ " a speech trainer. Speaking your mind"
-#~ " effectively is made easier when the"
-#~ " words, tone and emphasis you use "
-#~ "are shaped to your needs. The "
-#~ "assuredness of speech takes half the "
-#~ "stage fright away.<br /><br />\n"
-#~ "• <a href=\"#copywriting\" "
-#~ "rel=\"nav\">Copywriting</a> - As a former "
-#~ "PR official, I am experienced in "
-#~ "devising creative strategies to promote "
-#~ "products and services.\n"
-#~ msgstr ""
 

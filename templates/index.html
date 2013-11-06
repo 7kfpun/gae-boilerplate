@@ -1,8 +1,8 @@
-{% set home = _("Communication is about having a great idea and getting it across in time.<br />
-Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me Write</a> provides freelance writing, editing and translation services to facilitate effective communication.<br />
-As a freelance writer, I have worked with groups and individuals across all industries: from the arts, to fashion, to beauty, to hospitality and others. They had unique products or fantastic ideas, yet few managed to distil those qualities into words. Often, the key message was lost in translation and time.<br />
-To illustrate, a Chinese-to-English translation half the length of the original text is a sure indication that the original meaning has been regrettably abbreviated to a similar degree. And of course, it need not be said that a painstakingly crafted piece of copywriting is a Pyrrhic victory if it arrives a week after the product launch.<br />
-If you have a great or important idea, the key to nurturing, sharing and promoting the idea lies in effective communication. Good writing enables effective communication. It is my pleasure to help you with it. I do so with the following guarantees:<br />
+{% set home = _("Communication is about having a great idea and getting it across in time.<br /><br />
+Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me Write</a> provides freelance writing, editing and translation services to facilitate effective communication.<br /><br />
+As a freelance writer, I have worked with groups and individuals across all industries: from the arts, to fashion, to beauty, to hospitality and others. They had unique products or fantastic ideas, yet few managed to distil those qualities into words. Often, the key message was lost in translation and time.<br /><br />
+To illustrate, a Chinese-to-English translation half the length of the original text is a sure indication that the original meaning has been regrettably abbreviated to a similar degree. And of course, it need not be said that a painstakingly crafted piece of copywriting is a Pyrrhic victory if it arrives a week after the product launch.<br /><br />
+If you have a great or important idea, the key to nurturing, sharing and promoting the idea lies in effective communication. Good writing enables effective communication. It is my pleasure to help you with it. I do so with the following guarantees:<br /><br />
 • To be efficient and timely, always.<br />
 • To be concise and precise with the use of words.<br />
 • To lend originality of ideas when required.<br />
@@ -191,7 +191,7 @@ Translation:<br />
             <p>{{ service_we }}</p>
           </div>
           <div class="grid_4 bdr">
-            <h2>&middot; &middot;</h2>
+            <h2><small>&middot; </small></h2>
             <p>{{ service_t }}</p>
           </div>
           <div class="grid_8">
@@ -208,10 +208,16 @@ Translation:<br />
             <div class="gSlider">
               <ul>
                 {% set row_class = cycler(1, 2, 3, 4) %}
-                {% for category in ["art writing", "translation", "speeches", "copywriting"] %}
+                {% set categories = {
+                    "art writing": _("art writing"),
+                    "translation": _("translation"),
+                    "speeches": _("speeches"),
+                    "copywriting": _("copywriting"),
+                  } %}
+                {% for category, category_locale in categories.items() %}
                   <li>
                     {% set class = row_class.next() %}
-                    <p><a href="#" rel="nav"><strong class="bg{{ class }}">{{ category }}</strong></a></p>
+                    <p><a href="#" rel="nav"><strong class="bg{{ class }}">{{ category_locale }}</strong></a></p>
                     <p>
                     {% for client in clients %}
                       {% if category.replace(" ", "") in client.categories  %}

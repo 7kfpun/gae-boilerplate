@@ -95,20 +95,20 @@ class BaseHandler(webapp2.RequestHandler):
 
     def render_response(self, _template, cache_time=0, **context):
         if cache_time:
-            logger.info('cache used for {0} s'.format(cache_time))
+            logger.info('cache used for {} s'.format(cache_time))
             # TODO: add session
             transliterated_text = _template + json.dumps(context.values())
             signature = get_signiture(transliterated_text)
-            logger.debug('cache key {0}'.format(signature))
+            cache_key = 'page-{}-{}'.format(
+                context.get('locale', ''), signature)
+            logger.debug('cache key {}'.format(cache_key))
 
-            rendered_page = memcache.get('page {0}'.format(signature))
+            rendered_page = memcache.get(cache_key)
             if not rendered_page:
                 template = JINJA_ENVIRONMENT.get_template(_template)
                 rendered_page = template.render(**context)
 
-                if not memcache.add(
-                        'page {0}'.format(signature),
-                        rendered_page, cache_time):
+                if not memcache.add(cache_key, rendered_page, cache_time):
                     logging.error('Memcache set failed.')
         else:
             template = JINJA_ENVIRONMENT.get_template(_template)

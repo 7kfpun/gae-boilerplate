@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-06 10:09+0000\n"
+"POT-Creation-Date: 2013-11-06 10:38+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -78,24 +78,24 @@ msgstr ""
 #: templates/index.html:1
 msgid ""
 "Communication is about having a great idea and getting it across in "
-"time.<br />\n"
+"time.<br /><br />\n"
 "Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me "
 "Write</a> provides freelance writing, editing and translation services to"
-" facilitate effective communication.<br />\n"
+" facilitate effective communication.<br /><br />\n"
 "As a freelance writer, I have worked with groups and individuals across "
 "all industries: from the arts, to fashion, to beauty, to hospitality and "
 "others. They had unique products or fantastic ideas, yet few managed to "
 "distil those qualities into words. Often, the key message was lost in "
-"translation and time.<br />\n"
+"translation and time.<br /><br />\n"
 "To illustrate, a Chinese-to-English translation half the length of the "
 "original text is a sure indication that the original meaning has been "
 "regrettably abbreviated to a similar degree. And of course, it need not "
 "be said that a painstakingly crafted piece of copywriting is a Pyrrhic "
-"victory if it arrives a week after the product launch.<br />\n"
+"victory if it arrives a week after the product launch.<br /><br />\n"
 "If you have a great or important idea, the key to nurturing, sharing and "
 "promoting the idea lies in effective communication. Good writing enables "
 "effective communication. It is my pleasure to help you with it. I do so "
-"with the following guarantees:<br />\n"
+"with the following guarantees:<br /><br />\n"
 "• To be efficient and timely, always.<br />\n"
 "• To be concise and precise with the use of words.<br />\n"
 "• To lend originality of ideas when required.<br />\n"
@@ -291,7 +291,23 @@ msgstr ""
 msgid "contact or hire"
 msgstr ""
 
-#: templates/index.html:241
+#: templates/index.html:212
+msgid "art writing"
+msgstr ""
+
+#: templates/index.html:213
+msgid "translation"
+msgstr ""
+
+#: templates/index.html:214
+msgid "speeches"
+msgstr ""
+
+#: templates/index.html:215
+msgid "copywriting"
+msgstr ""
+
+#: templates/index.html:247
 msgid "Please visit"
 msgstr ""
 

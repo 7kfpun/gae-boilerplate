@@ -3,7 +3,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*GLOBAL*/
 html{min-width:940px;}
-body{font-family:Arial, Helvetica, sans-serif;font-size:100%;line-height:1em;color:#000; }
+body{font-family: sans-serif;font-size:100%;line-height:1em;color:#000; }
 
 #main{
 	width:940px;
@@ -38,8 +38,7 @@ body{font-family:Arial, Helvetica, sans-serif;font-size:100%;line-height:1em;col
 
 /*ELEMENTS*/
 a {color:#fff;font-weight:bold;outline:none;text-decoration:underline;}
-a:hover{text-decoration:none;font-style:italic;}
-
+a:hover{color:#000;}
 
 p,.blo{
 	line-height:18px;
@@ -99,9 +98,11 @@ nav>ul>li>a{
 	padding-bottom:10px;
 	overflow:hidden;
 	text-align:center;
-	font:30px/73px Arial, Helvetica, sans-serif;
+	font:34px/75px 'Pathway Gothic One', sans-serif;
 	text-decoration:none;
 	color:#fff;
+        font-weight:bold;
+	text-transform:uppercase;
 	position:relative;
 }
 
@@ -137,7 +138,9 @@ nav>ul>li ul ul{
 }
 
 nav>ul>li ul>li>a{
-	font:20px/40px Arial, Helvetica, sans-serif;	
+	font:24px/40px 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+	text-transform:uppercase;
 	display:block;
 	border-bottom:1px #8e4239 solid;
 	background:#812d22;
@@ -185,16 +188,15 @@ a.backBu:hover{
 }
 
 h2{
-	/*font:24px/1.2em Arial, Helvetica, sans-serif;*/
-        font-family: 'Alegreya', serif;
-        font-size: 24px;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+        font-size: 28px;
 	color:#fff;
 	text-transform:uppercase;
 	margin-bottom:30px;
 }
 
 p{
-	/* font:13px/18px Arial, Helvetica, sans-serif; */
         font-family: 'Alegreya', serif;
         font-size: 18px;
         color:#fff;
@@ -226,7 +228,9 @@ footer{
 }
 
 .soc-ico li a{
-	font:15px/1.2em Arial, Helvetica, sans-serif;
+	font:20px/1.2em 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+	text-transform:uppercase;
 	color:#fff;
 	float:left;
 	margin-right:6px;
@@ -238,7 +242,9 @@ footer{
 }
 
 footer .privacy{
-	font:10px/1.2em Arial, Helvetica, sans-serif;
+	font:14px/1.2em 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+        text-transform:uppercase;
 	color:#fff;
 	position:absolute;
 	bottom:18px;
@@ -253,6 +259,21 @@ footer .privacy a{
 footer .privacy a:hover{
 	color:#000;
 }
+
+.locale{
+	font:14px/1.2em 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+        text-transform:uppercase;
+	color:#fff;
+	position:absolute;
+	top:2px;
+	left:0;
+}
+
+.locale a:hover{
+	color:#000;
+}
+
 /*forms css*/
 
 #form1 label{

@@ -177,7 +177,7 @@ $(function(){
         duration:1000,
         clone:true,
         show:4,
-        mousewheel:true
+        //mousewheel:true
       }
     }).width(940)
     .data('gSlider')
@@ -195,8 +195,7 @@ $(function(){
     }
   })
   content.hide()
-  
-  
+
   $('.more')
     .bind('mouseenter',function(){
       $(this)

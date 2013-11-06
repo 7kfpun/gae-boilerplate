@@ -25,7 +25,9 @@ class HomeHandler(BaseHandler):
         file_location = os.path.join(
             os.path.dirname(__file__), "../templates/portfolio.json")
         f = open(file_location, 'rb')
-        self.render_response('index.html', clients=json.load(f))
+        self.render_response(
+            'index.html', clients=json.load(f), locale=self.locale,
+        )
 
 
 class StarterHandler(BaseHandler):

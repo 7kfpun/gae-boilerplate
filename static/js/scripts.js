@@ -165,7 +165,7 @@ $(function(){
         if(splash)
           show_subpages(),
           splash=false          
-        Cufon.refresh()
+        //Cufon.refresh()
         content.tabs(n)
       }        
     })

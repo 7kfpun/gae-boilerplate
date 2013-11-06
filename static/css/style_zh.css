@@ -1,0 +1,36 @@
+nav>ul>li>a{
+	display:block;
+	width:229px;
+	height:496px;
+	padding-bottom:10px;
+	overflow:hidden;
+	text-align:center;
+	font:25px/75px 'Pathway Gothic One', sans-serif;
+	text-decoration:none;
+	color:#fff;
+        font-weight:bold;
+	position:relative;
+}
+
+nav>ul>li ul>li>a{
+	font:20px/40px 'Pathway Gothic One', sans-serif;
+	display:block;
+	border-bottom:1px #8e4239 solid;
+	background:#812d22;
+	text-decoration:none;
+	color:#fff;
+}
+
+h2{
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 20px;
+	color:#fff;
+	margin-bottom:30px;
+}
+
+p{
+        font-family: 'Alegreya', serif;
+        font-size: 15px;
+        line-height:1.5em;
+        color:#fff;
+}

@@ -347,7 +347,15 @@ footer .privacy a:hover{
 }
 
 .gSlider li a{
+        font-family: 'Alegreya', serif;
+        font-size: 15px;
+        line-height:1.5em;
+        color:#fff;
 	text-decoration:none;
+}
+
+.gSlider li a:hover{
+        color:#000;
 }
 
 .gSlider li a strong{

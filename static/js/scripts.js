@@ -176,7 +176,7 @@ $(function(){
         easing:'easeOutBack',
         duration:1000,
         clone:true,
-        show:4,
+        show:4
         //mousewheel:true
       }
     }).width(940)

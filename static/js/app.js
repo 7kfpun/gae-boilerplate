@@ -17,4 +17,4 @@ $('#contact_form').submit(function() {
 
 $('#nav li a').click(function() {
   $(this).tab('show');
-})
+});

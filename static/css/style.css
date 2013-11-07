@@ -229,7 +229,6 @@ footer{
 
 .soc-ico li a{
 	font:20px/1.2em 'Pathway Gothic One', sans-serif;
-        font-weight:bold;
 	text-transform:uppercase;
 	color:#fff;
 	float:left;
@@ -243,7 +242,6 @@ footer{
 
 footer .privacy{
 	font:14px/1.2em 'Pathway Gothic One', sans-serif;
-        font-weight:bold;
         text-transform:uppercase;
 	color:#fff;
 	position:absolute;

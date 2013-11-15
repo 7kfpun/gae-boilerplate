@@ -1,295 +1,182 @@
-{% set home = _("Communication is about having a great idea and getting it across in time.<br /><br />
-Established in 2013, <a href=\"http://www.getmewrite.com\">Get Me Write</a> provides freelance writing, editing and translation services to facilitate effective communication.<br /><br />
-As a freelance writer, I have worked with groups and individuals across all industries: from the arts, to fashion, to beauty, to hospitality and others. They had unique products or fantastic ideas, yet few managed to distil those qualities into words. Often, the key message was lost in translation and time.<br /><br />
-To illustrate, a Chinese-to-English translation half the length of the original text is a sure indication that the original meaning has been regrettably abbreviated to a similar degree. And of course, it need not be said that a painstakingly crafted piece of copywriting is a Pyrrhic victory if it arrives a week after the product launch.<br /><br />
-If you have a great or important idea, the key to nurturing, sharing and promoting the idea lies in effective communication. Good writing enables effective communication. It is my pleasure to help you with it. I do so with the following guarantees:<br /><br />
-• To be efficient and timely, always.<br />
-• To be concise and precise with the use of words.<br />
-• To lend originality of ideas when required.<br />
-• Most importantly of all, to give the greatest care to every word I write.") %}
+{% extends "base.html" %}
+{% block title %}Thai in Hong Kong{% endblock %}
+{% block head %}
+   {{ super() }}
+   <style>
+      /* Sticky footer styles
+         -------------------------------------------------- */
 
-{% set about = _("I am fortunate to have received a bilingual and multicultural upbringing, having grown up in Hong Kong whilst receiving a thorough education in Western liberal arts in London. The ability to think and write effectively in Chinese and English comes naturally to me.<br /><br />
-<a href=\"http://www.getmewrite.com\">Get Me Write</a> is a project that grew directly from my passion in life for writing. I have always loved words, both spoken and written. The world around us is a rich and inexhaustible well of ideas and inspiration. In our imagination, we draw them together, mould and combine them into something original and creative before finally setting it into words, so that that concept or vision can germinate in the minds of readers.<br /><br />
-Before starting <a href=\"http://www.getmewrite.com\">Get Me Write</a>, I worked as a journalist, an editor, a copywriter, a marketing specialist and a translator.  Through this varied work experience, I developed an adeptness at different styles of writing across different subject areas (please refer to my portfolio for examples). I am keen to write press materials, product descriptions, editorials, or any other form of writing that will put your message across most effectively.<br /><br />
-To find out more about my previous work, please have a look at the \"Portfolio\" Section.
-") %}
+         html,
+         body {
+           height: 100%;
+           padding-top: 30px;
+           /* The html and body elements cannot have any padding or margin. */
+         }
 
-{% set portfolio = _("I am experienced writing on extensive topics. Below are niche topics that I'm particularly familiar with. If you wish to see sample writings on other topics, please email me.<br /><br />
-• <strong>Art writing</strong> - The creative arts often rely on a language that is difficult for an unaccustomed writer to grasp. Having graduated with a BA in English Literature and Politics, and an MA in Theater and Performance Studies at King’s College London, visual and performance arts form a strong part of my academic background. I have written and translated gallery and museum catalogues, artwork descriptions for art sales, art reviews and film reviews. I have also conducted and written published interviews with artists (please refer to my portfolio).<br /><br />
-• <strong>Translation between Chinese and English (both directions)</strong> - As a writer with a facility and command of these two very different languages, I can ensure the meaning you want to communicate not only lives through the translation process, but is in fact enhanced by it.<br /><br />
-• <strong>Speeches</strong> - As a successful participant and coach, I have been involved in debating at a regional level for many years. I have also worked as a speech trainer. Speaking your mind effectively is made easier when the words, tone and emphasis you use are shaped to your needs. The assuredness of speech takes half the stage fright away.<br /><br />
-• <strong>Copywriting</strong> - As a former PR official, I am experienced in devising creative strategies to promote products and services.
-") %}
+         /* Wrapper for page content to push down footer */
+         .wrap {
+           min-height: 100%;
+           height: auto !important;
+           height: 100%;
+           /* Negative indent footer by it's height */
+           margin: 0 auto -60px;
+         }
 
-{% set service_we = _("<strong>Writing and editing</strong><br /><br />
-I basically write and edit anything. Here are some types of writings I have done before, but I am open for further suggestions:<br /><br />
-• Product/Artwork description<br />
-• Press releases<br />
-• Websites<br />
-• Catalogues<br />
-• Interviews<br />
-• Featured articles<br />
-• Speeches
-") %}
+        /* Footer
+        -------------------------------------------------- */
 
-{% set service_t = _("<strong>Translating</strong><br /><br />
-I perform English to Chinese and Chinese to English written translations. Chinese translations can be written in traditional or simplified text as your needs require.<br /><br />
-For rates, please see the rates section.
-") %}
+        .footer {
+          padding: 30px 0;
+          border-top: 1px solid #e5e5e5;
+          background-color: #f5f5f5;
+        }
+        .footer p {
+          margin-bottom: 0;
+          color: #777;
+        }
+        .footer-links {
+          margin: 10px 0;
+        }
+        .footer-links li {
+          display: inline;
+          padding: 0 2px;
+        }
+        .footer-links li:first-child {
+          padding-left: 0;
+        }
 
-{% set rate = _("Below are the rates I charge for different types of tasks. These prices are set according to my past projects and the <a href=\"http://www.the-efa.org/res/rates.php\" >Freelancers Association table of rates</a>.<br /><br />
-Prices may be negotiable depending on volume, time frame etc. Please contact me at to get a precise quote for your project!<br /><br />
-Proofreading and Editing:<br />
-• 0.6 HKD per word<br /><br />
-Writing:<br />
-• 1.5 to 4 HKD per words<br /><br />
-Translation:<br />
-• 1.0 HKD per word for over 5000 words<br />
-• 1.0 - 1.1 HKD per word for below 5000 words
-") %}
+         /* Lastly, apply responsive CSS fixes as necessary */
+         @media (max-width: 767px) {
+           .footer {
+             margin-left: -20px;
+             margin-right: -20px;
+             padding-left: 20px;
+             padding-right: 20px;
+           }
+         }
 
-{% set contact = _("<strong>If you have a project in mind, simply follow the steps below:</strong><br /><br />
-1. Email me at <a href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> or whatsapp me at <a href=\"tel:+85292765601\">+852 9276 5601</a> with your project details/ needs.<br /><br />
-2. We work out together the exact cost and deadline of the project.<br /><br />
-3. We sign your contract or my quote Agreement.<br /><br />
-4. I meet your deadline and provide one round of further editing service if you are not happy with the work.<br /><br />
-5. We settle the payment (usually via direct bank transfer or cheques).<br /><br />
-6. We work together in the future =)
-") %}
+         /* Custom page CSS
+         -------------------------------------------------- */
+         /* Not required for template or sticky footer method. */
 
+         .container {
+           width: auto;
+           max-width: 800px;
+         }
+         
+         .text-justify {
+           text-align: justify;
+         }
+   </style>
+   
+   <script src="/static/js/jquery.js"></script>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+  <!-- Begin page content -->
+  <div class="container">
 
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>{{_("Get Me Write")}}</title>
-<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
-{% if 'zh' in locale %}<link href="/static/css/style_zh.css" rel="stylesheet" type="text/css" />{% endif %}
-<link href="/static/css/grid.css" rel="stylesheet" type="text/css" />
-<link href="/static/css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <div class="span8">
+      <div class="card">
+        <div class="card-body">
+          <div id="fb-root"></div>
+          <h3>Remove zombie pages easily with | zombie_page.appspot.com</h3>
+          <p><fb:login-button autologoutlink="true" perms="user_likes,email,status_update,publish_stream"></fb:login-button></p>
 
-<script type="text/javascript" src="/static/js/_061113.js"></script>
+          <p>
+            <a href="#" onclick="fqlQuery(); return false;">FQL Query Example</a>
+          </p>
+          <br />
+          <div id="login" style ="display:none"></div>
+          <div id="pages"></div>
 
-{#
-<script type="text/javascript" src="/static/js/jquery.min.js"></script>
-<!--<script type="text/javascript" src="/static/js/cufon-yui.js"></script>
-<script type="text/javascript" src="/static/js/cufon-replace.js"></script>-->
-<script type="text/javascript" src="/static/js/backgroundPosition.js"></script>
-<!--<script type="text/javascript" src="/static/js/Bebas_400.font.js"></script>-->
-<script type="text/javascript" src="/static/js/jquery.color.js"></script>
-<script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="/static/js/jquery-ui-1.8.12.custom.min.js"></script>
-<script type="text/javascript" src="/static/js/_fw.js"></script>
-<script type="text/javascript" src="/static/js/_fw_meth.js"></script>
-<script type="text/javascript" src="/static/js/superfish.js"></script>
-<script type="text/javascript" src="/static/js/jquery.fancybox-1.3.4.pack.js"></script>
-<!--<script type="text/javascript" src="/static/js/parsley.js"></script>-->
-<script type="text/javascript" src="/static/js/scripts.js"></script>
-#}
-
-<!--[if lt IE 8]>
-  <div class='alc' style=' clear: both; text-align:center; position: relative; z-index:9999;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-   </a>
- </div>
-<![endif]-->
-<!--[if lt IE 9]><script src="../static/js/html5.js" type="text/javascript"></script><![endif]-->
-<!--[if IE]><link href="../static/css/ie_style.css" rel="stylesheet" type="text/css" /><![endif]-->
-</head>
-<body>
-<div class="glob-wrap">
-  <div id="main">
-    <div class="locale"><a href="?hl=en_US">EN</a> &bull; <a href="?hl=zh_TW">繁</a> &bull; <a href="?hl=zh_CN">簡</a></div>
-    <h1><a href="#"><img src="static/images/logo2.png" height="160" width="600" alt=""></a></h1>
-    <nav>
-      <ul class="sf">
-        <li class="nav1"><a href="#home"><span>{{_("home")}}</span></a></li>
-        <li class="nav2"><a href="#about"><span>{{_("about")}}</span></a></li>
-        <li class="nav3"><a href="#rate" rel="nav"><span>{{_("works")}}</span></a>
-          <ul>
-            <li><a href="#portfolio" rel="nav"><span>{{_("portfolio")}}</span></a>
-              {#<ul>
-                <li><a href="#artwriting" rel="nav"><span>{{_("art writing")}}</span></a></li>
-                <li><a href="#translation" rel="nav"><span>{{_("translation")}}</span></a></li>
-                <li><a href="#speeches" rel="nav"><span>{{_("speeches")}}</span></a></li>
-                <li class="lst"><a href="#copywriting" rel="nav"><span>{{_("copywriting")}}</span></a></li>
-              </ul>#}
-            </li>
-            <li><a href="#clients" rel="nav"><span>{{_("clients")}}</span></a></li>
-            <li class="lst"><a href="#rate" rel="nav"><span>{{_("service")}} & {{_("rate")}}</span></a></li>
-          </ul>
-        </li>
-        <li class="nav4"><a href="#contacts"><span>{{_("contacts")}}</span></a></li>
-      </ul>
-    </nav>
-    <a href="#" class="backBu backButton"></a>
-    <article id="content">
-      <ul>
-        <li class="container_16" id="home">
-          <div class="grid_16">
-            <h2>{{_("welcome")}}!</h2>
-            <p>{{ home }}</p>
-            <!-- <a href="#readmore" class="more" rel="nav">more</a> --> </div>
-        </li>
-        <li class="container_16" id="about">
-          <div class="grid_16">
-            <h2>{{_("about")}}</h2>
-            <p>{{ about }}</p> </div>
-          {#<div class="grid_4">
-            <p><img src="static/images/mona.jpg" border="0" height="320" width="200" alt="Profile pic" /></p>
-            </div>#}
-        </li>
-        <li class="container_16" id="portfolio">
-          <div class="grid_16">
-            <h2>{{_("portfolio")}}</h2>
-            <p>{{ portfolio }}</p> </div>
-        </li>
-
-        <li class="container_16" id="contacts">
-          <div class="grid_5">
-            <h2>{{_("mail me")}}</h2>
-            <form action="#" id="form1">
-              <label>
-                <input type="text" class="name" value="Name:">
-                <br class="clear">
-                <span class="error">{{_("This is not a valid name.")}}</span> </label>
-              <label>
-                <input type="email" class="email" value="E-mail:">
-                <span class="error">{{_("This is not a valid email address.")}}</span> </label>
-              <label>
-                <input type="text" class="subject" value="Subject:">
-                <br class="clear">
-                <span class="error">{{_("This is not a valid subject.")}}</span> </label>
-              <label>
-                <textarea class="body">{{_("Body")}}:</textarea>
-                <span class="error">{{_("The message is too short.")}}</span> </label>
-              <span class="btns"><a href="#" rel="reset">{{_("reset")}}</a><a href="#" rel="submit">{{_("submit")}}</a></span>
-            </form>
-          </div>
-          <!--
-          <div class="grid_7">
-            <iframe width="400" height="344" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-          </div>
-          -->
-          <div class="grid_11">
-            <h2>{{_("contact or hire")}}</h2>
-            <p>
-              {{ contact }}
-            </p>
-          </div>
-        </li>
-        <li class="container_16" id="rate">
-          <div class="grid_4">
-            <h2>{{_("service")}}</h2>
-            <p>{{ service_we }}</p>
-          </div>
-          <div class="grid_4 bdr">
-            <h2><small>&middot; </small></h2>
-            <p>{{ service_t }}</p>
-          </div>
-          <div class="grid_8">
-            <h2>{{_("rate")}}</h2>
-            <p>{{ rate }}</p>
-          </div>
-        </li>
-
-        {# ############################## #}
-
-        <li class="container_16" id="clients">
-          <div class="grid_16">
-            <h2>{{_("clients")}}</h2>
-            <div class="gSlider">
-              <ul>
-                {% set row_class = cycler(1, 2, 3, 4) %}
-                {% set categories = {
-                    "art writing": _("art writing"),
-                    "translation": _("translation"),
-                    "speeches": _("speeches"),
-                    "copywriting": _("copywriting"),
-                  } %}
-                {% for category, category_locale in categories.items() %}
-                  <li>
-                    {% set class = row_class.next() %}
-                    <p><a href="#" rel="nav"><strong class="bg{{ class }}">{{ category_locale }}</strong></a></p>
-                    <p>
-                    {% for client in clients %}
-                      {% if category.replace(" ", "") in client.categories  %}
-                      • <a href="#{{ client.organization_name.replace(' ', '_').replace('.', '_').replace(':', '_').replace('(', '_').replace(')', '_').lower() }}" rel="nav">{{ client.organization_name }}</a><br />
-                      {% endif %}
-                    {% endfor %}
-                    </p>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        {# ############################## #}
-
-        {% for client in clients %}
-        <li class="container_16" id="{{ client.organization_name.replace(' ', '_').replace('.', '_').replace(':', '_').replace('(', '_').replace(')', '_').lower() }}">
-          <div class="grid_16">
-            <h2>{{ client.organization_name }}</h2>
-            <p>{{ client.description }}</p>
-            <p>
-            {% for project in client.projects %}
-              {% if '.pdf' in project.reference and client.organization_name == 'Precious Magazine' %}
-                • <a href="#{{ project.reference.replace('.', '_') }}" rel="nav">{{ project.project_name }}</a><br /><br />
-              {% elif 'http://' in project.reference %}
-                • {{_("Please visit")}} <a href="{{ project.reference }}" target="_blank">{{ project.reference }}</a><br /><br />
-              {% else %}
-                • {{ project.project_name }}<br /><br />
-              {% endif %}
-            {% endfor %}
-            </p>
-            <a href="#clients" class="more" rel="nav">Back to list</a>
-          </div>
-        </li>
-        {% endfor %}
-
-        {# ############################## #}
-
-        {% for number in range(1, 23) %}
-        <li class="container_16" id="{{ number }}_pdf">
-          <div class="grid_16">
-            <object data="../static/files/{{ number }}.pdf" type="application/pdf" width="100%" height="440px">             
-              <p>It appears you don't have a PDF plugin for this browser.
-              No biggie... you can <a href="../static/files/{{ number }}.pdf">click here to
-              download the PDF file.</a></p>
-            </object>
-            <a href="#portfolio" class="more" rel="nav">Back to list</a>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-    </article>
-    <footer>
-      <ul class="soc-ico">
-        <li><a href="#">facebook</a>&bull;</li>
-        <li><a href="mailto:mona@getmewrite.com">email</a>&bull;</li>
-        <li><a href="tel:+85292765601">whatsapp</a></li>
-      </ul>
-      <div class="privacy"><span>www.getmewrite.com</span> &copy; 2013</div>
-    </footer>
-  </div>
+        </div>
+      </div>
+    </div>
 </div>
-<div class="gspinner"></div>
+{% endblock %}
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+{% block js %}
+<script type="text/javascript">
 
-  ga('create', 'UA-44997034-1', 'getmewrite.com');
-  ga('send', 'pageview');
+  //Set intital divs to be hidden
+  function loadMore()
+  {
+    console.log("More loaded");
+    rows = jQuery.parseJSON( localStorage.pages );
+
+    for(i=0;i<10;i++) {
+      count = parseInt(localStorage.count);
+      console.log(count);
+      $(".content").append(
+        $('#pages').html($('#pages').html()
+        + '<a href="' + rows[count].page_url + '">' + rows[count].name + '</a>' + ' has ' + rows[count].fan_count + " fans.<br />"
+        + '<img src="' + rows[count].pic_square + '" alt="" />' + "<br /><br />")
+      );
+      localStorage.count=parseInt(localStorage.count)+1;
+    }
+    //$(window).bind('scroll', bindScroll);
+  }
+
+  function bindScroll(){
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 344) {
+      $(window).unbind('scroll');
+      loadMore();
+    }
+  }
+
+  window.fbAsyncInit = function() {
+    FB.init({appId: '632378410134710', status: true, cookie: true, xfbml: true});
+
+    /* All the events registered */
+    FB.Event.subscribe('auth.login', function(response) {
+      // do something with response
+      login();
+    });
+    FB.Event.subscribe('auth.logout', function(response) {
+      // do something with response
+      logout();
+    });
+
+    FB.getLoginStatus(function(response) {
+      if (response.session) {
+        // logged in and connected user, someone you know
+        login();
+      }
+    });
+  };
+  (function() {
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+  function login(){
+    FB.api('/me', function(response) {
+      document.getElementById('login').style.display = "block";
+      document.getElementById('login').innerHTML = response.name + " succsessfully logged in!";
+    });
+  }
+  function logout(){
+    document.getElementById('login').style.display = "none";
+  }
+
+  function fqlQuery(){
+    FB.api('/me', function(response) {
+       var query = FB.Data.query('SELECT page_id, pic_square, name, fan_count, about, page_url FROM page WHERE page_id IN (SELECT page_id from page_fan where uid = {0})', response.id);
+       query.wait(function(rows) {
+         console.log(response.id);
+         console.log(rows.length);
+
+         localStorage.pages = JSON.stringify(rows);
+         localStorage.count = 0;
+
+         loadMore();
+       });
+    });
+  }
 </script>
-
-<!--<script type="text/javascript">Cufon.now()</script>-->
-<!--coded by kf-->
-</body>
-</html>
+{% endblock %}

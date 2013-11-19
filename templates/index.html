@@ -1,95 +1,101 @@
 {% extends "base.html" %}
-{% block title %}Thai in Hong Kong{% endblock %}
+{% block title %}Zombie pages{% endblock %}
 {% block head %}
-   {{ super() }}
-   <style>
-      /* Sticky footer styles
-         -------------------------------------------------- */
+  {{ super() }}
+  <link href="/static/css/bootstrap-switch.css" rel="stylesheet">
 
-         html,
-         body {
-           height: 100%;
-           padding-top: 30px;
-           /* The html and body elements cannot have any padding or margin. */
-         }
+  <style>
+  /* Sticky footer styles
+  -------------------------------------------------- */
 
-         /* Wrapper for page content to push down footer */
-         .wrap {
-           min-height: 100%;
-           height: auto !important;
-           height: 100%;
-           /* Negative indent footer by it's height */
-           margin: 0 auto -60px;
-         }
+  html,
+  body {
+    height: 100%;
+    padding-top: 30px;
+    /* The html and body elements cannot have any padding or margin. */
+  }
 
-        /* Footer
-        -------------------------------------------------- */
+  /* Wrapper for page content to push down footer */
+  .wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+  }
 
-        .footer {
-          padding: 30px 0;
-          border-top: 1px solid #e5e5e5;
-          background-color: #f5f5f5;
-        }
-        .footer p {
-          margin-bottom: 0;
-          color: #777;
-        }
-        .footer-links {
-          margin: 10px 0;
-        }
-        .footer-links li {
-          display: inline;
-          padding: 0 2px;
-        }
-        .footer-links li:first-child {
-          padding-left: 0;
-        }
+  /* Footer
+  -------------------------------------------------- */
 
-         /* Lastly, apply responsive CSS fixes as necessary */
-         @media (max-width: 767px) {
-           .footer {
-             margin-left: -20px;
-             margin-right: -20px;
-             padding-left: 20px;
-             padding-right: 20px;
-           }
-         }
+  .footer {
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+  }
+  .footer p {
+    margin-bottom: 0;
+    color: #777;
+  }
+  .footer-links {
+    margin: 10px 0;
+  }
+  .footer-links li {
+    display: inline;
+    padding: 0 2px;
+  }
+  .footer-links li:first-child {
+    padding-left: 0;
+  }
 
-         /* Custom page CSS
-         -------------------------------------------------- */
-         /* Not required for template or sticky footer method. */
+  /* Lastly, apply responsive CSS fixes as necessary */
+  @media (max-width: 767px) {
+    .footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 
-         .container {
-           width: auto;
-           max-width: 800px;
-         }
-         
-         .text-justify {
-           text-align: justify;
-         }
-   </style>
-   
-   <script src="/static/js/jquery.js"></script>
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+
+  .container {
+    width: auto;
+    max-width: 800px;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+  </style>
 {% endblock %}
+
 {% block content %}
 <div class="wrap">
   <!-- Begin page content -->
   <div class="container">
-
     <div class="span8">
       <div class="card">
         <div class="card-body">
           <div id="fb-root"></div>
-          <h3>Remove zombie pages easily with | zombie_page.appspot.com</h3>
-          <p><fb:login-button autologoutlink="true" perms="user_likes,email,status_update,publish_stream"></fb:login-button></p>
-
+          <p>This is a site to help you easily find out which pages you liked have been died for a long time (no update status).</p>
+          <p>There is no reason to like any pages for no updates, right?</p>
+          <p>Log in your facebook by the following button, check the zombie pages and unlike them all!!</p>
+          <p>Please feel free to use this site. We do NOT and will NOT store any data from your Facebook!</p>
           <p>
-            <a href="#" onclick="fqlQuery(); return false;">FQL Query Example</a>
+            <fb:login-button autologoutlink="true" perms="user_likes,email,publish_stream"></fb:login-button>
+            <div id="login" style ="display:none"></div>
           </p>
-          <br />
-          <div id="login" style ="display:none"></div>
+          <p>
+            <div class="pull-right">Auto load <div id="auto-load" class="make-switch switch-mini"><input type="checkbox" checked></div> Auto sort <div id="auto-sort" class="make-switch switch-mini"><input type="checkbox" checked></div></div>
+            <button type="button" onclick="getPages(); return false;" class="btn btn-info"
+            data-loading-text="<i class='icon-spinner icon-spin icon-large'></i>">Searching for your zombie pages!!</button>
+          </p>
+          
           <div id="pages"></div>
-
+          <br />
         </div>
       </div>
     </div>
@@ -97,7 +103,15 @@
 {% endblock %}
 
 {% block js %}
+<script src="/static/js/bootstrap-switch.min.js"></script>
 <script type="text/javascript">
+
+  function truncate(string){
+    if (string.length > 5)
+      return string.substring(0,800)+'...';
+    else
+      return string;
+  }
 
   //Set intital divs to be hidden
   function loadMore()
@@ -105,17 +119,27 @@
     console.log("More loaded");
     rows = jQuery.parseJSON( localStorage.pages );
 
-    for(i=0;i<10;i++) {
+    for(i=0;i<9;i++) {
       count = parseInt(localStorage.count);
       console.log(count);
-      $(".content").append(
-        $('#pages').html($('#pages').html()
-        + '<a href="' + rows[count].page_url + '">' + rows[count].name + '</a>' + ' has ' + rows[count].fan_count + " fans.<br />"
-        + '<img src="' + rows[count].pic_square + '" alt="" />' + "<br /><br />")
+      //page_id, pic_square, name, fan_count, about, page_url
+      $('#pages').html($('#pages').html()
+      + '<div class="media" id="page_id' + rows[count].page_id + '">'
+      +   '<a class="pull-left" href="' + rows[count].page_url + '" target="_blank">'
+      +     '<img class="media-object" style="width: 80px; height: 80px;" src="' + rows[count].pic_square + '">'
+      +   '</a>'
+      +   '<div class="media-body">'
+      +     '<h4 class="media-heading"><b title="' + rows[count].about + '">' + rows[count].name + '</b> ' + rows[count].fan_count + ' likes!</h4>'
+      +     '<p class="post"></p>'
+      +     '<p>Latest status date: <span class="post_time hide"></span> <span class="post_time_format"></span> <span class="post_days_diff"></span></p>' 
+      +     '<p><span class="zombie_rate"></span></p>' 
+      +   '</div>'
+      + '</div>'
       );
       localStorage.count=parseInt(localStorage.count)+1;
+      getLastPost(rows[count].page_id);
     }
-    //$(window).bind('scroll', bindScroll);
+    $(window).bind('scroll', bindScroll);
   }
 
   function bindScroll(){
@@ -128,19 +152,15 @@
   window.fbAsyncInit = function() {
     FB.init({appId: '632378410134710', status: true, cookie: true, xfbml: true});
 
-    /* All the events registered */
     FB.Event.subscribe('auth.login', function(response) {
-      // do something with response
       login();
     });
     FB.Event.subscribe('auth.logout', function(response) {
-      // do something with response
       logout();
     });
 
     FB.getLoginStatus(function(response) {
       if (response.session) {
-        // logged in and connected user, someone you know
         login();
       }
     });
@@ -164,19 +184,115 @@
     document.getElementById('login').style.display = "none";
   }
 
-  function fqlQuery(){
+  var autoSortInterval = 0;
+  var autoSortIntervalTime = 4000;
+  $('#auto-sort').on('switch-change', function (e, data) {
+    var $el = $(data.el)
+      , value = data.value;
+    console.log(e, $el, value);
+    if (value==true) {
+      console.log("true", value);
+      sortDiv();
+      autoSortInterval = setInterval(function () {sortDiv()}, autoSortIntervalTime);
+    } else {
+      console.log("false", value);
+      clearInterval(autoSortInterval);
+    }
+  });
+
+  var autoLoadInterval = 0;
+  var autoLoadIntervalTime = 10000;
+  $('#auto-load').on('switch-change', function (e, data) {
+    var $el = $(data.el)
+      , value = data.value;
+    console.log(e, $el, value);
+    if (value==true) {
+      console.log("true", value);
+      loadMore()
+      autoLoadInterval = setInterval(function () {loadMore()}, autoLoadIntervalTime);
+    } else {
+      console.log("false", value);
+      clearInterval(autoLoadInterval);
+    }
+  });
+
+  function getPages(){
     FB.api('/me', function(response) {
-       var query = FB.Data.query('SELECT page_id, pic_square, name, fan_count, about, page_url FROM page WHERE page_id IN (SELECT page_id from page_fan where uid = {0})', response.id);
-       query.wait(function(rows) {
-         console.log(response.id);
-         console.log(rows.length);
+      var query = FB.Data.query('SELECT page_id, pic_square, name, fan_count, about, page_url FROM page WHERE page_id IN (SELECT page_id from page_fan where uid = {0})', response.id);
+      query.wait(function(rows) {
+        console.log(response.id);
+        console.log(rows.length);
 
-         localStorage.pages = JSON.stringify(rows);
-         localStorage.count = 0;
+        localStorage.pages = JSON.stringify(rows);
+        localStorage.count = 0;
 
-         loadMore();
-       });
+        loadMore();
+        autoSortInterval = setInterval(function () {sortDiv()}, autoSortIntervalTime);
+        autoLoadInterval = setInterval(function () {loadMore()}, autoLoadIntervalTime);
+      });
     });
   }
+
+  function countZombieRate(days){
+    var str = '';
+    for(i=0;i<Math.round(Math.log(days-15));i++) str+='<img src="/static/images/zombie.ico" alt="Smiley face" height="21" width="21"></img> ';
+    return str;
+  }
+
+  function getLastPost(post_id){
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    var today = new Date();
+
+    function diffDays(postedDate){
+      postedDate = new Date(postedDate);
+      return Math.round(Math.abs((today.getTime() - postedDate.getTime())/(oneDay)));
+    }
+
+    FB.api('/' + post_id + '/posts?limit=1', function(response) {
+      console.log(response);
+      if(response.error && response.error.code > 0) {
+        //alert(response.error.message + '\n\nPlease try again later.');
+        clearInterval(autoLoadInterval);
+      };
+      if(response.data[0].message){
+        $('#page_id' + post_id + ' p.post').text(truncate(response.data[0].message));
+      }else if(response.data[0].story){
+        $('#page_id' + post_id + ' p.post').text(truncate(response.data[0].story));
+      }else{
+        $('#page_id' + post_id + ' p.post').text(truncate(response.data[0].description));
+      }
+      created_time = response.data[0].created_time;
+      $('#page_id' + post_id + ' span.post_time').text(created_time);
+      $('#page_id' + post_id + ' span.post_time_format').text(created_time.substring(0,10));
+      diff_days = diffDays(response.data[0].created_time);
+      if(diff_days==0){
+        $('#page_id' + post_id + ' span.post_days_diff').text('still alive!');
+      }else{
+        $('#page_id' + post_id + ' span.post_days_diff').text('becomes a zombie for ' + diff_days + ' days...');
+      }
+      $('#page_id' + post_id + ' span.zombie_rate').html(countZombieRate(diff_days));
+    });
+  }
+
+  function sortDiv(){
+    function sortUsingNestedText(parent, childSelector, keySelector) {
+      var items = parent.children(childSelector).sort(function(a, b) {
+        var vA = $(keySelector, a).text();
+        var vB = $(keySelector, b).text();
+        return (vA < vB) ? -1 : (vA > vB) ? 1 : 0;
+      });
+      parent.append(items);
+    };
+    sortUsingNestedText($('#pages'), 'div', 'span.post_time');
+    console.log('sorted');
+  }
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45869177-1', 'zombie-pages.appspot.com');
+  ga('send', 'pageview');
 </script>
 {% endblock %}

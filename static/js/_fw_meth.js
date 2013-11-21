@@ -8,7 +8,7 @@ $.extend(_fw.meth,{
     invalidCl:'invalid',
     errorCl:'error',
     errorMsg:'Please enter a valid values',
-    mailHandlerURL:'contact',
+    mailHandlerURL:'/contact/',
     ownerEmail:'mona@getmewrite.com',
     stripHTML:true,
     smtpMailServer:'localhost',

@@ -1,4 +1,4 @@
 cron:
 - description: contacts email sending daily
-  url: /mail/contact
+  url: /mail/contact/
   schedule: every 2 hours

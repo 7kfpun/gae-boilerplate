@@ -54,13 +54,10 @@ class MailAllHandler(BaseHandler):
         contacts = Contact.query()
         datetime_handler = lambda obj: obj.isoformat() \
             if isinstance(obj, datetime) else None
-        message = json.dumps(
+        self.render_json(
             [contact.to_dict() for contact in contacts],
             default=datetime_handler,
-            indent=4
         )
-
-        self.response.write(message)
         logger.info('Check all {} contact(s)'.format(contacts.count()))
 
 

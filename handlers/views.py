@@ -21,7 +21,8 @@ class HelloHandler(BaseHandler):
 
 
 class HomeHandler(BaseHandler):
-    def get(self):
+    def get(self, locale=None):
+        self.set_locale(locale)
         file_location = os.path.join(
             self.app.config.get('PROJECT_ROOT'),
             "templates/portfolio.json",

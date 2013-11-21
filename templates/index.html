@@ -62,6 +62,16 @@ Translation:<br />
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="Description" CONTENT="Established in 2013, Get Me Write provides freelance writing, editing and translation services to facilitate effective communication.">
+<meta name="keywords" content="getmewrite,artwriting,translation,speech,copywriting">
+<meta name="author" content="mona">
+
+<meta property="og:title" content="Get Me Write" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.getmewrite.comstatic/images/logo2.png" />
+<meta property="og:description" content="Established in 2013, Get Me Write provides freelance writing, editing and translation services to facilitate effective communication." />
+<meta property="og:url" content="http://www.getmewrite.com">
+
 <title>{{_("Get Me Write")}}</title>
 <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
 {% if 'zh' in locale %}<link href="/static/css/style_zh.css" rel="stylesheet" type="text/css" />{% endif %}
@@ -103,9 +113,9 @@ Translation:<br />
 <div class="glob-wrap">
   <div id="main">
     {% if locales|length > 1 %}
-    <div class="locale"><a href="?hl=en_US">EN</a> &bull; <a href="?hl=zh_TW">繁</a> &bull; <a href="?hl=zh_CN">簡</a></div>
+    <div class="locale"><a href="/en_US/">EN</a> &bull; <a href="/zh_TW/">繁</a> &bull; <a href="/zh_CN/">簡</a></div>
+    <h1><a href="#"><img src="/static/images/logo2.png" height="160" width="600" alt=""></a></h1>
     {% endif %}
-    <h1><a href="#"><img src="static/images/logo2.png" height="160" width="600" alt=""></a></h1>
     <nav>
       <ul class="sf">
         <li class="nav1"><a href="#home"><span>{{_("home")}}</span></a></li>

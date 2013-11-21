@@ -44,7 +44,7 @@ class BaseHandler(webapp2.RequestHandler):
 
     def __init__(self, request, response):
         self.initialize(request, response)
-        self.locale = self.set_locale()
+        self.set_locale()
 
     @property
     def locales(self):
@@ -96,8 +96,8 @@ class BaseHandler(webapp2.RequestHandler):
         i18n.get_i18n().set_locale(locale)
         logger.info('locale is {0}'.format(locale))
         # save locale in cookie with 26 weeks expiration (in seconds)
+        self.locale = locale
         self.response.set_cookie('hl', locale, max_age=15724800)
-        return locale
 
     def render_response(self, _template,
                         cache_time=0, content_type='text/html; charset=utf-8',

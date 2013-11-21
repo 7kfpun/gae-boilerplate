@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Zombie pages{% endblock %}
+{% block title %}ZOMBIE PAGES DETECTOR{% endblock %}
 {% block head %}
   {{ super() }}
   <link href="/static/css/bootstrap-switch.css" rel="stylesheet">
@@ -93,7 +93,6 @@
             <button type="button" onclick="getPages(); return false;" class="btn btn-info"
             data-loading-text="<i class='icon-spinner icon-spin icon-large'></i>">Searching for your zombie pages!!</button>
           </p>
-          
           <div id="pages"></div>
           <br />
         </div>
@@ -105,6 +104,8 @@
 {% block js %}
 <script src="/static/js/bootstrap-switch.min.js"></script>
 <script type="text/javascript">
+  var autoSortInterval = 0;
+  var autoLoadInterval = 0;
 
   function truncate(string){
     if (string.length > 5)
@@ -113,7 +114,6 @@
       return string;
   }
 
-  //Set intital divs to be hidden
   function loadMore()
   {
     console.log("More loaded");
@@ -121,6 +121,10 @@
 
     for(i=0;i<9;i++) {
       count = parseInt(localStorage.count);
+      if(count>rows.length){
+        clearInterval(autoLoadInterval);
+        break;
+      }
       console.log(count);
       //page_id, pic_square, name, fan_count, about, page_url
       $('#pages').html($('#pages').html()
@@ -184,7 +188,6 @@
     document.getElementById('login').style.display = "none";
   }
 
-  var autoSortInterval = 0;
   var autoSortIntervalTime = 4000;
   $('#auto-sort').on('switch-change', function (e, data) {
     var $el = $(data.el)
@@ -200,7 +203,6 @@
     }
   });
 
-  var autoLoadInterval = 0;
   var autoLoadIntervalTime = 10000;
   $('#auto-load').on('switch-change', function (e, data) {
     var $el = $(data.el)
@@ -292,7 +294,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-45869177-1', 'zombie-pages.appspot.com');
+
+  ga('create', 'UA-45869177-1', 'zombie-pages-detector.appspot.com');
   ga('send', 'pageview');
 </script>
 {% endblock %}

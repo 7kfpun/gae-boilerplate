@@ -158,7 +158,8 @@ class SitemapHandler(BaseHandler):
         self.render_response(
             'sitemap.xml', cache_time=0,
             content_type='application/xml',
-            host=app_identity.get_default_version_hostname(),
+            #host=app_identity.get_default_version_hostname(),
+            host=self.request.url.replace('/sitemap.xml', ''),
             paths=json.load(f),
             lastmod=date.today().isoformat(),
             changefreq='weekly',

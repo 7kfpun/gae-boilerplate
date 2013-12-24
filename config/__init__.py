@@ -13,14 +13,14 @@ logger = logging.getLogger(__name__)
 if "SERVER_SOFTWARE" in os.environ:
     if os.environ['SERVER_SOFTWARE'].startswith('Dev'):
         from config.localhost import config
-        environ = "Dev"
+        environ = "dev"
 
     elif os.environ['SERVER_SOFTWARE'].startswith('Google'):
         from config.production import config
-        environ = "Google Production"
+        environ = "production"
 else:
     from .testing import config
-    environ = "Testing"
+    environ = "testing"
 
 config.update(base_config)
 config = config

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-21 04:15+0000\n"
+"POT-Creation-Date: 2014-01-23 08:50+0000\n"
 "PO-Revision-Date: 2013-07-14 11:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -26,11 +26,12 @@ msgstr "主頁"
 msgid "About"
 msgstr "關於"
 
-#: templates/base.html:49 templates/index.html:105
+#: templates/base.html:49 templates/index.html:159
 msgid "Services"
 msgstr "服务"
 
-#: templates/base.html:50 templates/index.html:125
+#: templates/base.html:50 templates/index.html:84 templates/index.html:127
+#: templates/index.html:179
 msgid "Contact"
 msgstr "聯絡"
 
@@ -75,7 +76,14 @@ msgstr "清空"
 msgid "We get your message!"
 msgstr "已經收到您的信息，我們會儘快回覆！"
 
-#: templates/index.html:81
+#: templates/index.html:80 templates/index.html:111 templates/index.html:119
+msgid ""
+"I am a Thailand-born Chinese, native in Thai and Chinese. If you need any"
+" help in Thai, such as Thai course or Thai interpretation. Please contact"
+" me!"
+msgstr "大家好！我是泰國華僑，有需要學泰文(泰語)，或者有需要泰文(泰語)傳譯、翻譯(中-泰或泰-中)，請聯繫我！"
+
+#: templates/index.html:97
 msgid ""
 "Due to rapid economic development in recent years, Thailand has become an"
 " Asian economic power and a popular tourist destination. The four levels "
@@ -84,58 +92,51 @@ msgid ""
 "country’s language and culture in a relaxed and fun environment."
 msgstr ""
 
-#: templates/index.html:90
-msgid ""
-"I am a Thailand-born Chinese, native in Thai and Chinese. If you need any"
-" help in Thai, such as Thai course or Thai interpretation. Please contact"
-" me!"
-msgstr "大家好！我是泰國華僑，有需要學泰文(泰語)，或者有需要泰文(泰語)傳譯、翻譯(中-泰或泰-中)，請聯繫我！"
-
-#: templates/index.html:96
+#: templates/index.html:134
 msgid "Thai lessons"
 msgstr "泰語課程"
 
-#: templates/index.html:107
+#: templates/index.html:161
 msgid ""
 "Private One on One Thai lessons or Group lessons. Lessons conducted in "
 "Mandarin, Cantonese or English."
 msgstr "泰語單對單／單對多教學"
 
-#: templates/index.html:108
+#: templates/index.html:162
 msgid "Private One on One Home visit Thai lessons."
 msgstr "泰語單對單家教"
 
-#: templates/index.html:109
+#: templates/index.html:163
 msgid "Travel Thai language lessons."
 msgstr "旅行泰語教學"
 
-#: templates/index.html:110
+#: templates/index.html:164
 msgid ""
 "Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to "
 "Thai"
 msgstr "泰語傳譯"
 
-#: templates/index.html:111
+#: templates/index.html:165
 msgid "Assistance on any jobs need Thai."
 msgstr "協助泰語相關工作"
 
-#: templates/index.html:116
+#: templates/index.html:170
 msgid "Rates"
 msgstr "泰語教學收費"
 
-#: templates/index.html:118
+#: templates/index.html:172
 msgid "Only HKD $180 per hour (One Teacher to One Student)"
 msgstr "單對單，HKD 180／小時"
 
-#: templates/index.html:119
+#: templates/index.html:173
 msgid "HKD $120 per hour per student (One Teacher to 2 Students)"
 msgstr "單對雙，HKD 120／小時"
 
-#: templates/index.html:120
+#: templates/index.html:174
 msgid "HKD $100 per hour per student (One Teacher to 3-6 Students)"
 msgstr "單對多，HKD 100／小時"
 
-#: templates/index.html:121
+#: templates/index.html:175
 msgid "Please contact me at to get a precise price quote for other services!"
 msgstr "想知更多，請聯絡我！"
 

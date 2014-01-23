@@ -9,4 +9,4 @@ app = TestApp(app)
 
 def test_index():
     response = app.get('/')
-    assert 'Hello world!' in str(response), response
+    assert 'This will be your homepage' in str(response), response

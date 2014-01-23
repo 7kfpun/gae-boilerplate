@@ -1,5 +1,7 @@
 from babel import Locale
-from google.appengine.api import memcache
+from datetime import date
+from google.appengine.api import app_identity, memcache
+
 import jinja2
 import json
 import os
@@ -32,25 +34,30 @@ JINJA_ENVIRONMENT.install_gettext_translations(i18n)
 
 
 class BaseHandler(webapp2.RequestHandler):
-    """BaseHandler which will be inherited all other handlers
+    """
+
+    BaseHandler which will be inherited all other handlers
     it should implement the most common functionality
     required by all handlers
+
     """
 
     def __init__(self, request, response):
         self.initialize(request, response)
-        self.locale = self.set_locale()
+        self.set_locale()
 
     @property
     def locales(self):
         """
+
         returns a dict of locale codes to locale display names in both
         the current locale and the localized locale
         example: if the current locale is es_ES then
         locales['en_US'] = 'Ingles (Estados Unidos) - English (United States)'
+
         """
         if not self.app.config.get('locales'):
-            return None
+            return []
         locales = {}
         for l in self.app.config.get('locales'):
             current_locale = Locale.parse('en_US')
@@ -89,34 +96,39 @@ class BaseHandler(webapp2.RequestHandler):
         i18n.get_i18n().set_locale(locale)
         logger.info('locale is {0}'.format(locale))
         # save locale in cookie with 26 weeks expiration (in seconds)
+        self.locale = locale
         self.response.set_cookie('hl', locale, max_age=15724800)
-        return locale
 
-    def render_response(self, _template, **context):
-        cache_time = 0
-        # TODO: add session
-        transliterated_text = '.'.join([_template] + context.keys())
-        signature = get_signiture(transliterated_text)
-
+    def render_response(self, _template,
+                        cache_time=0, content_type='text/html; charset=utf-8',
+                        **context):
         if cache_time:
-            rendered_page = memcache.get('page {0}'.format(signature))
+            logger.info('cache used for {} s'.format(cache_time))
+            # TODO: add session
+            transliterated_text = _template + json.dumps(context.values())
+            signature = get_signiture(transliterated_text)
+            cache_key = 'page-{}-{}'.format(
+                context.get('locale', ''), signature)
+            logger.debug('cache key {}'.format(cache_key))
+
+            rendered_page = memcache.get(cache_key)
             if not rendered_page:
                 template = JINJA_ENVIRONMENT.get_template(_template)
                 rendered_page = template.render(**context)
 
-                if not memcache.add(
-                        'page {0}'.format(signature),
-                        rendered_page, cache_time):
+                if not memcache.add(cache_key, rendered_page, cache_time):
                     logging.error('Memcache set failed.')
         else:
             template = JINJA_ENVIRONMENT.get_template(_template)
             rendered_page = template.render(**context)
 
-            self.response.write(rendered_page)
+        self.response.headers['Content-Type'] = content_type
+        logger.info(self.response.headers['Content-Type'])
+        self.response.write(rendered_page)
 
-    def render_json(self, obj):
-        rv = json.dumps(obj)
-        self.response.headers.content_type = 'application/json'
+    def render_json(self, obj, **argv):
+        rv = json.dumps(obj, **argv)
+        self.response.headers['Content-Type'] = 'application/json'
         self.response.write(rv)
 
     def dispatch(self):
@@ -134,3 +146,22 @@ class BaseHandler(webapp2.RequestHandler):
     def session(self):
         # Returns a session using the default cookie key.
         return self.session_store.get_session()
+
+
+class SitemapHandler(BaseHandler):
+    def get(self):
+        file_location = os.path.join(
+            self.app.config.get('PROJECT_ROOT'),
+            "templates/urls.json",
+        )
+        f = open(file_location, 'rb')
+        self.render_response(
+            'sitemap.xml', cache_time=0,
+            content_type='application/xml',
+            #host=app_identity.get_default_version_hostname(),
+            host=self.request.url.replace('/sitemap.xml', ''),
+            paths=json.load(f),
+            lastmod=date.today().isoformat(),
+            changefreq='weekly',
+            priority=0.5,
+        )

@@ -13,16 +13,16 @@ logger = logging.getLogger(__name__)
 if "SERVER_SOFTWARE" in os.environ:
     if os.environ['SERVER_SOFTWARE'].startswith('Dev'):
         from config.localhost import config
+        environ = "dev"
 
     elif os.environ['SERVER_SOFTWARE'].startswith('Google'):
         from config.production import config
+        environ = "production"
 else:
-    from config.testing import config
+    from .testing import config
+    environ = "testing"
 
 config.update(base_config)
 config = config
 
-logger.info(
-    'GAE is running on {0}, with config {1}'.format(
-        os.environ['SERVER_SOFTWARE'], config)
-)
+logger.info('GAE is running on {0}, with config {1}'.format(environ, config))

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html lang="en">
   <head>
 	  {% block head %}
@@ -12,23 +12,23 @@
 
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="../static/css/bootplus.css" rel="stylesheet">
-    <link href="../static/css/bootplus-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootplus.css" rel="stylesheet">
+    <link href="/static/css/bootplus-responsive.css" rel="stylesheet">
     
-    <link href="../static/css/bootplus-responsive.css" rel="stylesheet">
-    <link href="../static/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="/static/css/bootplus-responsive.css" rel="stylesheet">
+    <link href="/static/css/font-awesome-ie7.min.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="../static/js/html5shiv.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../static/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../static/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/static/favicon.ico">
     {% endblock %}
   </head>
 
@@ -41,7 +41,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">THAI in HK</a>
+          <a class="brand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;THAI in HK</a>
+          {#
           <div class="nav-collapse collapse">
             <ul id="nav" class="nav">
               <li class="active"><a href="#">{{_("Home")}}</a></li>
@@ -50,12 +51,13 @@
               <li><a href="#contact">{{_("Contact")}}</a></li>
             </ul>
             <ul class="pull-right breadcrumb">
-              <li><a href="?hl=zh_TW">HK</a> <span class="divider">/</span></li>
-              <li><a href="?hl=zh_CN">CN</a> <span class="divider">/</span></li>
-              <li><a href="?hl=th_TH">TH</a> <span class="divider">/</span></li>
-              <li><a href="?hl=en_US">EN</a></li>
+              <li><a href="/zh_TW/">HK</a> <span class="divider">/</span></li>
+              <li><a href="/zh_CN/">CN</a> <span class="divider">/</span></li>
+              <li><a href="/th_TH/">TH</a> <span class="divider">/</span></li>
+              <li><a href="/en_US/">EN</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+          #}
         </div>
       </div>
     </div>
@@ -68,7 +70,7 @@
         <div class="span5"><a name="contact">
           <form id="contact_form" action="contact" method="post">
             <fieldset>
-              <span class="help-block">{{_("Want to hire me? Get in touch!")}}</span>
+              <span class="help-block">{{_("聯絡我們")}}</span>
               <div class="control-group">
                 <input class="span2" name="name" type="text" required placeholder={{_("Name...")}}
                        data-validation-required-message={{_("Please fill out this field.")}} >
@@ -90,10 +92,11 @@
           </form>
         </div>
         <div class="span3 text-justify">
-          <p>Matthew Haughey and Aaron Swartz[7] also played a significant role in the early stages of the project. In 2008, there were an estimated 130 million works licensed under the various Creative Commons licenses.[8] As of October 2011, Flickr alone hosts over 200 million Creative Commons licensed photos.[9] Creative Commons is governed by a board of directors and a technical advisory board. Their licenses have been embraced by many as a way for creators to take control of how they choose to share their copyrighted works.</p>
+          <p>{{_("Bodyslam 是個泰國出生的華僑，從小受泰國教育，高中回國讀書，因此精通中泰兩語. 因為絕大部分泰國朋友也一樣80後，所以熟悉當下流行用語，不只會書上『正統』語言.")}}</p>
         </div>
         <div class="span8">
-          <p class="muted pagination-centered">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+          <p class="pagination-centered">Present by <a href="http://thaiinhk.appspot.com">thaiinhk.appspot.com</a>.</p>
+          <p class="pagination-centered">Hong Kong</p>
         </div>
       </div>
     </div>
@@ -110,23 +113,23 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../static/js/jquery.js"></script>
-    <script src="../static/js/bootstrap.js"></script>
-    <script src="../static/js/jqBootstrapValidation.js"></script>
-    <script src="../static/js/app.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/app.js"></script>
     <!--
-    <script src="../static/js/bootstrap-transition.js"></script>
-    <script src="../static/js/bootstrap-alert.js"></script>
-    <script src="../static/js/bootstrap-modal.js"></script>
-    <script src="../static/js/bootstrap-dropdown.js"></script>
-    <script src="../static/js/bootstrap-scrollspy.js"></script>
-    <script src="../static/js/bootstrap-tab.js"></script>
-    <script src="../static/js/bootstrap-tooltip.js"></script>
-    <script src="../static/js/bootstrap-popover.js"></script>
-    <script src="../static/js/bootstrap-button.js"></script>
-    <script src="../static/js/bootstrap-collapse.js"></script>
-    <script src="../static/js/bootstrap-carousel.js"></script>
-    <script src="../static/js/bootstrap-typeahead.js"></script>
+    <script src="/static/js/bootstrap-transition.js"></script>
+    <script src="/static/js/bootstrap-alert.js"></script>
+    <script src="/static/js/bootstrap-modal.js"></script>
+    <script src="/static/js/bootstrap-dropdown.js"></script>
+    <script src="/static/js/bootstrap-scrollspy.js"></script>
+    <script src="/static/js/bootstrap-tab.js"></script>
+    <script src="/static/js/bootstrap-tooltip.js"></script>
+    <script src="/static/js/bootstrap-popover.js"></script>
+    <script src="/static/js/bootstrap-button.js"></script>
+    <script src="/static/js/bootstrap-collapse.js"></script>
+    <script src="/static/js/bootstrap-carousel.js"></script>
+    <script src="/static/js/bootstrap-typeahead.js"></script>
     -->
   </body>
 </html>

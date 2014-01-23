@@ -18,7 +18,8 @@ class HelloHandler(BaseHandler):
 
 
 class HomeHandler(BaseHandler):
-    def get(self):
+    def get(self, locale=None):
+        self.set_locale(locale)
         self.render_response('index.html')
 
 

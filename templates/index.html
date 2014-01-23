@@ -91,116 +91,66 @@
   <!-- Begin page content -->
   <div class="container">
 
-    <div class="span8">
-      <div class="card">
-        <div class="card-body">
-          <p>{{_("Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.")}}</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="span4"><a name="about"></a>
+    <div class="span8"><a name="about"></a>
       <div class="card">
         <div class="card-top green">
-          <!-- <img src="./images/profile.jpg" alt="profile"> -->
+          <!-- <img src="/images/profile.jpg" alt="profile"> -->
         </div>
         <div class="card-body">
           <div class="media">
             <div class="media-body">
-              <h4 class="media-heading">Nested media heading</h4>
-              {{_("I am a Thailand-born Chinese, native in Thai and Chinese. If you need any help in Thai, such as Thai course or Thai interpretation. Please contact me!")}}
               <!-- Nested media object -->
               <div class="media">
                 <a class="pull-left" href="#">
-                  <img class="media-object" style="width: 100px; height: 128px;" src="./images/profile.jpg">
+                  <img class="media-object" style="width: 140px; height: 180px;" src="./images/profile.jpg">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading">Nested media heading</h4>
-                  {{_("I am a Thailand-born Chinese, native in Thai and Chinese. If you need any help in Thai, such as Thai course or Thai interpretation. Please contact me!")}}
+                  {#<h4 class="media-heading">{{_("泰文班")}}</h4>#}
+                  <p>{{_("由於近年來經濟的快速發展，泰國已成為一個東南亞經濟強國，一個熱門的旅遊目的地。來一起學習泰文，打破語言和文化上的隔閡吧。")}}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-actions">
-          <a class="btn btn-success" href="#contact">
-            {{_("Contact")}}
-            <i class="icon-circle-arrow-right"></i>
-          </a>
-        </div>
+        <div class="card-actions"></div>
       </div>
-      <!-- card -->
+    </div>
+    
+    <div class="span8"><a name="services"></a>
       <div class="card">
-        <h3 class="card-heading simple">{{_("Thai lessons")}}</h3>
-        <div class="card-body text-justify">
-          <p>Due to rapid economic development in recent years, Thailand has become an Asian economic power and a popular tourist destination. The four levels of Thai language courses offered by the School are taught by native Thai teachers fluent in Cantonese, allowing participants to learn the country’s language and culture in a relaxed and fun environment.</p>
-        </div>
-        <div class="card-comments">
-          <div class="comments-collapse-toggle">
-            <a data-toggle="collapse" data-target="#c1-comments">34 comments <i class="icon-angle-down"></i></a>
-          </div>
-          <div id="c1-comments" class="comments collapse">
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/28x28" alt="avatar"/>
-              </a>
-              <div class="media-body">
-                <h4 class="media-heading">Comment title</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-              </div>
-            </div>
-          </div>
+        <h3 class="card-heading simple">{{_("泰文班")}}</h3>
+        <div class="card-body">
+          <p><b>{{_("個人課程")}}</b></p>
+          <p>{{_("可根據原有的程度調節課程難度和進度，不用怕跟不上其他同學而失去信心. 可以自選上課時間及地點，方便安排課程時間.")}}</p>
+          <p>{{_("學費: $ 180/ 小時.")}}</p>
+          <p><b>{{_("小組課程(2-5人)")}}</b></p>
+          <p>{{_("有朋友陪伴可以增添樂趣，多些互動，又可以有更多對話練習的機會.")}}</p>
+          <p>{{_("學費: $ 120/ 小時.")}}</p>
+          <p><b>{{_("旅行泰語課程")}}</b></p>
+          <p>{{_("跳過讀寫，只學聽讀。專注於旅行日常用語，以備到泰國旅行可派上用場，在陌生的國度沒有後顧之憂.")}}</p>
+          <p>{{_("學費: (個人) $ 180/ 小時, (小組) $ 120/ 小時.")}}</p>
         </div>
       </div>
     </div>
 
-    <div class="span4"><a name="services"></a>
+    <!-- card -->
+    <div class="span8"><a name="services"></a>
       <div class="card">
-        <h3 class="card-heading simple">{{_("Services")}}</h3>
+        <h3 class="card-heading simple">{{_("其他")}}</h3>
         <div class="card-body">
-          <p>{{_("Private One on One Thai lessons or Group lessons. Lessons conducted in Mandarin, Cantonese or English.")}}</p>
-          <p>{{_("Private One on One Home visit Thai lessons.")}}</p>
-          <p>{{_("Travel Thai language lessons.")}}</p>
-          <p>{{_("Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to Thai")}}</p>
-          <p>{{_("Assistance on any jobs need Thai.")}}</p>
-        </div>
-      </div>
-      <!-- card -->
-      <div class="card">
-        <h3 class="card-heading simple">{{_("Rates")}}</h3>
-        <div class="card-body">
-          <p>{{_("Only HKD $180 per hour (One Teacher to One Student)")}}</p>
-          <p>{{_("HKD $120 per hour per student (One Teacher to 2 Students)")}}</p>
-          <p>{{_("HKD $100 per hour per student (One Teacher to 3-6 Students)")}}</p>
-          <p>{{_("Please contact me at to get a precise price quote for other services!")}}</p>
+          <p>{{_("泰中傳譯")}}</p>
+          <p>{{_("泰文校對")}}</p>
+          <p>{{_("泰中翻譯")}}</p>
+          <p>{{_("可電郵聯絡，免費報價")}}</p>
         </div>
         <div class="card-actions">
           <a class="btn btn-success" href="#contact">
-            {{_("Contact")}}
+            {{_("聯絡我們")}}
             <i class="icon-circle-arrow-right"></i>
           </a>
         </div>
       </div>
-      <!-- card -->
-      <div id="card-features" class="card">
-        <div class="card-media-container" href="#">
-          <i class="icon-html5"></i>
-          <i class="icon-css3"></i>
-          <i class="icon-wrench"></i>
-        </div>
-        <div class="card-body">
-          <h2>Packed with features.</h2>
-          <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootplus your own.</p>
-        </div>
-      </div>
-      <!-- card -->
-      <div class="card"></a>
-        <div class="card-body">
-          <h2>Built with Bootstrap.</h2>
-          <p>Bootplus is built on top of <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a> as a customization that reproduce the most recent Google+ style.</p>
-          <p>Bootplus utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
-        </div>
-      </div>
+    </div>
   </div>
-</div>
+
 {% endblock %}

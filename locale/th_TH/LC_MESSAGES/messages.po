@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-07 17:24+0000\n"
+"POT-Creation-Date: 2014-01-24 06:54+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: th_TH <LL@li.org>\n"
@@ -215,99 +215,99 @@ msgid ""
 "6. We work together in the future =)\n"
 msgstr ""
 
-#: templates/index.html:65
+#: templates/index.html:75
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:109
+#: templates/index.html:121
 msgid "home"
 msgstr ""
 
-#: templates/index.html:110 templates/index.html:139
+#: templates/index.html:122 templates/index.html:151
 msgid "about"
 msgstr ""
 
-#: templates/index.html:111
+#: templates/index.html:123
 msgid "works"
 msgstr ""
 
-#: templates/index.html:113 templates/index.html:147
+#: templates/index.html:125 templates/index.html:159
 msgid "portfolio"
 msgstr ""
 
-#: templates/index.html:121 templates/index.html:203
+#: templates/index.html:133 templates/index.html:215
 msgid "clients"
 msgstr ""
 
-#: templates/index.html:122 templates/index.html:186
+#: templates/index.html:134 templates/index.html:198
 msgid "service"
 msgstr ""
 
-#: templates/index.html:122 templates/index.html:194
+#: templates/index.html:134 templates/index.html:206
 msgid "rate"
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:137
 msgid "contacts"
 msgstr ""
 
-#: templates/index.html:133
+#: templates/index.html:145
 msgid "welcome"
 msgstr ""
 
-#: templates/index.html:153
+#: templates/index.html:165
 msgid "mail me"
 msgstr ""
 
-#: templates/index.html:158
+#: templates/index.html:170
 msgid "This is not a valid name."
 msgstr ""
 
-#: templates/index.html:161
+#: templates/index.html:173
 msgid "This is not a valid email address."
 msgstr ""
 
-#: templates/index.html:165
+#: templates/index.html:177
 msgid "This is not a valid subject."
 msgstr ""
 
-#: templates/index.html:167
+#: templates/index.html:179
 msgid "Body"
 msgstr ""
 
-#: templates/index.html:168
+#: templates/index.html:180
 msgid "The message is too short."
 msgstr ""
 
-#: templates/index.html:169
+#: templates/index.html:181
 msgid "reset"
 msgstr ""
 
-#: templates/index.html:169
+#: templates/index.html:181
 msgid "submit"
 msgstr ""
 
-#: templates/index.html:178
+#: templates/index.html:190
 msgid "contact or hire"
 msgstr ""
 
-#: templates/index.html:208
+#: templates/index.html:220
 msgid "art writing"
 msgstr ""
 
-#: templates/index.html:209
+#: templates/index.html:221
 msgid "translation"
 msgstr ""
 
-#: templates/index.html:210
+#: templates/index.html:222
 msgid "speeches"
 msgstr ""
 
-#: templates/index.html:211
+#: templates/index.html:223
 msgid "copywriting"
 msgstr ""
 
-#: templates/index.html:243
+#: templates/index.html:255
 msgid "Please visit"
 msgstr ""
 

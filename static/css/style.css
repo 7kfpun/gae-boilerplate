@@ -80,7 +80,7 @@ nav>ul>li.nav1 a{
 nav>ul>li.nav2 a{
 	background: url(/static/images/nav2.png) no-repeat #a64e22;	
 }
-nav>ul>li.nav3>a{
+nav>ul>li.nav3 a{
 	background: url(/static/images/nav3.png) no-repeat #5a1f18;
 }
 nav>ul>li.nav4 a{
@@ -187,6 +187,7 @@ a.backBu:hover{
 	z-index:1;
 }
 
+/*
 h2{
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight:bold;
@@ -201,6 +202,7 @@ p{
         font-size: 18px;
         color:#fff;
 }
+*/
 
 .bdr{
 	background:url(/static/images/separator.png) right repeat-y;

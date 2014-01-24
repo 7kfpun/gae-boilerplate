@@ -29,7 +29,7 @@ class HomeHandler(BaseHandler):
         )
         f = open(file_location, 'rb')
         self.render_response(
-            'index.html', cache_time=360000,
+            'index.html', cache_time=self.app.config.get('cache'),
             clients=json.load(f),
             locale=self.locale,
             locales=self.app.config.get('locales'),

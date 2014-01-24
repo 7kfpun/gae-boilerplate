@@ -2,6 +2,7 @@
 import os
 
 base_config = {
+    'default_locale': 'en_US',
     'locales': ['en_US'],  # , 'zh_TW', 'zh_CN', 'th_TH'],
     'PROJECT_ROOT': os.path.dirname(os.path.dirname(__file__)),
 }

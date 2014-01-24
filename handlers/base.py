@@ -91,7 +91,10 @@ class BaseHandler(webapp2.RequestHandler):
                         #locale = str(Locale.negotiate(territory, locales))
                         if locale not in locales:
                             # 6. use default locale
-                            locale = self.request.GET.get('locale', 'en_US')
+                            locale = self.request.GET.get(
+                                'locale',
+                                self.app.config.get('default_locale'),
+                            )
 
         i18n.get_i18n().set_locale(locale)
         logger.info('locale is {0}'.format(locale))

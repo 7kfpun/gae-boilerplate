@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-07 17:24+0000\n"
+"POT-Creation-Date: 2014-01-24 06:54+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -253,99 +253,99 @@ msgstr ""
 "5. 阁下通过银行过户或支票付款<br /><br />\n"
 "6. 预祝我们未来合作愉快=）"
 
-#: templates/index.html:65
+#: templates/index.html:75
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:109
+#: templates/index.html:121
 msgid "home"
 msgstr "主页"
 
-#: templates/index.html:110 templates/index.html:139
+#: templates/index.html:122 templates/index.html:151
 msgid "about"
 msgstr "关于我"
 
-#: templates/index.html:111
+#: templates/index.html:123
 msgid "works"
 msgstr "工作"
 
-#: templates/index.html:113 templates/index.html:147
+#: templates/index.html:125 templates/index.html:159
 msgid "portfolio"
 msgstr "履历"
 
-#: templates/index.html:121 templates/index.html:203
+#: templates/index.html:133 templates/index.html:215
 msgid "clients"
 msgstr "过往客户"
 
-#: templates/index.html:122 templates/index.html:186
+#: templates/index.html:134 templates/index.html:198
 msgid "service"
 msgstr "服务"
 
-#: templates/index.html:122 templates/index.html:194
+#: templates/index.html:134 templates/index.html:206
 msgid "rate"
 msgstr "收费"
 
-#: templates/index.html:125
+#: templates/index.html:137
 msgid "contacts"
 msgstr "联络方法"
 
-#: templates/index.html:133
+#: templates/index.html:145
 msgid "welcome"
 msgstr ""
 
-#: templates/index.html:153
+#: templates/index.html:165
 msgid "mail me"
 msgstr "联络我"
 
-#: templates/index.html:158
+#: templates/index.html:170
 msgid "This is not a valid name."
 msgstr ""
 
-#: templates/index.html:161
+#: templates/index.html:173
 msgid "This is not a valid email address."
 msgstr ""
 
-#: templates/index.html:165
+#: templates/index.html:177
 msgid "This is not a valid subject."
 msgstr ""
 
-#: templates/index.html:167
+#: templates/index.html:179
 msgid "Body"
 msgstr ""
 
-#: templates/index.html:168
+#: templates/index.html:180
 msgid "The message is too short."
 msgstr ""
 
-#: templates/index.html:169
+#: templates/index.html:181
 msgid "reset"
 msgstr "重置"
 
-#: templates/index.html:169
+#: templates/index.html:181
 msgid "submit"
 msgstr "发送"
 
-#: templates/index.html:178
+#: templates/index.html:190
 msgid "contact or hire"
 msgstr "联络方法"
 
-#: templates/index.html:208
+#: templates/index.html:220
 msgid "art writing"
 msgstr "艺术书写"
 
-#: templates/index.html:209
+#: templates/index.html:221
 msgid "translation"
 msgstr "翻译"
 
-#: templates/index.html:210
+#: templates/index.html:222
 msgid "speeches"
 msgstr "讲词"
 
-#: templates/index.html:211
+#: templates/index.html:223
 msgid "copywriting"
 msgstr "商业/市场推广文稿"
 
-#: templates/index.html:243
+#: templates/index.html:255
 msgid "Please visit"
 msgstr ""
 

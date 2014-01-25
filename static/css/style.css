@@ -22,12 +22,12 @@ body{font-family: sans-serif;font-size:100%;line-height:1em;color:#000; }
 	height:100%;
 	min-height:850px;
 	min-width:940px;
-	background:#8f902e url(../images/body-bg-dark.jpg) center center no-repeat;	
+	background:#8f902e url(/static/images/body-bg-dark.jpg) center center no-repeat;	
         background-size: 100% 100%;
 }
 
 .gspinner{
-	background:#8f902e url(../images/ajax-loader.gif) 50% 50% no-repeat;
+	background:#8f902e url(/static/images/ajax-loader.gif) 50% 50% no-repeat;
 	position:fixed;
 	left:0;
 	top:0;
@@ -75,16 +75,16 @@ nav>ul>li{
 }
 
 nav>ul>li.nav1 a{
-	background: url(../images/nav1.png) no-repeat #b2762b;	
+	background: url(/static/images/nav1.png) no-repeat #b2762b;	
 }
 nav>ul>li.nav2 a{
-	background: url(../images/nav2.png) no-repeat #a64e22;	
+	background: url(/static/images/nav2.png) no-repeat #a64e22;	
 }
-nav>ul>li.nav3>a{
-	background: url(../images/nav3.png) no-repeat #5a1f18;
+nav>ul>li.nav3 a{
+	background: url(/static/images/nav3.png) no-repeat #5a1f18;
 }
 nav>ul>li.nav4 a{
-	background:url(../images/nav4.png) no-repeat #2d4476;
+	background:url(/static/images/nav4.png) no-repeat #2d4476;
 }
 
 nav>ul>li.nav4{
@@ -159,7 +159,7 @@ nav>ul>li ul>li>a:hover{
 a.backBu{
 	width:68px;
 	height:24px;
-	background:url(../images/back-sprite.png) no-repeat;
+	background:url(/static/images/back-sprite.png) no-repeat;
 	position:absolute;
 	right:0;
 	top:132px;
@@ -197,13 +197,14 @@ h2{
 }
 
 p{
-        font-family: 'Alegreya', serif;
-        font-size: 18px;
+        font-family: sans-serif;
+        font-size: 16px;
         color:#fff;
+        line-height:1.2em;
 }
 
 .bdr{
-	background:url(../images/separator.png) right repeat-y;
+	background:url(/static/images/separator.png) right repeat-y;
 }
 
 /*footer*/
@@ -339,13 +340,13 @@ footer .privacy a:hover{
 	width:198px;
 	height:290px;
 	float:left;
-	background:url(../images/separator.png) right repeat-y;
+	background:url(/static/images/separator.png) right repeat-y;
 	padding-right:22px;
 	margin-right:22px;
 }
 
 .gSlider li a{
-        font-family: 'Alegreya', serif;
+        font-family: sans-serif;
         font-size: 15px;
         line-height:1.5em;
         color:#fff;
@@ -367,7 +368,7 @@ footer .privacy a:hover{
 .gSlider-controls .prev{
 	width:24px;
 	height:24px;
-	background:url(../images/cntrl-sprite.png) no-repeat;
+	background:url(/static/images/cntrl-sprite.png) no-repeat;
 	position:absolute;
 	right:40px;
 	top:0;
@@ -376,7 +377,7 @@ footer .privacy a:hover{
 .gSlider-controls .next{
 	width:24px;
 	height:24px;
-	background:url(../images/cntrl-sprite.png) right 0 no-repeat;
+	background:url(/static/images/cntrl-sprite.png) right 0 no-repeat;
 	position:absolute;
 	right:10px;
 	top:0;
@@ -418,7 +419,7 @@ footer .privacy a:hover{
 	left:24px;
 	right:24px;
 	position:absolute;
-	background: url(../images/slider-sprite.png) 0 -42px repeat-x;
+	background: url(/static/images/slider-sprite.png) 0 -42px repeat-x;
 }
 
 .track div{
@@ -433,7 +434,7 @@ footer .privacy a:hover{
 .track .lf{
 	width:21px;
 	height:21px;
-	background:url(../images/slider-sprite.png) 0 0 no-repeat;
+	background:url(/static/images/slider-sprite.png) 0 0 no-repeat;
 	position:absolute;
 	left:-24px;
 }
@@ -441,7 +442,7 @@ footer .privacy a:hover{
 .track .rg{
 	width:21px;
 	height:21px;
-	background:url(../images/slider-sprite.png) 0 -21px no-repeat;
+	background:url(/static/images/slider-sprite.png) 0 -21px no-repeat;
 	position:absolute;
 	right:-24px;
 }
@@ -494,7 +495,7 @@ a.und:hover,.und a:hover{text-decoration:underline;}
 	display:inline-block;
 	width:14px;
 	height:13px;
-	background-image:url(../images/mrk.png);
+	background-image:url(/static/images/mrk.png);
 	background-repeat: no-repeat;
 }
 
@@ -530,7 +531,7 @@ a.und:hover,.und a:hover{text-decoration:underline;}
 	padding-left:28px;
 	display:inline-block;
 	text-decoration:none;
-	background:url(../images/marker-sprite.png) 0 0 no-repeat;
+	background:url(/static/images/marker-sprite.png) 0 0 no-repeat;
 }
 
 .list a:hover{

@@ -1,5 +1,6 @@
 from babel import Locale
-from google.appengine.api import memcache
+from datetime import date
+from google.appengine.api import app_identity, memcache
 
 import jinja2
 import json
@@ -33,9 +34,12 @@ JINJA_ENVIRONMENT.install_gettext_translations(i18n)
 
 
 class BaseHandler(webapp2.RequestHandler):
-    """BaseHandler which will be inherited all other handlers
+    """
+
+    BaseHandler which will be inherited all other handlers
     it should implement the most common functionality
     required by all handlers
+
     """
 
     def __init__(self, request, response):
@@ -45,13 +49,15 @@ class BaseHandler(webapp2.RequestHandler):
     @property
     def locales(self):
         """
+
         returns a dict of locale codes to locale display names in both
         the current locale and the localized locale
         example: if the current locale is es_ES then
         locales['en_US'] = 'Ingles (Estados Unidos) - English (United States)'
+
         """
         if not self.app.config.get('locales'):
-            return None
+            return []
         locales = {}
         for l in self.app.config.get('locales'):
             current_locale = Locale.parse('en_US')
@@ -93,7 +99,9 @@ class BaseHandler(webapp2.RequestHandler):
         self.locale = locale
         self.response.set_cookie('hl', locale, max_age=15724800)
 
-    def render_response(self, _template, cache_time=0, **context):
+    def render_response(self, _template,
+                        cache_time=0, content_type='text/html; charset=utf-8',
+                        **context):
         if cache_time:
             logger.info('cache used for {} s'.format(cache_time))
             # TODO: add session
@@ -114,11 +122,13 @@ class BaseHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template(_template)
             rendered_page = template.render(**context)
 
+        self.response.headers['Content-Type'] = content_type
+        logger.info(self.response.headers['Content-Type'])
         self.response.write(rendered_page)
 
-    def render_json(self, obj):
-        rv = json.dumps(obj)
-        self.response.headers.content_type = 'application/json'
+    def render_json(self, obj, **argv):
+        rv = json.dumps(obj, **argv)
+        self.response.headers['Content-Type'] = 'application/json'
         self.response.write(rv)
 
     def dispatch(self):
@@ -136,3 +146,22 @@ class BaseHandler(webapp2.RequestHandler):
     def session(self):
         # Returns a session using the default cookie key.
         return self.session_store.get_session()
+
+
+class SitemapHandler(BaseHandler):
+    def get(self):
+        file_location = os.path.join(
+            self.app.config.get('PROJECT_ROOT'),
+            "templates/urls.json",
+        )
+        f = open(file_location, 'rb')
+        self.render_response(
+            'sitemap.xml', cache_time=0,
+            content_type='application/xml',
+            #host=app_identity.get_default_version_hostname(),
+            host=self.request.url.replace('/sitemap.xml', ''),
+            paths=json.load(f),
+            lastmod=date.today().isoformat(),
+            changefreq='weekly',
+            priority=0.5,
+        )

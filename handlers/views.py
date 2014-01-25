@@ -6,9 +6,8 @@ import os
 
 from forms import ContactForm
 from models import Contact
-from handlers.mails import send_contact_mail
-
-from base import BaseHandler
+from .base import BaseHandler
+from .mails import send_contact_mail
 
 import logging
 
@@ -18,6 +17,7 @@ logger = logging.getLogger(__name__)
 class HelloHandler(BaseHandler):
     def get(self):
         self.response.write(self.app.config)
+        self.response.write(self.request)
 
 
 class HomeHandler(BaseHandler):
@@ -25,17 +25,25 @@ class HomeHandler(BaseHandler):
         self.set_locale(locale)
         if self.locale == 'zh_TW':
             file_location = os.path.join(
-                os.path.dirname(__file__), "../templates/portfolio_zh_TW.json")
+                self.app.config.get('PROJECT_ROOT'),
+                "templates/portfolio_zh_TW.json",
+            )
         elif self.locale == 'zh_CN':
             file_location = os.path.join(
-                os.path.dirname(__file__), "../templates/portfolio_zh_CN.json")
+                self.app.config.get('PROJECT_ROOT'),
+                "templates/portfolio_zh_CN.json",
+            )
         else:
             file_location = os.path.join(
-                os.path.dirname(__file__), "../templates/portfolio.json")
+                self.app.config.get('PROJECT_ROOT'),
+                "templates/portfolio.json",
+            )
         f = open(file_location, 'rb')
         self.render_response(
-            'index.html', cache_time=0,
-            clients=json.load(f), locale=self.locale,
+            'index.html', cache_time=self.app.config.get('cache'),
+            clients=json.load(f),
+            locale=self.locale,
+            locales=self.app.config.get('locales'),
         )
 
 

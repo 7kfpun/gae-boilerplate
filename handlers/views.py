@@ -10,6 +10,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 from base import BaseHandler
+from mails import send_contact_mail
 
 
 class HelloHandler(BaseHandler):
@@ -54,7 +55,9 @@ class ContactHandler(BaseHandler):
                 body=self.request.get('body'),
             )
             contact.put()
-        self.render_response('contact.html', **params)
+            send_contact_mail(self)
+        else:
+            self.render_response('contact.html', **params)
 
 
 class CheckingHandler(BaseHandler):

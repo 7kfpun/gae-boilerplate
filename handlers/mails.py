@@ -26,8 +26,8 @@ def send_contact_mail(self):
         )
 
         mail.send_mail(
-            sender="Getmewrite.com Support <getmewrite@gmail.com>",
-            to="Mona <mona@getmewrite.com>",
+            sender="Thaiinhk.com Support <bodyslam.thaiinhk@gmail.com>",
+            to="Thai in HK <bodyslam.thaiinhk@gmail.com>",
             subject="You have {0} new contact(s)".format(count),
             body=message
         )

@@ -1,9 +1,9 @@
 [
   {
-    "organization_name": "Hong Kong Arts Centre",
-    "description": "The Hong Kong Arts Centre is an arts organisation that promotes contemporary arts and culture within Hong Kong and beyond. It provides programmes featuring local and overseas artists that cover a wide range of art forms including, media, visual and performing arts, theatre and film.",    
+    "organization_name": "香港藝術中心",
+    "description": "香港藝術中心是一個藝術組織,旨在促進在香港及以後的當代藝術和文化,包括介紹本地及海外藝術家,涵蓋範圍廣泛的藝術形式,包括媒體,視覺表演藝術,戲劇和電影.",
     "categories": ["artwriting"],
-    "projects": [
+    "projects​​": [
       {
         "category": "artwriting",
         "project_name": "Art@lunch Programme Leaflet (Feb 2013)",
@@ -12,31 +12,31 @@
       },
       {
         "category": "artwriting",
-        "project_name": "agnes choice - Welcome's feature article for Artslink (April issue 2013)",
+        "project_name": "agnes choice -  Artslink 專題文章 (2013 年四月號)",
         "reference": "n/a",
         "type": "Translation (C to E)"
       },
       {
         "category": "artwriting",
-        "project_name": "Arts Xperience: Open Dance (Jan 2013) - House Programme Introduction",
+        "project_name": "Arts Xperience: 開放舞蹈 (2013 年一月) ",
+        "reference": "n/a",
+         "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting" ,
+        "project_name": "藝術商業廣告2012 " ,
         "reference": "n/a",
         "type": "Translation (C to E)"
       },
       {
         "category": "artwriting",
-        "project_name": "Art of Commercials 2012",
+        "project_name": "藝術商業廣告2012",
         "reference": "n/a",
-        "type": "Translation (C to E)"
+         "type": "Translation (C to E)"
       },
       {
         "category": "artwriting",
-        "project_name": "Leaflet for Art of Commercials Festival 2012",
-        "reference": "n/a",
-        "type": "Translation (C to E)"
-      },
-      {
-        "category": "artwriting",
-        "project_name": "House Programme of Open Dance (Aug 2012)",
+        "project_name": "開放舞蹈 (2012 八月)",
         "reference": "n/a",
         "type": "Translation (C to E)"
       }
@@ -44,7 +44,7 @@
   },
   {
     "organization_name": "Artshare HK",
-    "description": "Artshare is the first global online platform dedicated to the exhibition and sale of modern and contemporary Asian art. Artshare presents critically curated online exhibitions, and offers the opportunity for private personal viewings. Artshare also provides a private sales avenue, working with collectors to source or sell major artworks.",
+    "description": "Artshare是全球第一個銷售洲亞現代與當代藝術展覽的在線平台,透過策劃網上展覽,供收藏家採購或銷售的主要作品.",
     "categories": ["artwriting", "translation"],
     "projects": [
       {
@@ -57,7 +57,7 @@
         "category": "translation",
         "project_name": "Continental Divide:  10 Chinese Artists at Home & Abroad (Exhibition):  curatorial statement",
         "reference": "2.pdf",
-        "type": "Translation (E to C)"
+       "type": "Translation (E to C)"
       },
       {
         "category": "artwriting",
@@ -75,70 +75,70 @@
   },
   {
     "organization_name": "Intelligence Squared Asia",
-    "description": "Intelligence Squared is the world’s premier forum for debate and intelligent discussion. Live and online we take you to the heart of the issues that matter, in the company of some of the world’s sharpest minds and most exciting orators.",
+    "description": "Intelligence Squared 是世界第一個策劃辯論的平台,邀請頭腦清晰及激動人心的演說家討論最迫切的問題.",
     "categories": ["translation"],
     "projects": [
       {
         "category": "translation",
-        "project_name": "Intelligence Squared 5th Annual Debate at Art Basel Hong Kong “THE MARKET IS THE BEST JUDGE OF ART’S QUALITY”",
+        "project_name": "第五屆 Intelligence Squared Art Basel Hong Kong “THE MARKET IS THE BEST JUDGE OF ART’S QUALITY”",
         "reference": "5.pdf",
         "type": "Translation (E to C)"
       }
     ]
   },
   {
-    "organization_name": "The Robert HN Ho Family Foundation",
-    "description": "The Robert HN Ho Family Foundation is a private philanthropic organisation with deep roots in Chinese Culture and Buddhist philosophy. From its Hong Kong base, the Foundation supports and develops programmes throughout the world.",
+    "organization_name": "何鴻毅家族基金",
+    "description": "何鴻毅家族基金會是一個私人慈善組織,以香港為基地,推廣中國文化和佛教哲學,並支持和發展世界各地的節目.",
     "categories": ["translation"],
     "projects": [
       {
         "category": "translation",
-        "project_name": "2012 Music Grant Press release",
+        "project_name": "2012 Music Grant 新聞稿",
         "reference": "6.pdf",
         "type": "Translation E to C translation"
       },
       {
         "category": "translation",
-        "project_name": "Insight Story Janet Gyatso\n",
+        "project_name": "Insight Story Janet Gyatson",
         "reference": "7.pdf",
         "type": ""
       }
     ]
   },
   {
-    "organization_name": "Topography: 12 Interviews with Contemporary Art Institutions in Hong Kong (Book)",
+    "organization_name": "測繪香港藝術地形:十二間當代藝術機構訪談(Book)",
     "description": "",
     "categories": ["translation"],
     "projects": [
       {
         "category": "translation",
-        "project_name": "Topography: 12 Interviews with Contemporary Art (Book)",
+        "project_name": "測繪香港藝術地形:十二間當代藝術機構訪談 (Book)",
         "reference": "n/a",
         "type": "C to E translation"
       }
     ]
   },
   {
-    "organization_name": "Edouard Malingue Gallery",
-    "description": "Based in Hong Kong, Edouard Malingue Gallery exhibits contemporary art from different cultures.",
+    "organization_name": "馬凌畫廊",
+    "description": "",
     "categories": ["translation"],
     "projects": [
       {
         "category": "translation",
-        "project_name": "Artist interview with Charwei Tsai and Wu Chi-Tsung",
+        "project_name": "藝術家專訪蔡佳葳,吳季璁",
         "reference": "8.pdf",
         "type": "Translation (C to E and E to C) "
       }
     ]
   },
   {
-    "organization_name": "Independent Artist Yuni Kim Lang",
+    "organization_name": "獨立藝術家 Yuni Kim Lang",
     "description": "http://www.yunikimlang.com/",
     "categories": ["translation"],
     "projects": [
       {
         "category": "translation",
-        "project_name": "Artist Statement\n",
+        "project_name": "藝術家簡介",
         "reference": "9.pdf",
         "type": "Translation (E to C)"
       }
@@ -151,20 +151,21 @@
     "projects": [
       {
         "category": "copywriting",
-        "project_name": "Company Statement",
+        "project_name": "公司簡介",
         "reference": "10.pdf",
         "type": "Translation (E to C)"
       }
     ]
   },
   {
-    "organization_name": "Precious Magazine",
-    "description": "Precious is a monthly bilingual high-end luxury lifestyle magazine distributed in Hong Kong.",
+
+    "organization_name": "品尊雜誌",
+    "description": "品尊是一本走高檔路線的雙月刊,在香港發行.",
     "categories": ["artwriting"],
     "projects": [
       {
         "category": "artwriting",
-        "project_name": "Precious Magazine issue May 2013 -- Editorial on Art Basel Hong Kong",
+        "project_name": "品尊雜誌 2013 年 五月號 -- Editorial on Art Basel Hong Kong",
         "reference": "11.pdf",
         "type": "Research and Writing"
       },
@@ -176,58 +177,58 @@
       },
       {
         "category": "artwriting",
-        "project_name": "From Asia to the world:  An interview with Director Glenn Scott Wright from Victoria Miro GalleryA",
+        "project_name": "From Asia to the world:  An interview with Director Glenn Scott Wright from Victoria Miro Gallery",
         "reference": "13.pdf",
         "type": "Interview and Writing"
       }
     ]
   },
   {
-    "organization_name": "The 59th World Statistic Congress",
-    "description": "The 59th WSC provides a platform for the international statistical community to share and present the latest knowledge and innovation in statistics.",
+    "organization_name": "第五十九屆世界統計大會",
+    "description": "第五十九屆世界統計大會為國際統計社群提供一個分享和展示最新統計知識與創新意念的平台.大會的科學議程涵蓋廣泛的議題,讓各統計領域的專家及從業員進行專業交流暨分享.",
     "categories": ["speeches"],
     "projects": [
       {
         "category": "speeches",
-        "project_name": "59th World Statistics Congress Closing Speech",
+        "project_name": "第五十九屆世界統計大會結語",
         "reference": "14.pdf",
         "type": "Research and Writing"
       }
     ]
   },
   {
-    "organization_name": "Lazare Kaplan International Inc.",
-    "description": "Lazare Kaplan International Inc. is a premier diamond cutting company in the world. \n\n",
+    "organization_name": "麗澤美鑽",
+    "description": "麗澤美鑽是世界頂級鑽石切割公司" ,
     "categories": ["copywriting"],
     "projects": [
       {
         "category": "copywriting",
-        "project_name": "Press materials (bilingual) for the launch of the Wing of Hope collection",
+        "project_name": "Wing of Hope collection 系列新聞稿",
         "reference": ["15.pdf", "16.pdf"],
         "type": "Research and Writing"
       },
       {
         "category": "copywriting",
-        "project_name": "Press materials (bilingual) for the launch of Valentine’s Day Fantasy collection",
+        "project_name": "情人節 Fantasy 系列新聞稿",
         "reference": ["16.pdf", "17.pdf"],
         "type": "Research and Writing"
       },
       {
         "category": "copywriting",
-        "project_name": "Press materials (bilingual) for the launch of Chinese New Year Love Knots collection",
+        "project_name": "農曆新年 Love Knots 系列新聞稿",
         "reference": ["18.pdf", "19.pdf"],
         "type": "Research and Writing"
       },
       {
         "category": "copywriting",
-        "project_name": "Press materials (bilingual) for the Mothers’ Day special collection.",
+        "project_name": "Mothers’ Day  special collection.",
         "reference": ["20.pdf", "21.pdf"],
         "type": "Research and Writing"
       }
     ]
   },
   {
-    "organization_name": "Cafe de Coral",
+    "organization_name": "大家樂",
     "description": "",
     "categories": ["copywriting"],
     "projects": [
@@ -265,16 +266,15 @@
     "projects": [
       {
         "category": "copywriting",
-        "project_name": "Product Launch",
-        "reference": "n/a",
-        "type": "Writing and editing"
+        "project_name": "Product Launch"
       }
     ]
   },
   {
     "organization_name": "Hong Kong International Airport",
-    "description": "Chinese New Year Special service",
-    "categories": ["copywriting"],
-    "projects": []
+    "description": " Chinese New Year Special service",
+    "categories": ["copywriting"]
   }
 ]
+
+

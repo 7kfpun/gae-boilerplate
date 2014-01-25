@@ -1,0 +1,278 @@
+[
+  {
+    "organization_name": "香港艺术中心",
+    "description": "香港艺术中心是一个艺术组织,旨在促进在香港及以后的当代艺术和文化,包括介绍本地及海外艺术家,涵盖范围广泛的艺术形式,包括媒体,视觉表演艺术,戏剧和电影.",
+    "categories": ["artwriting"],
+    "projects​​": [
+      {
+        "category": "artwriting",
+        "project_name": "Art@lunch Programme Leaflet (Feb 2013)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "agnes choice - Artslink专题文章(2013年四月号)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Arts Xperience :开放舞蹈(2013年一月) ",
+        "reference": "n/a",
+         "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting" ,
+        "project_name": "艺术商业广告2012 " ,
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "艺术商业广告2012",
+        " reference": "n/a",
+         "type": "Translation (C to E)"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "开放舞蹈(2012八月)",
+        "reference": "n/a",
+        "type": "Translation (C to E)"
+      }
+    ]
+  },
+  {
+    "organization_name": "Artshare HK",
+    "description": "Artshare是全球第一个销售洲亚现代与当代艺术展览的在线平台,透过策划网上展览,供收藏家采购或销售的主要作品.",
+    "categories": ["artwriting", "translation"],
+    "projects": [
+      {
+        "category": "translation" ,
+        "project_name": "Continental Divide: 10 Chinese Artists at Home & Abroad (Exhibition) Artwork Description",
+        "reference": "1.pdf",
+        "type": "Translation (E to C)"
+      },
+      {
+        "category ": "translation",
+        "project_name": "Continental Divide: 10 Chinese Artists at Home & Abroad (Exhibition): curatorial statement",
+        "reference": "2.pdf",
+       "type": "Translation (E to C) "
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Post-Politics: 7 Chinese Artists from the New Generation: Curatorial Statement",
+        "reference": "3.pdf",
+        "type": "Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Post-Politics: 7 Chinese Artists from the New Generation: Artwork Description",
+        "reference": "4.pdf",
+        "type": "Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "Intelligence Squared Asia",
+    "description": "Intelligence Squared是世界第一个策划辩论的平台,邀请头脑清晰及激动人心的演说家讨论最迫切的问题.",
+    "categories ": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "第五届Intelligence Squared Art Basel Hong Kong “THE MARKET IS THE BEST JUDGE OF ART'S QUALITY”",
+        " reference": "5.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+    "organization_name": "何鸿毅家族基金",
+    "description": "何鸿毅家族基金会是一个私人慈善组织,以香港为基地,推广中国文化和佛教哲学,并支持和发展世界各地的节目.",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name ": "2012 Music Grant新闻稿",
+        "reference": "6.pdf",
+        "type": "Translation E to C translation"
+      },
+      {
+        "category": "translation",
+        "project_name": "Insight Story Janet Gyatson",
+        "reference": "7.pdf",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "organization_name": "测绘香港艺术地形:十二间当代艺术机构访谈(Book)",
+    "description": "",
+    "categories": ["translation"],
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "测绘香港艺术地形:十二间当代艺术机构访谈(Book)",
+        " reference": "n/a",
+        "type": "C to E translation"
+      }
+    ]
+  },
+  {
+    "organization_name": "马凌画廊",
+    "description": "",
+    "categories": ["translation"] ,
+    "projects": [
+      {
+        "category": "translation",
+        "project_name": "艺术家专访蔡佳葳,吴季璁",
+        "reference": "8.pdf",
+        "type": "Translation (C to E and E to C) "
+      }
+    ]
+  },
+  {
+    "organization_name": "独立艺术家Yuni Kim Lang",
+    "description": "http://www.yunikimlang.com/",
+    "categories": ["translation"],
+    "projects" : [
+      {
+        "category": "translation",
+        "project_name": "艺术家简介",
+        "reference": "9.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+    "organization_name" : "Zhuhai Free Trade Zone Neojet-Apollojet Imaging Materials Co.Ltd",
+    "description": "",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name" : "公司简介",
+        "reference": "10.pdf",
+        "type": "Translation (E to C)"
+      }
+    ]
+  },
+  {
+
+    "organization_name": "品尊杂志",
+    "description": "品尊是一本走高档路线的双月刊,在香港发行.",
+    "categories": ["artwriting"],
+    "projects": [
+      {
+        "category": "artwriting",
+        "project_name": "品尊杂志2013年五月号-- Editorial on Art Basel Hong Kong",
+        "reference": "11.pdf",
+        "type": "Research and Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "Interview with Tomio Koyama, Director, Tomio Koyama Gallery",
+        "reference": "12.pdf",
+        "type": "Interview and Writing"
+      },
+      {
+        "category": "artwriting",
+        "project_name": "From Asia to the world: An interview with Director Glenn Scott Wright from Victoria Miro Gallery",
+        "reference": "13.pdf",
+        "type": "Interview and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "第五十九届世界统计大会",
+    "description": "第五十九届世界统计大会为国际统计社群提供一个分享和展示最新统计知识与创新意念的平台.大会的科学议程涵盖广泛的议题,让各统计领域的专家及从业员进行专业交流暨分享.",
+    "categories": ["speeches"],
+    "projects": [
+      {
+        "category": "speeches",
+        "project_name": "第五十九届世界统计大会结语",
+        " reference": "14.pdf",
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "丽泽美钻",
+    "description": "丽泽美钻是世界顶级钻石切割公司" ,
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Wing of Hope collection系列新闻稿",
+        "reference": ["15.pdf", "16.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "情人节Fantasy系列新闻稿",
+        "reference": ["16.pdf" , "17.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "农历新年Love Knots系列新闻稿",
+        "reference": ["18. pdf", "19.pdf"],
+        "type": "Research and Writing"
+      },
+      {
+        "category": "copywriting",
+        "project_name": "Mothers' Day special collection.",
+        "reference": ["20 .pdf", "21.pdf"],
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "大家乐",
+    "description": "",
+    "categories": ["copywriting"] ,
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Press Materials (Bilingual) 5th generation flagship store opening",
+        "reference": "On request",
+        "type": "Research and Writing"
+      }
+    ]
+  },
+  {
+    "organization_name": "The Standard",
+    "description": "The Standard is the only free local English paper, and its magazine publications.\nTopics spanned from health, education, food and wine, wedding to business services . The paper is available at http://www.thestandard.com.hk/",
+    "categories": ["copywriting"],
+    "projects": []
+  },
+  {
+    "organization_name": "Hong Kong Art Talk",
+    "description": "Artalk is a pioneering website and magazine project dedicated to art review. It is the first platform in Hong Kong opened to writers of any background and education to review art exhibitions extensively.",
+    "categories": ["artwriting" ],
+    "projects": [
+      {
+        "category": "artwriting",
+        "project_name": "",
+        "reference": "http://hkartalk.com/author/miaching/",
+        "type": "Writing and editing "
+      }
+    ]
+  },
+  {
+    "organization_name": "L'Oréal LUXE",
+    "description": "L'ORÉAL LUXE Travel Retail Asia Pacific markets and distributes luxury cosmetics and fragrances sold in selected Travel Retail outlets in Asia Pacific region, including Lancôme , Ralph Lauren, Giorgio Armani, Cacharel, Guy Laroche, Helena Rubinstein, Shu Uemura, Biotherm, Kiehl's & YSL.",
+    "categories": ["copywriting"],
+    "projects": [
+      {
+        "category": "copywriting",
+        "project_name": "Product Launch"
+      }
+    ]
+  },
+  {
+    "organization_name": "Hong Kong International Airport",
+    "description": " Chinese New Year Special service",
+    "categories": ["copywriting"]
+  }
+]

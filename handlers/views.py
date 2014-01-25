@@ -23,8 +23,15 @@ class HelloHandler(BaseHandler):
 class HomeHandler(BaseHandler):
     def get(self, locale=None):
         self.set_locale(locale)
-        file_location = os.path.join(
-            os.path.dirname(__file__), "../templates/portfolio.json")
+        if self.locale == 'zh_TW':
+            file_location = os.path.join(
+                os.path.dirname(__file__), "../templates/portfolio_zh_TW.json")
+        elif self.locale == 'zh_CN':
+            file_location = os.path.join(
+                os.path.dirname(__file__), "../templates/portfolio_zh_CN.json")
+        else:
+            file_location = os.path.join(
+                os.path.dirname(__file__), "../templates/portfolio.json")
         f = open(file_location, 'rb')
         self.render_response(
             'index.html', cache_time=0,

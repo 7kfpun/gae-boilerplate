@@ -260,7 +260,7 @@ footer .privacy a:hover{
 }
 
 .locale{
-	font:14px/1.2em 'Pathway Gothic One', sans-serif;
+	font:14px/1.2em 'Pathway Gothic One', "微軟正黑體", "Microsoft JhengHei", sans-serif;
         font-weight:bold;
         text-transform:uppercase;
 	color:#fff;

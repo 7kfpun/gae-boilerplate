@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-26 04:22+0000\n"
+"POT-Creation-Date: 2014-01-26 07:04+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: th_TH <LL@li.org>\n"
@@ -18,54 +18,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/base.html:75 templates/index.html:128
+#: templates/base.html:76 templates/index.html:128
 msgid "聯絡我們"
 msgstr ""
 
-#: templates/base.html:76
+#: templates/base.html:77
 msgid "Name"
 msgstr ""
 
-#: templates/base.html:77 templates/base.html:79 templates/base.html:82
-#: templates/base.html:85
+#: templates/base.html:78 templates/base.html:80 templates/base.html:83
+#: templates/base.html:86
 msgid "Please fill out this field."
 msgstr ""
 
-#: templates/base.html:78
+#: templates/base.html:79
 msgid "Email"
 msgstr ""
 
-#: templates/base.html:80
+#: templates/base.html:81
 msgid "Please enter an email address."
 msgstr ""
 
-#: templates/base.html:81
+#: templates/base.html:82
 msgid "Subject"
 msgstr ""
 
-#: templates/base.html:84
+#: templates/base.html:85
 msgid "Body"
 msgstr ""
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "Send message"
 msgstr ""
 
-#: templates/base.html:87
+#: templates/base.html:88
 msgid "Clear form"
 msgstr ""
 
-#: templates/base.html:92
+#: templates/base.html:93
 msgid "簡介"
 msgstr ""
 
-#: templates/base.html:93
+#: templates/base.html:94
 msgid ""
 "ครูเอก (老師Ek) "
 "80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
 msgstr ""
 
-#: templates/base.html:105
+#: templates/base.html:106
 msgid "電郵已經收到，我們會盡快回复。"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgid "學費：$ 120/ 小時。"
 msgstr ""
 
 #: templates/index.html:111
-msgid "旅行泰語課程"
+msgid "旅遊泰語課程"
 msgstr ""
 
 #: templates/index.html:112

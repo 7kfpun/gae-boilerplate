@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-26 04:22+0000\n"
+"POT-Creation-Date: 2014-01-26 07:04+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -18,49 +18,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/base.html:75 templates/index.html:128
+#: templates/base.html:76 templates/index.html:128
 msgid "聯絡我們"
 msgstr "联络我们"
 
-#: templates/base.html:76
+#: templates/base.html:77
 msgid "Name"
 msgstr "名称"
 
-#: templates/base.html:77 templates/base.html:79 templates/base.html:82
-#: templates/base.html:85
+#: templates/base.html:78 templates/base.html:80 templates/base.html:83
+#: templates/base.html:86
 msgid "Please fill out this field."
 msgstr ""
 
-#: templates/base.html:78
+#: templates/base.html:79
 msgid "Email"
 msgstr "电邮"
 
-#: templates/base.html:80
+#: templates/base.html:81
 msgid "Please enter an email address."
 msgstr ""
 
-#: templates/base.html:81
+#: templates/base.html:82
 #, fuzzy
 msgid "Subject"
 msgstr "主题"
 
-#: templates/base.html:84
+#: templates/base.html:85
 msgid "Body"
 msgstr "内容"
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "Send message"
 msgstr "发送"
 
-#: templates/base.html:87
+#: templates/base.html:88
 msgid "Clear form"
 msgstr "清空"
 
-#: templates/base.html:92
+#: templates/base.html:93
 msgid "簡介"
 msgstr "简介"
 
-#: templates/base.html:93
+#: templates/base.html:94
 msgid ""
 "ครูเอก (老師Ek) "
 "80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
@@ -68,7 +68,7 @@ msgstr ""
 "ครูเอก (老师Ek) "
 "80后、泰国出生的华侨，从小受泰国教育，中学回国读书，因此精通中泰两语。因为绝大部分泰国朋友也一样属80后，所以熟悉当下流行用语，不只会书上『正统』语言。"
 
-#: templates/base.html:105
+#: templates/base.html:106
 msgid "電郵已經收到，我們會盡快回复。"
 msgstr "电邮已经收到，我们会尽快回复。"
 
@@ -121,8 +121,9 @@ msgid "學費：$ 120/ 小時。"
 msgstr "学费：$ ​​120/ 小时。"
 
 #: templates/index.html:111
-msgid "旅行泰語課程"
-msgstr "旅行泰语课程"
+#, fuzzy
+msgid "旅遊泰語課程"
+msgstr "旅游泰语课程"
 
 #: templates/index.html:112
 msgid "跳過讀寫，只學聽讀。專注於旅行日常用語，以備到泰國旅行可派上用場，在陌生的國度沒有後顧之憂。"

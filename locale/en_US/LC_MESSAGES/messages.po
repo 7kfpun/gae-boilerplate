@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-23 08:50+0000\n"
+"POT-Creation-Date: 2014-01-26 03:13+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -18,125 +18,130 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/base.html:47
-msgid "Home"
+#: templates/base.html:75 templates/index.html:128
+msgid "聯絡我們"
 msgstr ""
 
-#: templates/base.html:48
-msgid "About"
+#: templates/base.html:76
+msgid "Contact Person 聯絡人"
 msgstr ""
 
-#: templates/base.html:49 templates/index.html:159
-msgid "Services"
-msgstr ""
-
-#: templates/base.html:50 templates/index.html:84 templates/index.html:127
-#: templates/index.html:179
-msgid "Contact"
-msgstr ""
-
-#: templates/base.html:71
-msgid "Want to hire me? Get in touch!"
-msgstr ""
-
-#: templates/base.html:73
-msgid "Name..."
-msgstr ""
-
-#: templates/base.html:74 templates/base.html:76 templates/base.html:81
+#: templates/base.html:77 templates/base.html:79 templates/base.html:82
 #: templates/base.html:85
 msgid "Please fill out this field."
 msgstr ""
 
-#: templates/base.html:75
-msgid "Email..."
-msgstr ""
-
-#: templates/base.html:77
-msgid "Please enter an email address."
+#: templates/base.html:78
+msgid "Email 電郵信箱"
 msgstr ""
 
 #: templates/base.html:80
-msgid "Subject..."
+msgid "Please enter an email address."
+msgstr ""
+
+#: templates/base.html:81
+msgid "Subject 主旨"
 msgstr ""
 
 #: templates/base.html:84
-msgid "Body..."
+msgid "Body 內容"
 msgstr ""
 
-#: templates/base.html:87
+#: templates/base.html:86
 msgid "Send message"
 msgstr ""
 
-#: templates/base.html:88
+#: templates/base.html:87
 msgid "Clear form"
 msgstr ""
 
-#: templates/base.html:103
-msgid "We get your message!"
+#: templates/base.html:92
+msgid "簡介"
 msgstr ""
 
-#: templates/index.html:80 templates/index.html:111 templates/index.html:119
+#: templates/base.html:93
 msgid ""
-"I am a Thailand-born Chinese, native in Thai and Chinese. If you need any"
-" help in Thai, such as Thai course or Thai interpretation. Please contact"
-" me!"
+"ครูเอก (老師Ek) "
+"80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
 msgstr ""
 
-#: templates/index.html:97
-msgid ""
-"Due to rapid economic development in recent years, Thailand has become an"
-" Asian economic power and a popular tourist destination. The four levels "
-"of Thai language courses offered by the School are taught by native Thai "
-"teachers fluent in Cantonese, allowing participants to learn the "
-"country’s language and culture in a relaxed and fun environment."
+#: templates/base.html:95
+msgid "Email"
 msgstr ""
 
-#: templates/index.html:134
-msgid "Thai lessons"
+#: templates/base.html:106
+msgid "電郵已經收到，我們會盡快回复。"
 msgstr ""
 
-#: templates/index.html:161
-msgid ""
-"Private One on One Thai lessons or Group lessons. Lessons conducted in "
-"Mandarin, Cantonese or English."
+#: templates/index.html:87
+msgid "拜訪曼谷四面佛、到布吉滑浪、在蘇梅島的長灘上撐一把太陽傘，來一個椰青，遠離城市煩囂，是不少人下個假期的計劃吧？"
 msgstr ""
 
-#: templates/index.html:162
-msgid "Private One on One Home visit Thai lessons."
+#: templates/index.html:88
+msgid "還是，你打算出走南泰小村，一探原始泰國風貌？"
 msgstr ""
 
-#: templates/index.html:163
-msgid "Travel Thai language lessons."
+#: templates/index.html:89
+msgid "無論如何，一口流利的泰文都是你旅遊旁身必然選擇！"
 msgstr ""
 
-#: templates/index.html:164
-msgid ""
-"Interpretation. Thai - Mandarin or Cantonese, Mandarin or Cantonese to "
-"Thai"
+#: templates/index.html:90
+msgid "跟書本一字一句聽說讀寫？Out 了！學語文，當然要找地道 80 後，從聽講開始，短時間掌握真正溝通的技巧吧！"
 msgstr ""
 
-#: templates/index.html:165
-msgid "Assistance on any jobs need Thai."
+#: templates/index.html:91
+msgid "想要暢遊泰國，快報名學泰文喇！"
 msgstr ""
 
-#: templates/index.html:170
-msgid "Rates"
+#: templates/index.html:103
+msgid "泰文班"
 msgstr ""
 
-#: templates/index.html:172
-msgid "Only HKD $180 per hour (One Teacher to One Student)"
+#: templates/index.html:105
+msgid "個人課程"
 msgstr ""
 
-#: templates/index.html:173
-msgid "HKD $120 per hour per student (One Teacher to 2 Students)"
+#: templates/index.html:106
+msgid "可根據原有的程度調節課程難度和進度，不用怕跟不上其他同學而失去信心. 可以自選上課時間及地點，方便安排課程時間。"
 msgstr ""
 
-#: templates/index.html:174
-msgid "HKD $100 per hour per student (One Teacher to 3-6 Students)"
+#: templates/index.html:107
+msgid "學費：$ 200/ 小時。"
 msgstr ""
 
-#: templates/index.html:175
-msgid "Please contact me at to get a precise price quote for other services!"
+#: templates/index.html:108
+msgid "小組課程(2-5人)"
+msgstr ""
+
+#: templates/index.html:109
+msgid "有朋友陪伴可以增添樂趣，多些互動，又可以有更多對話練習的機會。"
+msgstr ""
+
+#: templates/index.html:110
+msgid "學費：$ 120/ 小時。"
+msgstr ""
+
+#: templates/index.html:111
+msgid "旅行泰語課程"
+msgstr ""
+
+#: templates/index.html:112
+msgid "跳過讀寫，只學聽讀。專注於旅行日常用語，以備到泰國旅行可派上用場，在陌生的國度沒有後顧之憂。"
+msgstr ""
+
+#: templates/index.html:113
+msgid "學費：(個人) $ 200/ 小時, (小組) $ 120/ 小時。"
+msgstr ""
+
+#: templates/index.html:121
+msgid "其他"
+msgstr ""
+
+#: templates/index.html:123
+msgid "泰中傳譯，泰文校對，泰中翻譯。"
+msgstr ""
+
+#: templates/index.html:124
+msgid "可電郵聯絡，免費報價。"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-26 03:13+0000\n"
+"POT-Creation-Date: 2014-01-26 04:22+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgid "聯絡我們"
 msgstr "联络我们"
 
 #: templates/base.html:76
-msgid "Contact Person 聯絡人"
-msgstr "Contact Person 联络人"
+msgid "Name"
+msgstr "名称"
 
 #: templates/base.html:77 templates/base.html:79 templates/base.html:82
 #: templates/base.html:85
@@ -32,28 +32,29 @@ msgid "Please fill out this field."
 msgstr ""
 
 #: templates/base.html:78
-msgid "Email 電郵信箱"
-msgstr "Email 电邮信箱"
+msgid "Email"
+msgstr "电邮"
 
 #: templates/base.html:80
 msgid "Please enter an email address."
 msgstr ""
 
 #: templates/base.html:81
-msgid "Subject 主旨"
-msgstr "Subject 主旨"
+#, fuzzy
+msgid "Subject"
+msgstr "主题"
 
 #: templates/base.html:84
-msgid "Body 內容"
-msgstr "Body 内容"
+msgid "Body"
+msgstr "内容"
 
 #: templates/base.html:86
 msgid "Send message"
-msgstr ""
+msgstr "发送"
 
 #: templates/base.html:87
 msgid "Clear form"
-msgstr ""
+msgstr "清空"
 
 #: templates/base.html:92
 msgid "簡介"
@@ -67,11 +68,7 @@ msgstr ""
 "ครูเอก (老师Ek) "
 "80后、泰国出生的华侨，从小受泰国教育，中学回国读书，因此精通中泰两语。因为绝大部分泰国朋友也一样属80后，所以熟悉当下流行用语，不只会书上『正统』语言。"
 
-#: templates/base.html:95
-msgid "Email"
-msgstr ""
-
-#: templates/base.html:106
+#: templates/base.html:105
 msgid "電郵已經收到，我們會盡快回复。"
 msgstr "电邮已经收到，我们会尽快回复。"
 

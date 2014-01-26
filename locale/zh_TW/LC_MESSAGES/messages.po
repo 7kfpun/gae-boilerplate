@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-26 03:13+0000\n"
+"POT-Creation-Date: 2014-01-26 04:22+0000\n"
 "PO-Revision-Date: 2013-07-14 11:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgid "聯絡我們"
 msgstr ""
 
 #: templates/base.html:76
-msgid "Contact Person 聯絡人"
-msgstr ""
+msgid "Name"
+msgstr "名稱"
 
 #: templates/base.html:77 templates/base.html:79 templates/base.html:82
 #: templates/base.html:85
@@ -32,8 +32,9 @@ msgid "Please fill out this field."
 msgstr "請在此輸入"
 
 #: templates/base.html:78
-msgid "Email 電郵信箱"
-msgstr ""
+#, fuzzy
+msgid "Email"
+msgstr "電郵"
 
 #: templates/base.html:80
 msgid "Please enter an email address."
@@ -41,12 +42,12 @@ msgstr "請輸入正確電子郵件地址"
 
 #: templates/base.html:81
 #, fuzzy
-msgid "Subject 主旨"
+msgid "Subject"
 msgstr "主題"
 
 #: templates/base.html:84
-msgid "Body 內容"
-msgstr ""
+msgid "Body"
+msgstr "內容"
 
 #: templates/base.html:86
 msgid "Send message"
@@ -66,12 +67,7 @@ msgid ""
 "80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
 msgstr ""
 
-#: templates/base.html:95
-#, fuzzy
-msgid "Email"
-msgstr "電子郵件..."
-
-#: templates/base.html:106
+#: templates/base.html:105
 msgid "電郵已經收到，我們會盡快回复。"
 msgstr ""
 

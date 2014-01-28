@@ -6,7 +6,7 @@ $('#contact_form').submit(function() {
     data: that.serialize(),
     success: function(data) {
       $('#contactModal').modal('show');
-      that.find("input[type=text], input[type=email], textarea").val("");
+      that.find("input, textarea").val("");
     },
     error: function(data) {
       console.log('Fail!');

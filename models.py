@@ -6,7 +6,7 @@ from google.appengine.ext import ndb
 class Contact(ndb.Model):
     name = ndb.StringProperty()
     email = ndb.StringProperty()
-    subject = ndb.StringProperty()
+    phonenumber = ndb.StringProperty()
     body = ndb.TextProperty()
     sent = ndb.BooleanProperty(default=False)
 

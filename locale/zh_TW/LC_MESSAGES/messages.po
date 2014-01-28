@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-26 07:04+0000\n"
+"POT-Creation-Date: 2014-01-28 15:17+0000\n"
 "PO-Revision-Date: 2013-07-14 11:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -18,77 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/base.html:76 templates/index.html:128
+#: templates/base.html:10 templates/index.html:87
+msgid "拜訪曼谷四面佛、到布吉滑浪、在蘇梅島的長灘上撐一把太陽傘，來一個椰青，遠離城市煩囂，是不少人下個假期的計劃吧？"
+msgstr ""
+
+#: templates/base.html:11 templates/index.html:88
+msgid "還是，你打算出走南泰小村，一探原始泰國風貌？"
+msgstr ""
+
+#: templates/base.html:12 templates/index.html:89
+msgid "無論如何，一口流利的泰文都是你旅遊旁身必然選擇！"
+msgstr ""
+
+#: templates/base.html:13 templates/index.html:90
+msgid "跟書本一字一句聽說讀寫？Out 了！學語文，當然要找地道 80 後，從聽講開始，短時間掌握真正溝通的技巧吧！"
+msgstr ""
+
+#: templates/base.html:14 templates/index.html:91
+msgid "想要暢遊泰國，快報名學泰文喇！"
+msgstr ""
+
+#: templates/base.html:81 templates/index.html:128
 msgid "聯絡我們"
 msgstr ""
 
-#: templates/base.html:77
+#: templates/base.html:82
 msgid "Name"
 msgstr "名稱"
 
-#: templates/base.html:78 templates/base.html:80 templates/base.html:83
-#: templates/base.html:86
+#: templates/base.html:83 templates/base.html:85 templates/base.html:88
+#: templates/base.html:91
 msgid "Please fill out this field."
 msgstr "請在此輸入"
 
-#: templates/base.html:79
+#: templates/base.html:84
 #, fuzzy
 msgid "Email"
 msgstr "電郵"
 
-#: templates/base.html:81
+#: templates/base.html:86
 msgid "Please enter an email address."
 msgstr "請輸入正確電子郵件地址"
 
-#: templates/base.html:82
-#, fuzzy
-msgid "Subject"
-msgstr "主題"
+#: templates/base.html:87
+msgid "Phone number"
+msgstr "電話號碼"
 
-#: templates/base.html:85
+#: templates/base.html:90
 msgid "Body"
 msgstr "內容"
 
-#: templates/base.html:87
+#: templates/base.html:92
 msgid "Send message"
 msgstr "發送"
 
-#: templates/base.html:88
+#: templates/base.html:93
 msgid "Clear form"
 msgstr "清空"
 
-#: templates/base.html:93
+#: templates/base.html:98
 msgid "簡介"
 msgstr ""
 
-#: templates/base.html:94
+#: templates/base.html:99
 msgid ""
 "ครูเอก (老師Ek) "
 "80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
 msgstr ""
 
-#: templates/base.html:106
+#: templates/base.html:111
 msgid "電郵已經收到，我們會盡快回复。"
-msgstr ""
-
-#: templates/index.html:87
-msgid "拜訪曼谷四面佛、到布吉滑浪、在蘇梅島的長灘上撐一把太陽傘，來一個椰青，遠離城市煩囂，是不少人下個假期的計劃吧？"
-msgstr ""
-
-#: templates/index.html:88
-msgid "還是，你打算出走南泰小村，一探原始泰國風貌？"
-msgstr ""
-
-#: templates/index.html:89
-msgid "無論如何，一口流利的泰文都是你旅遊旁身必然選擇！"
-msgstr ""
-
-#: templates/index.html:90
-msgid "跟書本一字一句聽說讀寫？Out 了！學語文，當然要找地道 80 後，從聽講開始，短時間掌握真正溝通的技巧吧！"
-msgstr ""
-
-#: templates/index.html:91
-msgid "想要暢遊泰國，快報名學泰文喇！"
 msgstr ""
 
 #: templates/index.html:103

@@ -51,7 +51,7 @@ class ContactHandler(BaseHandler):
             contact = Contact(
                 name=self.request.get('name'),
                 email=self.request.get('email'),
-                subject=self.request.get('subject'),
+                phonenumber=self.request.get('phonenumber'),
                 body=self.request.get('body'),
             )
             contact.put()

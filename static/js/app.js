@@ -12,6 +12,7 @@ $('#contact_form').submit(function() {
       console.log('Fail!');
     }
   });
+  _gaq.push(['_trackEvent', 'Contact', 'Send message', 'Contact Form',, false]);
   return false;
 });
 

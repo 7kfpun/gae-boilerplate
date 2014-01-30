@@ -16,14 +16,16 @@
     learn thai,thai language,culture hong kong,culture exchange,thai in hk">
     <meta name="author" content="thai in hk">
     <meta name="google-site-verification" content="0g0HTZL4tUkQSZuBxi1UHcUj2jjqb0_nOppuLhyCUcg" />
+    <meta name="msvalidate.01" content="6EC63BDDD31C02A1FA9EA35089FC74A5" />
 
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="/static/css/bootplus.css" rel="stylesheet">
-    <link href="/static/css/bootplus-responsive.css" rel="stylesheet">
-    
-    <link href="/static/css/bootplus-responsive.css" rel="stylesheet">
+    <!--
+    <link href="/static/css/bootplus.min.css" rel="stylesheet">
+    <link href="/static/css/bootplus-responsive.min.css" rel="stylesheet">
     <link href="/static/css/font-awesome-ie7.min.css" rel="stylesheet">
+    -->
+    <link href="/static/css/_300114.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -118,11 +120,14 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/js/jquery.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="/static/js/jqBootstrapValidation.js"></script>
-    <script src="/static/js/app.js"></script>
+    <script src="/static/js/app.js?t=_300114"></script>
     <!--
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
     <script src="/static/js/bootstrap-transition.js"></script>
     <script src="/static/js/bootstrap-alert.js"></script>
     <script src="/static/js/bootstrap-modal.js"></script>
@@ -140,11 +145,11 @@
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-47464563-1']);
       _gaq.push(['_trackPageview']);
-      setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+      setInterval("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
 
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>

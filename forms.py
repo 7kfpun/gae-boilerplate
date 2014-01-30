@@ -86,8 +86,8 @@ class ContactForm(EmailMixin):
          #validators.regexp(utils.NAME_LASTNAME_REGEXP, message=_(
              #"Name invalid. Use only letters and numbers."))])
 
-    subject = fields.TextField(
-        _('Message'),
+    phonenumber = fields.TextField(
+        _('Phone number'),
         [validators.Required(),
          validators.Length(max=256)])
 

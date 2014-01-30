@@ -4,6 +4,8 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
+#default_expiration: "14d"
+
 skip_files:
 - ^(.*/)?app\.yaml
 - ^(.*/)?app\.yml
@@ -30,6 +32,8 @@ handlers:
 
 - url: /static
   static_dir: static 
+  http_headers:
+      Vary: Accept-Encoding
 
 - url: /images
   static_dir: images 

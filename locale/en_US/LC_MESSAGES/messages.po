@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-01 06:14+0000\n"
+"POT-Creation-Date: 2014-02-06 14:45+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 #: templates/base.html:100
 msgid ""
 "ครูเอก (老師Ek) "
-"80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
+"80後、泰國出生的華僑，小時受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
 msgstr ""
 
 #: templates/base.html:112
@@ -89,7 +89,7 @@ msgid "電郵已經收到，我們會盡快回复。"
 msgstr ""
 
 #: templates/index.html:103
-msgid "泰文班"
+msgid "泰語班"
 msgstr ""
 
 #: templates/index.html:105

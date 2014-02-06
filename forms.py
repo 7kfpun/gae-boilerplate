@@ -88,8 +88,7 @@ class ContactForm(EmailMixin):
 
     phonenumber = fields.TextField(
         _('Phone number'),
-        [validators.Required(),
-         validators.Length(max=256)])
+        [validators.Length(max=256)])
 
     body = fields.TextAreaField(
         _('Body'),

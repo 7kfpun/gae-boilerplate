@@ -80,17 +80,16 @@
         <div class="span5"><a name="contact"></a>
           <form id="contact_form" action="/contact/" method="post">
             <fieldset>
-              <span class="help-block"><b>{{_("聯絡我們")}}</b></span>
+              <span class="help-block"><b>{{_("有任何問題，歡迎和我們聯繫 ")}}</b></span>
               <input class="span5" name="name" type="text" required placeholder={{_("Name")}}
                      data-validation-required-message={{_("Please fill out this field.")}} >
               <input class="span5" name="email" type="email" required placeholder={{_("Email")}}
                      data-validation-required-message={{_("Please fill out this field.")}}
                      data-validation-email-message={{_("Please enter an email address.")}} >
-              <input class="span5" name="phonenumber"  type="tel" required placeholder={{_("Phone number")}}
-                     data-validation-required-message={{_("Please fill out this field.")}}>
+              <input class="span5" name="phonenumber"  type="tel" placeholder={{_("Phone number")}}>
 
               <textarea class="span5" name="body" rows="4" required placeholder={{_("Body")}}
-                        data-validation-required-message={{_("Please fill out this field.")}}></textarea>
+                     data-validation-required-message={{_("Please fill out this field.")}}></textarea>
               <button type="submit" class="btn btn-success">{{_("Send message")}}</button>
               <button type="reset" class="btn">{{_("Clear form")}}</button>
             </fieldset>

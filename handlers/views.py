@@ -54,6 +54,7 @@ class ContactHandler(BaseHandler):
                 phonenumber=self.request.get('phonenumber'),
                 body=self.request.get('body'),
             )
+            logger.info(contact)
             contact.put()
             send_contact_mail(self)
         else:

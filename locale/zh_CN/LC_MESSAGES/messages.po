@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-28 15:17+0000\n"
+"POT-Creation-Date: 2014-02-01 06:14+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -38,48 +38,47 @@ msgstr "跟书本一字一句听说读写？Out 了！学语文，当然要找�
 msgid "想要暢遊泰國，快報名學泰文喇！"
 msgstr "想要畅游泰国，快报名学泰文喇！"
 
-#: templates/base.html:81 templates/index.html:128
-msgid "聯絡我們"
-msgstr "联络我们"
+#: templates/base.html:83
+msgid "有任何問題，歡迎和我們聯繫 "
+msgstr "有任何问题, 欢迎和我们联系"
 
-#: templates/base.html:82
+#: templates/base.html:84
 msgid "Name"
-msgstr "名称"
+msgstr "名称*"
 
-#: templates/base.html:83 templates/base.html:85 templates/base.html:88
-#: templates/base.html:91
+#: templates/base.html:85 templates/base.html:87 templates/base.html:92
 msgid "Please fill out this field."
 msgstr ""
 
-#: templates/base.html:84
-msgid "Email"
-msgstr "电邮"
-
 #: templates/base.html:86
+msgid "Email"
+msgstr "电邮*"
+
+#: templates/base.html:88
 msgid "Please enter an email address."
 msgstr ""
 
-#: templates/base.html:87
+#: templates/base.html:89
 msgid "Phone number"
 msgstr "电话号码"
 
-#: templates/base.html:90
+#: templates/base.html:91
 msgid "Body"
-msgstr "内容"
+msgstr "查询内容*"
 
-#: templates/base.html:92
+#: templates/base.html:93
 msgid "Send message"
 msgstr "发送"
 
-#: templates/base.html:93
+#: templates/base.html:94
 msgid "Clear form"
 msgstr "清空"
 
-#: templates/base.html:98
+#: templates/base.html:99
 msgid "簡介"
 msgstr "简介"
 
-#: templates/base.html:99
+#: templates/base.html:100
 msgid ""
 "ครูเอก (老師Ek) "
 "80後、泰國出生的華僑，從小受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
@@ -87,7 +86,7 @@ msgstr ""
 "ครูเอก (老师Ek) "
 "80后、泰国出生的华侨，从小受泰国教育，中学回国读书，因此精通中泰两语。因为绝大部分泰国朋友也一样属80后，所以熟悉当下流行用语，不只会书上『正统』语言。"
 
-#: templates/base.html:111
+#: templates/base.html:112
 msgid "電郵已經收到，我們會盡快回复。"
 msgstr "电邮已经收到，我们会尽快回复。"
 
@@ -143,4 +142,8 @@ msgstr "泰中传译，泰文校对，泰中翻译。"
 #: templates/index.html:124
 msgid "可電郵聯絡，免費報價。"
 msgstr "可电邮联络，免费报价。"
+
+#: templates/index.html:128
+msgid "聯絡我們"
+msgstr "联络我们"
 

@@ -28,4 +28,5 @@ setTimeout(function() {
 $('#promoModaltoContact').click(function() {
   $('#promoModal').modal('hide');
   $('#contact_form input[name="name"]').focus();
+  _gaq.push(['_trackEvent', 'Contact', 'Close contact form', 'Contact Form',, false]);
 });

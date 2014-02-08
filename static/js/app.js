@@ -23,7 +23,7 @@ $('#nav li a').click(function() {
 setTimeout(function() {
   $('#promoModal').modal('show');
   _gaq.push(['_trackEvent', 'Contact', 'Popup contact form', 'Contact Form',, false]);
-}, 1000 * 6 * 5);
+}, 1000 * 6 * 10);
 
 $('#promoModaltoContact').click(function() {
   $('#promoModal').modal('hide');

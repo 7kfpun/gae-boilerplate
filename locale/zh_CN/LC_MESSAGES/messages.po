@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-16 14:13+0000\n"
+"POT-Creation-Date: 2014-02-16 15:01+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -127,8 +127,8 @@ msgid "學費：(個人) $ 200/ 小時, (小組) $ 120/ 小時。"
 msgstr "学费：(个人) $ 200/ 小时, (小组) $ 120/ 小时。"
 
 #: templates/index.html:49 templates/lesson.html:35
-msgid "課程筆記"
-msgstr "课程笔记"
+msgid "課堂筆記"
+msgstr "课堂笔记"
 
 #: templates/index.html:58
 msgid "其他"
@@ -165,4 +165,7 @@ msgstr "有什么疑问吗？我们很乐意为您解答！"
 #: templates/modals.html:21
 msgid "聯絡我們"
 msgstr "联络我们"
+
+#~ msgid "課程筆記"
+#~ msgstr "课程笔记"
 

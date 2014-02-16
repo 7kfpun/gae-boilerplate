@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-16 10:14+0000\n"
+"POT-Creation-Date: 2014-02-16 14:13+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -151,8 +151,8 @@ msgid "第"
 msgstr "第"
 
 #: templates/lesson.html:38
-msgid "堂課"
-msgstr "堂课"
+msgid "課"
+msgstr "课"
 
 #: templates/modals.html:6
 msgid "電郵已經收到，我們會盡快回复！"

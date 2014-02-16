@@ -24,7 +24,10 @@ class LessonHandler(BaseHandler):
         page = page or 1
         lesson = Lesson.get(page)
         logger.debug(lesson)
-        self.render_response('lesson.html', lesson=lesson[0])
+        if lesson:
+            self.render_response('lesson.html', lesson=lesson[0])
+        else:
+            self.redirect("/")
 
 
 class SigninHandler(BaseHandler):

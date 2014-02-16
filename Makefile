@@ -1,3 +1,4 @@
+APPLICATION=thaiinhk
 GAE=/opt/google_appengine_1.8.9/
 APP_PATH=.
 LOCALE=en_US zh_TW zh_CN th_TH
@@ -79,6 +80,10 @@ compile_locale:
 # target: lupdate - Update all locale files
 .PHONY: lupdate
 lupdate: extract_locale update_locale compile_locale
+
+# target: download_contact
+.PHONY: download_contact
+	$(GAE)bulkloader.py --download --url http://$(APPLICATION).appspot.com/_ah/remote_api --config_file generated_bulkloader.yaml --kind=Contact --filename downloads/download_contact.csv
 
 # target: clean - Clean all .pyc
 .PHONY: clean

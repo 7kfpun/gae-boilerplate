@@ -34,9 +34,9 @@
       <div class="card">
         <h3 class="card-heading simple">{{_("課程筆記")}} <span class="badge">{{_("更新中...")}}</span></h3>
         <div class="card-body">
-          <div>
-            <p id="lesson_content">{{ lesson.content }}</p>
-            
+          <div class="well">
+            <h4>{{_("第")}} <span id="lesson_page">{{ lesson.page }}</span> {{_("堂課")}}</h4>
+            <div id="lesson_content">{{ lesson.content }}</div>
           </div>
           <div id="example"></div>
         </div>

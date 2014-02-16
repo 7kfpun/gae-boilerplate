@@ -34,13 +34,14 @@ $('#promoModaltoContact').click(function() {
 
 var options = {
   currentPage: 1,
-  totalPages: 10,
+  totalPages: 3,
   onPageClicked: function(e,originalEvent,type,page){
     console.log('Click!');
     $.get("/api/lesson/"+page+"/", function(data) {
       lesson = JSON.parse(data)[0];
       console.log(lesson);
-      $('#lesson_content').html("Page item clicked, page: "+lesson.page+" content: "+lesson.content);
+      $('#lesson_page').text(lesson.page);
+      $('#lesson_content').html(lesson.content);
     });
   }
 }

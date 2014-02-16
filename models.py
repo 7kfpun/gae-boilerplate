@@ -20,31 +20,37 @@ class Contact(ndb.Model):
         return unicode('{0} - {1}'.format(self.subject, self.email))
 
 
-class Guest(ndb.Model):
-    name = ndb.StringProperty()
-    age = ndb.IntegerProperty()
+class Lesson(ndb.Model):
+    page = ndb.IntegerProperty()
+    content = ndb.TextProperty()
 
     @classmethod
-    def all(cls):
+    def get(cls, page):
+        logger.info('get {}: {}'.format(cls._class_name(), page))
+        lesson = cls.query(cls.page == int(page))
+        return [l for l in lesson]
+
+    @classmethod
+    def all(cls, *kwds):
         logger.info('all {}'.format(cls._class_name()))
-        return cls.query()
+        return cls.query(*kwds).order(cls.page)
 
     @classmethod
-    def update(cls, id, name, age):
-        guest = cls(id=id, name=name, age=age)
-        guest.put()
-        logger.info('Update: {}'.format(guest))
-        return guest
+    def update(cls, id, page, content):
+        lesson = cls(id=id, page=page, content=content)
+        lesson.put()
+        logger.info('Update: {}'.format(lesson))
+        return lesson
 
     @classmethod
-    def insert(cls, name, age):
-        guest = cls(name=name, age=age)
-        guest.put()
-        logger.info('Insert: {}'.format(guest))
-        return guest
+    def insert(cls, page, content):
+        lesson = cls(page=page, content=content)
+        lesson.put()
+        logger.info('Insert: {}'.format(lesson))
+        return lesson
 
     @classmethod
-    def DeleteGuest(cls, id):
+    def delete(cls, id):
         key = ndb.Key(cls, id)
         key.delete()
         logger.info('Delete {} {}'.format(cls._class_name(), id))

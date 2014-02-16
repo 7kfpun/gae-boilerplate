@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from webapp2_extras.i18n import lazy_gettext as _
+#from webapp2_extras.i18n import lazy_gettext as _
 
 from forms import ContactForm
-from models import Contact
+from models import Contact, Lesson
 
 import logging
 
@@ -13,20 +13,18 @@ from base import BaseHandler
 from mails import send_contact_mail
 
 
-class HelloHandler(BaseHandler):
-    def get(self):
-        self.response.write(self.app.config)
-
-
 class HomeHandler(BaseHandler):
     def get(self, locale=None):
         self.set_locale(locale)
         self.render_response('index.html', locale=locale)
 
 
-class StarterHandler(BaseHandler):
-    def get(self):
-        self.render_response('starter.html')
+class LessonHandler(BaseHandler):
+    def get(self, page=None):
+        page = page or 1
+        lesson = Lesson.get(page)
+        logger.debug(lesson)
+        self.render_response('lesson.html', lesson=lesson[0])
 
 
 class SigninHandler(BaseHandler):

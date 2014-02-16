@@ -32,33 +32,17 @@
     
     <div class="span8"><a name="courses"></a>
       <div class="card">
-        <h3 class="card-heading simple">{{_("泰語班")}}</h3>
+        <h3 class="card-heading simple">{{_("課程筆記")}} <span class="badge">{{_("更新中...")}}</span></h3>
         <div class="card-body">
-          <p><b>{{_("個人課程")}}</b></p>
-          <p>{{_("可根據原有的程度調節課程難度和進度，不用怕跟不上其他同學而失去信心. 可以自選上課時間及地點，方便安排課程時間。")}}</p>
-          <p>{{_("學費：$ 200/ 小時。")}}</p>
-          <p><b>{{_("小組課程(2-5人)")}}</b></p>
-          <p>{{_("有朋友陪伴可以增添樂趣，多些互動，又可以有更多對話練習的機會。")}}</p>
-          <p>{{_("學費：$ 120/ 小時。")}}</p>
-          <p><b>{{_("旅遊泰語課程")}}</b></p>
-          <p>{{_("跳過讀寫，只學聽讀。專注於旅行日常用語，以備到泰國旅行可派上用場，在陌生的國度沒有後顧之憂。")}}</p>
-          <p>{{_("學費：(個人) $ 200/ 小時, (小組) $ 120/ 小時。")}}</p>
+          <div>
+            <p id="lesson_content">{{ lesson.content }}</p>
+            
+          </div>
+          <div id="example"></div>
         </div>
-        <div class="card-actions"><a href="/lesson/" class="button-info">{{_("課程內容")}}</a></div>
-      </div>
-    </div>
-
-    <!-- card -->
-    <div class="span8"><a name="services"></a>
-      <div class="card">
-        <h3 class="card-heading simple">{{_("其他")}}</h3>
-        <div class="card-body">
-          <p>{{_("泰中傳譯，泰文校對，泰中翻譯。")}}</p>
-          <p>{{_("可電郵聯絡，免費報價。")}}</p>
-        </div>
-        <div class="card-actions"></div>
       </div>
     </div>
   </div>
 
+  </script>      
 {% endblock %}

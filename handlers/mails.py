@@ -14,8 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def send_contact_mail(self):
-    contacts = Contact.query(Contact.sent != True)
-    contacts.order('created_date')
+    contacts = Contact.query(Contact.sent != True).order(Contact.created_date)
     count = contacts.count()
     if count:
         datetime_handler = lambda obj: obj.isoformat() \
@@ -52,7 +51,7 @@ class MailContactHandler(BaseHandler):
 
 class MailAllHandler(BaseHandler):
     def get(self):
-        contacts = Contact.query()
+        contacts = Contact.query().order(Contact.created_date)
         datetime_handler = lambda obj: obj.isoformat() \
             if isinstance(obj, datetime) else None
         self.render_json(

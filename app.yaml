@@ -55,7 +55,12 @@ handlers:
   static_files: static/\1
   upload: static/(robots\.txt|humans\.txt|crossdomain\.xml)
 
-- url: /mail/*
+- url: /api/.*
+  script: main.api_app
+  #http_headers:
+      #Access-Control-Allow-Origin: "*"
+
+- url: /mail/.*
   script: main.admin_app
   login: admin
 

@@ -16,6 +16,14 @@ urls_list = [
     (r'^/?(.*)[/]', HomeHandler),
 ]
 
+api_urls_list = [
+    ('/api/guest/', GuestHandler),
+    ('/api/query/', QueryHandler),
+    ('/api/insert/', InsertHandler),
+    ('/api/delete/', DeleteHandler),
+    ('/api/update/', UpdateHandler),
+]
+
 admin_urls_list = [
     # admin urls, remember to configure in app.yaml
     (r'^/mail/all/$', MailAllHandler),

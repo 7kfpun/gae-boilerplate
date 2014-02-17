@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-17 11:20+0000\n"
+"POT-Creation-Date: 2014-02-17 11:29+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -79,481 +79,164 @@ msgstr ""
 msgid "Get Me Write"
 msgstr ""
 
-#: templates/index.html:60
+#: templates/index.html:59
 msgid "home"
-msgstr "主页"
+msgstr ""
 
-#: templates/index.html:61
+#: templates/index.html:60
 msgid "a topic"
 msgstr ""
 
-#: templates/index.html:62
+#: templates/index.html:61
 msgid "another topic"
 msgstr ""
 
-#: templates/index.html:63
+#: templates/index.html:62
 msgid "the last topic"
 msgstr ""
 
-#: templates/index.html:71 templates/index.html:72 templates/index.html:73
-#: templates/index.html:74 templates/index.html:75 templates/index.html:76
-#: templates/index.html:77 templates/index.html:94 templates/index.html:95
-#: templates/index.html:96 templates/index.html:97 templates/index.html:98
-#: templates/index.html:99 templates/index.html:100 templates/index.html:127
-#: templates/index.html:128 templates/index.html:129 templates/index.html:130
-#: templates/index.html:131 templates/index.html:132 templates/index.html:133
-#: templates/index.html:153 templates/index.html:154 templates/index.html:155
-#: templates/index.html:156 templates/index.html:157 templates/index.html:158
-#: templates/index.html:159 templates/index.html:162 templates/index.html:163
-#: templates/index.html:164 templates/index.html:165 templates/index.html:166
-#: templates/index.html:167 templates/index.html:168
+#: templates/index.html:70 templates/index.html:71 templates/index.html:72
+#: templates/index.html:73 templates/index.html:74 templates/index.html:75
+#: templates/index.html:76 templates/index.html:93 templates/index.html:94
+#: templates/index.html:95 templates/index.html:96 templates/index.html:97
+#: templates/index.html:98 templates/index.html:99 templates/index.html:126
+#: templates/index.html:127 templates/index.html:128 templates/index.html:129
+#: templates/index.html:130 templates/index.html:131 templates/index.html:132
+#: templates/index.html:152 templates/index.html:153 templates/index.html:154
+#: templates/index.html:155 templates/index.html:156 templates/index.html:157
+#: templates/index.html:158 templates/index.html:161 templates/index.html:162
+#: templates/index.html:163 templates/index.html:164 templates/index.html:165
+#: templates/index.html:166 templates/index.html:167
 msgid ""
 "blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
 "blah blah blah blah blah blah so informative blah"
 msgstr ""
 
-#: templates/index.html:80
+#: templates/index.html:79
 msgid "Getmewrite 於2013年成立於倫敦，旨在提供專業的撰稿、校對和翻譯服務。我們承諾服務準確、準時、創新。"
 msgstr ""
 
-#: templates/index.html:81
+#: templates/index.html:80
 msgid "Getmewrite創辦人Mia生於香港，從小接受雙語教育；及後負笈倫敦進修文藝，練成純熟的中英文寫作技巧。Mia曾經從事記者、編輯、市場撰稿員和翻譯等工作，從中學會不同形式、範疇的寫作技巧，涵蓋藝術、時裝、美容、服務業等。"
 msgstr ""
 
-#: templates/index.html:82
+#: templates/index.html:81
 msgid "Mia發現客戶大都有創新有趣的意念，卻因為無法準確用文字表達，或撰稿員拖欠稿件，令意念平白流失。舉例說，如果一篇文章由中文翻譯成英文後，比原文短了一半，文意一定準確不到哪裡。反過來說，一篇精彩的產品簡介如果比原定稿期遲了一星期出現，文字再好也發揮不到功用。因此，我們抱持以下承諾，為客戶提供有質素的文字服務："
 msgstr ""
 
-#: templates/index.html:84
+#: templates/index.html:83
 msgid "快而準"
 msgstr ""
 
-#: templates/index.html:85
+#: templates/index.html:84
 msgid "提供創新意念支援"
 msgstr ""
 
-#: templates/index.html:86
+#: templates/index.html:85
 msgid "認真專業地對待每一份稿件"
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:87
 msgid "Getmewrite樂意撰寫新聞稿、產品簡介、專題文章或其他切合你需要的文體。"
 msgstr ""
 
-#: templates/index.html:104
+#: templates/index.html:103
 msgid "藝術專題/人訪"
 msgstr ""
 
-#: templates/index.html:104
+#: templates/index.html:103
 msgid "藝術書寫是一套獨特的語言，對於沒有相關經驗的作者來說，很難掌握。憑著豐富的相關經驗，我們曾經替畫廊和博物館編寫展覽場刊，撰寫藝評、影評、以及藝術家訪談等。部分曾合作機構包括："
 msgstr ""
 
-#: templates/index.html:106 templates/index.html:118
+#: templates/index.html:105 templates/index.html:117
 msgid "香港藝術中心"
 msgstr ""
 
-#: templates/index.html:107 templates/index.html:115
+#: templates/index.html:106 templates/index.html:114
 msgid "Artshare HK"
 msgstr ""
 
-#: templates/index.html:108
+#: templates/index.html:107
 msgid "品尊雜誌"
 msgstr ""
 
-#: templates/index.html:109
+#: templates/index.html:108
 msgid "藝托邦"
 msgstr ""
 
-#: templates/index.html:110
+#: templates/index.html:109
 msgid "主場新聞"
 msgstr ""
 
-#: templates/index.html:113
+#: templates/index.html:112
 msgid "中英文翻譯"
 msgstr ""
 
-#: templates/index.html:113
+#: templates/index.html:112
 msgid "提供中譯英及英譯中服務。保證傳譯準確。部分曾合作機構包括："
 msgstr ""
 
-#: templates/index.html:116
+#: templates/index.html:115
 msgid "Intelligence Squared Asia"
 msgstr ""
 
-#: templates/index.html:117
+#: templates/index.html:116
 msgid "何鴻毅家族基金"
 msgstr ""
 
-#: templates/index.html:119
+#: templates/index.html:118
 msgid "測繪香港藝術地形：十二間當代藝術機構訪談"
 msgstr ""
 
-#: templates/index.html:120
+#: templates/index.html:119
 msgid "獨立藝術家 Yuni Kim Lang"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:136
 msgid "商業/市場推廣及新聞稿"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:136
 msgid "我們擁有市場推廣及公關經驗，擅於為各類產品服務構思推廣策略，以及撰寫相關文件。"
 msgstr ""
 
-#: templates/index.html:139
+#: templates/index.html:138
 msgid "講詞"
 msgstr ""
 
-#: templates/index.html:139
+#: templates/index.html:138
 msgid "Mia曾參與多項區域性比賽，及擔任公開演說及辯論導師，對於如何遣詞用字及掌握語調有深入認識，可因應你的需要，提供文稿寫作及演說訓練。曾合作機構包括："
 msgstr ""
 
-#: templates/index.html:141
+#: templates/index.html:140
 msgid "The Standard"
 msgstr ""
 
-#: templates/index.html:142
+#: templates/index.html:141
 msgid "大家樂"
 msgstr ""
 
-#: templates/index.html:143
+#: templates/index.html:142
 msgid "麗澤美鑽"
 msgstr ""
 
-#: templates/index.html:144
+#: templates/index.html:143
 msgid "香港國際機場"
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:144
 msgid "L'Oréal Luxe"
 msgstr ""
 
-#: templates/index.html:146
+#: templates/index.html:145
 msgid "第59屆世界統計大會"
 msgstr ""
 
-#: templates/index.html:206
+#: templates/index.html:205
 msgid "service"
 msgstr "服务"
 
-#: templates/index.html:214
+#: templates/index.html:213
 msgid "rate"
 msgstr "收费"
-
-#~ msgid ""
-#~ "Communication is about having a great"
-#~ " idea and getting it across in "
-#~ "time.<br /><br />\n"
-#~ "Established in 2013, <a "
-#~ "href=\"http://www.getmewrite.com\">Get Me Write</a> "
-#~ "provides freelance writing, editing and "
-#~ "translation services to facilitate effective"
-#~ " communication.<br /><br />\n"
-#~ "As a freelance writer, I have "
-#~ "worked with groups and individuals "
-#~ "across all industries: from the arts,"
-#~ " to fashion, to beauty, to "
-#~ "hospitality and others. They had unique"
-#~ " products or fantastic ideas, yet few"
-#~ " managed to distil those qualities "
-#~ "into words. Often, the key message "
-#~ "was lost in translation and time.<br "
-#~ "/><br />\n"
-#~ "To illustrate, a Chinese-to-English "
-#~ "translation half the length of the "
-#~ "original text is a sure indication "
-#~ "that the original meaning has been "
-#~ "regrettably abbreviated to a similar "
-#~ "degree. And of course, it need not"
-#~ " be said that a painstakingly crafted"
-#~ " piece of copywriting is a Pyrrhic"
-#~ " victory if it arrives a week "
-#~ "after the product launch.<br /><br />"
-#~ "\n"
-#~ "If you have a great or important"
-#~ " idea, the key to nurturing, sharing"
-#~ " and promoting the idea lies in "
-#~ "effective communication. Good writing enables"
-#~ " effective communication. It is my "
-#~ "pleasure to help you with it. I"
-#~ " do so with the following "
-#~ "guarantees:<br /><br />\n"
-#~ "• To be efficient and timely, always.<br />\n"
-#~ "• To be concise and precise with the use of words.<br />\n"
-#~ "• To lend originality of ideas when required.<br />\n"
-#~ "• Most importantly of all, to give"
-#~ " the greatest care to every word "
-#~ "I write."
-#~ msgstr ""
-#~ "准确、准时地传递创新意念，才算得上是有效率的传讯。<br /><br /><a "
-#~ "\"href=\"http://www.getmewrite.com\">Get Me Write</a> "
-#~ "是为了提供高质素文字传讯服务而成立的。<br /><br "
-#~ "/>作为自由撰稿人，我曾经接触很多不同客户，包括艺术、时装、美容、服务业等。客户大都有创新有趣的意念，却因为无法准确用文字表达，或撰稿员拖欠稿件，令意念平白流失。<br"
-#~ " /><br "
-#~ "/>举例说，如果一篇文章由中文翻译成英文后，比原文短了一半，文意一定准确不到哪里。反过来说，一篇精彩的产品简介如果比原定稿期迟了一星期才出现，文字再好，也发挥不到功用。<br"
-#~ " /><br />好的文字是有效传讯的第一步，它不但让读者明白你的意念，也把意念植根在他们脑中。<br "
-#~ "/><br />我抱持以下承诺，为客户提供有质素的文字服务：<br /><br />- "
-#~ "快而准<br />- 在有需要的时候，提供创新的意念<br />- "
-#~ "认真专业地对待我写的每一份稿件"
-
-#~ msgid ""
-#~ "I am fortunate to have received a"
-#~ " bilingual and multicultural upbringing, "
-#~ "having grown up in Hong Kong "
-#~ "whilst receiving a thorough education in"
-#~ " Western liberal arts in London. The"
-#~ " ability to think and write "
-#~ "effectively in Chinese and English comes"
-#~ " naturally to me.<br /><br />\n"
-#~ "<a href=\"http://www.getmewrite.com\">Get Me "
-#~ "Write</a> is a project that grew "
-#~ "directly from my passion in life "
-#~ "for writing. I have always loved "
-#~ "words, both spoken and written. The "
-#~ "world around us is a rich and "
-#~ "inexhaustible well of ideas and "
-#~ "inspiration. In our imagination, we draw"
-#~ " them together, mould and combine "
-#~ "them into something original and "
-#~ "creative before finally setting it into"
-#~ " words, so that that concept or "
-#~ "vision can germinate in the minds "
-#~ "of readers.<br /><br />\n"
-#~ "Before starting <a "
-#~ "href=\"http://www.getmewrite.com\">Get Me Write</a>, "
-#~ "I worked as a journalist, an "
-#~ "editor, a copywriter, a marketing "
-#~ "specialist and a translator.  Through "
-#~ "this varied work experience, I developed"
-#~ " an adeptness at different styles of"
-#~ " writing across different subject areas "
-#~ "(please refer to my portfolio for "
-#~ "examples). I am keen to write "
-#~ "press materials, product descriptions, "
-#~ "editorials, or any other form of "
-#~ "writing that will put your message "
-#~ "across most effectively.<br /><br />\n"
-#~ "To find out more about my previous"
-#~ " work, please have a look at "
-#~ "the \"Portfolio\" Section.\n"
-#~ msgstr ""
-#~ "<a href=\"http://www.getmewrite.com\">Get Me "
-#~ "Write</a> "
-#~ "于2013年成立于伦敦，旨在提供专业的写作、校对和翻译服务。我很幸运生于香港，从小接受双语教育；及后负笈伦敦进修文艺，因此练成纯熟的中英文写作技巧。<br"
-#~ " /><br "
-#~ "/>对我们来说，写作不单是一项工作，也是我乐在其中的追求。我们身处的世界包含无尽可能，如何在这些可能中获得灵感，加以想像，重塑成独一无二的故事，与读者分享，是一场持续不断的探索，也是我成立Getmewrite"
-#~ " 的原因。<br /><br />成立 <a "
-#~ "href=\"http://www.getmewrite.com\">Get Me Write</a> "
-#~ "以前，我曾经从事记者、编辑、市场撰稿员和翻译等工作，从中学会不同形式、范畴的写作技巧。我乐意撰写新闻稿、产品简介、专题文章或其他切合你需要的文体。<br"
-#~ " /><br />如欲了解更多我过往的工作经验，请参考工作履历。"
-
-#~ msgid ""
-#~ "I am experienced writing on extensive"
-#~ " topics. Below are niche topics that"
-#~ " I'm particularly familiar with. If "
-#~ "you wish to see sample writings on"
-#~ " other topics, please email me.<br "
-#~ "/><br />\n"
-#~ "• <strong>Art writing</strong> - The "
-#~ "creative arts often rely on a "
-#~ "language that is difficult for an "
-#~ "unaccustomed writer to grasp. Having "
-#~ "graduated with a BA in English "
-#~ "Literature and Politics, and an MA "
-#~ "in Theater and Performance Studies at"
-#~ " King’s College London, visual and "
-#~ "performance arts form a strong part "
-#~ "of my academic background. I have "
-#~ "written and translated gallery and "
-#~ "museum catalogues, artwork descriptions for"
-#~ " art sales, art reviews and film "
-#~ "reviews. I have also conducted and "
-#~ "written published interviews with artists "
-#~ "(please refer to my portfolio).<br /><br"
-#~ " />\n"
-#~ "• <strong>Translation between Chinese and "
-#~ "English (both directions)</strong> - As "
-#~ "a writer with a facility and "
-#~ "command of these two very different "
-#~ "languages, I can ensure the meaning "
-#~ "you want to communicate not only "
-#~ "lives through the translation process, "
-#~ "but is in fact enhanced by it.<br"
-#~ " /><br />\n"
-#~ "• <strong>Speeches</strong> - As a "
-#~ "successful participant and coach, I have"
-#~ " been involved in debating at a "
-#~ "regional level for many years. I "
-#~ "have also worked as a speech "
-#~ "trainer. Speaking your mind effectively "
-#~ "is made easier when the words, "
-#~ "tone and emphasis you use are "
-#~ "shaped to your needs. The assuredness"
-#~ " of speech takes half the stage "
-#~ "fright away.<br /><br />\n"
-#~ "• <strong>Copywriting</strong> - As a "
-#~ "former PR official, I am experienced "
-#~ "in devising creative strategies to "
-#~ "promote products and services.\n"
-#~ msgstr ""
-#~ "以下是我经常接触的创作/写作领域一览。如欲查询我的其他作品，请电邮告知。<br /><br />- "
-#~ "<strong>艺术</strong>：艺术书写是一套独特的语言，对于没有相关经验的作者来说，很难掌握。由于我大学时修读英国文学，后在伦敦进修戏剧，因此非常熟悉视觉和表演艺术相关词汇。我曾经替画廊和博物馆编写展览场刊，撰写艺评、影评、以及艺术家访谈等。<br"
-#~ " /><br />- "
-#~ "<strong>中英文翻译</strong>：提供中译英及英译中服务。保证传译准确。<br /><br />-"
-#~ " "
-#~ "<strong>讲词</strong>：曾参与多项区域性比赛，及担任公开演说及辩论导师，对于如何遣词用字及掌握语调有深入认识，可因应你的需要，提供文稿写作及演说训练。<br"
-#~ " /><br />- "
-#~ "<strong>商业/市场推广文稿</strong>：拥有市场推广经验，擅于为各类产品服务构思推广策略，以及撰写相关文件。"
-
-#~ msgid ""
-#~ "<strong>Writing and editing</strong><br /><br />\n"
-#~ "I basically write and edit anything. "
-#~ "Here are some types of writings I"
-#~ " have done before, but I am "
-#~ "open for further suggestions:<br /><br "
-#~ "/>\n"
-#~ "• Product/Artwork description<br />\n"
-#~ "• Press releases<br />\n"
-#~ "• Websites<br />\n"
-#~ "• Catalogues<br />\n"
-#~ "• Interviews<br />\n"
-#~ "• Featured articles<br />\n"
-#~ "• Speeches\n"
-#~ msgstr ""
-#~ "<strong>写作/撰稿</strong><br /><br "
-#~ "/>以下是我曾经提供的服务，如有其他需求，欢迎致电查询<br /><br />\n"
-#~ "新闻稿<br />网站内文<br />各类展览场刊<br />人访<br />专题<br />讲词"
-
-#~ msgid ""
-#~ "<strong>Translating</strong><br /><br />\n"
-#~ "I perform English to Chinese and "
-#~ "Chinese to English written translations. "
-#~ "Chinese translations can be written in"
-#~ " traditional or simplified text as "
-#~ "your needs require.<br /><br />\n"
-#~ "For rates, please see the rates section.\n"
-#~ msgstr "<strong>翻译</strong><br /><br />中译英和英译中服务，可提供繁、简体中文版本。"
-
-#~ msgid ""
-#~ "Below are the rates I charge for"
-#~ " different types of tasks. These "
-#~ "prices are set according to my "
-#~ "past projects and the <a "
-#~ "href=\"http://www.the-efa.org/res/rates.php\" >Freelancers"
-#~ " Association table of rates</a>.<br /><br"
-#~ " />\n"
-#~ "Prices may be negotiable depending on"
-#~ " volume, time frame etc. Please "
-#~ "contact me at to get a precise "
-#~ "quote for your project!<br /><br />\n"
-#~ ""
-#~ "Proofreading and Editing:<br />\n"
-#~ "• 0.6 HKD per word<br /><br />\n"
-#~ "Writing:<br />\n"
-#~ "• 1.5 to 4 HKD per words<br /><br />\n"
-#~ "Translation:<br />\n"
-#~ "• 1.0 HKD per word for over 5000 words<br />\n"
-#~ "• 1.0 - 1.1 HKD per word for below 5000 words\n"
-#~ msgstr ""
-#~ "以下收费参照我过往的工作项目，以及美国 <a href=\"http://www.the-"
-#~ "efa.org/res/rates.php\" >Freelancers Association "
-#~ "table of rates</a> "
-#~ "的标准而定，并可能因应工作数量及时限等因素调整。如欲查询项目实际收费，请电邮联络。<br /><br "
-#~ "/>编辑校对：每字港币0.6元<br /><br />写作/撰稿：每字港币1.5~4元<br /><br"
-#~ " />翻译：<br />5000字以上文稿每字 1.0 港币<br "
-#~ "/>5000字以下文稿每字 1.0 - 1.1 港币"
-
-#~ msgid ""
-#~ "<strong>If you have a project in "
-#~ "mind, simply follow the steps "
-#~ "below:</strong><br /><br />\n"
-#~ "1. Email me at <a "
-#~ "href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a> or"
-#~ " whatsapp me at <a "
-#~ "href=\"tel:+85292765601\">+852 9276 5601</a> with"
-#~ " your project details/ needs.<br /><br "
-#~ "/>\n"
-#~ "2. We work out together the exact"
-#~ " cost and deadline of the project.<br"
-#~ " /><br />\n"
-#~ "3. We sign your contract or my quote Agreement.<br /><br />\n"
-#~ "4. I meet your deadline and "
-#~ "provide one round of further editing "
-#~ "service if you are not happy with"
-#~ " the work.<br /><br />\n"
-#~ "5. We settle the payment (usually "
-#~ "via direct bank transfer or cheques).<br"
-#~ " /><br />\n"
-#~ "6. We work together in the future =)\n"
-#~ msgstr ""
-#~ "如果你有需要帮忙的写作项目，请参照以下做法：<br /><br />\n"
-#~ "1. 把阁下的项目资料/需要电邮至 <a "
-#~ "\"href=\"mailto:mona@getmewrite.com\">mona@getmewrite.com</a>，或whatsapp至"
-#~ " <a href=\"tel:+85292765601\">+852 9276 "
-#~ "5601</a>。<br /><br />\n"
-#~ "2. 我们一同制定项目实际收费和工作限期<br /><br />\n"
-#~ "3. 签署合作同意书<br /><br />\n"
-#~ "4. 我在限期前完成工作，并因应阁下需求，提供一轮免费修订服务。<br /><br />\n"
-#~ "5. 阁下通过银行过户或支票付款<br /><br />\n"
-#~ "6. 预祝我们未来合作愉快=）"
-
-#~ msgid "about"
-#~ msgstr "关于我"
-
-#~ msgid "works"
-#~ msgstr "工作"
-
-#~ msgid "portfolio"
-#~ msgstr "履历"
-
-#~ msgid "clients"
-#~ msgstr "过往客户"
-
-#~ msgid "contacts"
-#~ msgstr "联络方法"
-
-#~ msgid "welcome"
-#~ msgstr ""
-
-#~ msgid "mail me"
-#~ msgstr "联络我"
-
-#~ msgid "This is not a valid name."
-#~ msgstr ""
-
-#~ msgid "This is not a valid email address."
-#~ msgstr ""
-
-#~ msgid "This is not a valid subject."
-#~ msgstr ""
-
-#~ msgid "Body"
-#~ msgstr ""
-
-#~ msgid "The message is too short."
-#~ msgstr ""
-
-#~ msgid "reset"
-#~ msgstr "重置"
-
-#~ msgid "submit"
-#~ msgstr "发送"
-
-#~ msgid "contact or hire"
-#~ msgstr "联络方法"
-
-#~ msgid "art writing"
-#~ msgstr "艺术书写"
-
-#~ msgid "translation"
-#~ msgstr "翻译"
-
-#~ msgid "speeches"
-#~ msgstr "讲词"
-
-#~ msgid "copywriting"
-#~ msgstr "商业/市场推广文稿"
-
-#~ msgid "Please visit"
-#~ msgstr ""
 

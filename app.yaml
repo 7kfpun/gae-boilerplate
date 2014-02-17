@@ -53,7 +53,7 @@ handlers:
   static_files: static/\1
   upload: static/(robots\.txt|humans\.txt|crossdomain\.xml)
 
-- url: /mail/(.*)
+- url: /mail/.*
   script: main.admin_app
   login: admin
 

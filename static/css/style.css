@@ -190,17 +190,15 @@ a.backBu:hover{
 h2{
         font-family: 'Pathway Gothic One', sans-serif, "微軟正黑體", "Microsoft JhengHei";
         font-weight:bold;
-        font-size: 28px;
+        font-size: 25px;
 	color:#fff;
 	text-transform:uppercase;
 	margin-bottom:30px;
 }
 
 p{
-        font-family: sans-serif, "微軟正黑體", "Microsoft JhengHei";
-        font-size: 13px;
+        font: 14px/1.5em sans-serif, "微軟正黑體", "Microsoft JhengHei";
         color:#fff;
-        line-height:1.2em;
 }
 
 .bdr{

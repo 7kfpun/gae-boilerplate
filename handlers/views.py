@@ -23,14 +23,11 @@ class HelloHandler(BaseHandler):
 class HomeHandler(BaseHandler):
     def get(self, locale=None):
         self.set_locale(locale)
-        file_location = os.path.join(
-            self.app.config.get('PROJECT_ROOT'),
-            "templates/portfolio.json",
-        )
-        f = open(file_location, 'rb')
+
         self.render_response(
-            'index.html', cache_time=self.app.config.get('cache'),
-            clients=json.load(f),
+            'index.html',
+            form=ContactForm(self),
+            cache_time=self.app.config.get('cache'),
             locale=self.locale,
             locales=self.app.config.get('locales'),
         )
@@ -58,15 +55,16 @@ class ContactHandler(BaseHandler):
         params = {
             'form': form,
         }
-        self.response.write(form.validate())
+        #self.response.write(form.validate())
         if form.validate():
             contact = Contact(
                 name=self.request.get('name'),
                 email=self.request.get('email'),
-                subject=self.request.get('subject'),
+                phonenumber=self.request.get('phonenumber'),
                 body=self.request.get('body'),
             )
             contact.put()
             send_contact_mail(self)
         else:
             self.render_response('contact.html', **params)
+            self.response.set_status(403)

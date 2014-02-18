@@ -32,7 +32,7 @@ def send_contact_mail(self):
             body=message
         )
 
-        self.response.write(message)
+        #self.response.write(message)
         logger.info(
             'Send daily mail success, {0} new contacts'.format(count))
 

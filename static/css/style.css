@@ -542,3 +542,5 @@ dl.address dd span{float:left;}
 
 dl.img-box,.img-box-set dl,dl.img-box dd,.img-box-set dl dd{overflow:hidden;}
 dl.img-box dt,.img-box-set dl dt{float:left;}
+
+.hide { font-size:0; }

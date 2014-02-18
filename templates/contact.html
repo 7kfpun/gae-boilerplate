@@ -4,12 +4,12 @@
       <p></p>
       <p>{{_("Don't hesitate to mail me for any further information")}}</p>
       <p>{{_("有任何問題，歡迎和我們聯繫！")}}</p>
-      <input class="span5" name="name" type="text" required placeholder={{_("Name")}} />
+      <input class="span5" name="name" type="text" required placeholder={{_("Name")}}* />
       {% if form.name.errors %}
         {% for error in form.name.errors %}<p>{{ error }}</p>{% endfor %}
       {% endif %}
 
-      <input class="span5" name="email" type="email" required placeholder={{_("Email")}} />
+      <input class="span5" name="email" type="email" required placeholder={{_("Email")}}* />
       {% if form.email.errors %}
         {% for error in form.email.errors %}<p>{{ error }}</p>{% endfor %}
       {% endif %}
@@ -19,7 +19,7 @@
         {% for error in form.phonenumber.errors %}<p>{{ error }}</p>{% endfor %}
       {% endif %}
 
-      <textarea class="span5" name="body" rows="4" required placeholder={{_("Body")}}></textarea>
+      <textarea class="span5" name="body" rows="4" required placeholder={{_("Body")}}*></textarea>
       {% if form.body.errors %}
         {% for error in form.body.errors %}<p>{{ error }}</p>{% endfor %}
       {% endif %}

@@ -8,7 +8,7 @@ function submit_contact_form() {
     success: function(data) {
       that.find("#success").html('Your mail has been sent. We will contact you soon.');
       setTimeout(function() {
-        $('#simple-menu').click();
+        $('#simple-menu').die().click();
         that.find("input[type=text], input[type=email], input[type=tel], textarea").val("");
         that.find("#success").html('');
       }, 3000)
@@ -26,7 +26,7 @@ function submit_contact_form() {
 };
 
 function cancel_contact_form() {
-  $('#simple-menu').click();
+  $('#simple-menu').die().click();
   $("#contact_form").find("input[type=text], input[type=email], textarea").val("");
 };
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-17 11:29+0000\n"
+"POT-Creation-Date: 2014-02-18 02:27+0000\n"
 "PO-Revision-Date: 2013-10-21 03:46+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -79,6 +79,14 @@ msgstr ""
 msgid "Get Me Write"
 msgstr ""
 
+#: templates/index.html:15
+msgid "writing and translation service"
+msgstr ""
+
+#: templates/index.html:15
+msgid "專業選稿翻譯服務"
+msgstr "专业选稿翻译服务"
+
 #: templates/index.html:59
 msgid "home"
 msgstr ""
@@ -99,144 +107,161 @@ msgstr ""
 #: templates/index.html:73 templates/index.html:74 templates/index.html:75
 #: templates/index.html:76 templates/index.html:93 templates/index.html:94
 #: templates/index.html:95 templates/index.html:96 templates/index.html:97
-#: templates/index.html:98 templates/index.html:99 templates/index.html:126
-#: templates/index.html:127 templates/index.html:128 templates/index.html:129
-#: templates/index.html:130 templates/index.html:131 templates/index.html:132
-#: templates/index.html:152 templates/index.html:153 templates/index.html:154
-#: templates/index.html:155 templates/index.html:156 templates/index.html:157
-#: templates/index.html:158 templates/index.html:161 templates/index.html:162
-#: templates/index.html:163 templates/index.html:164 templates/index.html:165
-#: templates/index.html:166 templates/index.html:167
+#: templates/index.html:98 templates/index.html:99 templates/index.html:118
+#: templates/index.html:119 templates/index.html:120 templates/index.html:121
+#: templates/index.html:122 templates/index.html:123 templates/index.html:124
+#: templates/index.html:144 templates/index.html:145 templates/index.html:146
+#: templates/index.html:147 templates/index.html:148 templates/index.html:149
+#: templates/index.html:150
 msgid ""
 "blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
 "blah blah blah blah blah blah so informative blah"
 msgstr ""
 
 #: templates/index.html:79
-msgid "Getmewrite 於2013年成立於倫敦，旨在提供專業的撰稿、校對和翻譯服務。我們承諾服務準確、準時、創新。"
-msgstr ""
+msgid "Getmewrite 於 2013 年成立於香港，旨在提供專業的撰稿、校對和翻譯服務。我們承諾服務準確、準時、創新。"
+msgstr "Getmewrite 于2013 年成立于香港，旨在提供专业的撰稿、校对和翻译服务。我们承诺服务准确、准时、创新。"
 
 #: templates/index.html:80
-msgid "Getmewrite創辦人Mia生於香港，從小接受雙語教育；及後負笈倫敦進修文藝，練成純熟的中英文寫作技巧。Mia曾經從事記者、編輯、市場撰稿員和翻譯等工作，從中學會不同形式、範疇的寫作技巧，涵蓋藝術、時裝、美容、服務業等。"
+msgid ""
+"Getmewrite 創辦人 Mia "
+"生於香港，從小接受雙語教育；及後負笈倫敦進修文藝，練成純熟的中英文寫作技巧。Mia曾經從事記者、編輯、市場撰稿員和翻譯等工作，從中學會不同形式、範疇的寫作技巧，涵蓋藝術、時裝、美容、服務業等。"
 msgstr ""
+"Getmewrite 创办人 Mia "
+"生于香港，从小接受双语教育；及后负笈伦敦进修文艺，练成纯熟的中英文写作技巧。Mia曾经从事记者、编辑、市场撰稿员和翻译等工作，从中学会不同形式、范畴的写作技巧，涵盖艺术、时装、美容、服务业等。"
 
 #: templates/index.html:81
-msgid "Mia發現客戶大都有創新有趣的意念，卻因為無法準確用文字表達，或撰稿員拖欠稿件，令意念平白流失。舉例說，如果一篇文章由中文翻譯成英文後，比原文短了一半，文意一定準確不到哪裡。反過來說，一篇精彩的產品簡介如果比原定稿期遲了一星期出現，文字再好也發揮不到功用。因此，我們抱持以下承諾，為客戶提供有質素的文字服務："
+msgid ""
+"Mia "
+"發現客戶大都有創新有趣的意念，卻因為無法準確用文字表達，或撰稿員拖欠稿件，令意念平白流失。舉例說，如果一篇文章由中文翻譯成英文後，比原文短了一半，文意一定準確不到哪裡。反過來說，一篇精彩的產品簡介如果比原定稿期遲了一星期出現，文字再好也發揮不到功用。因此，我們抱持以下承諾，為客戶提供有質素的文字服務："
 msgstr ""
+"Mia "
+"发现客户大都有创新有趣的意念，却因为无法准确用文字表达，或撰稿员拖欠稿件，令意念平白流失。举例说，如果一篇文章由中文翻译成英文后，比原文短了一半，文意一定准确不到哪里。反过来说，一篇精彩的产品简介如果比原定稿期迟了一星期出现，文字再好也发挥不到功用。因此，我们抱持以下承诺，为客户提供有质素的文字服务："
 
 #: templates/index.html:83
 msgid "快而準"
-msgstr ""
+msgstr "快而准"
 
 #: templates/index.html:84
 msgid "提供創新意念支援"
-msgstr ""
+msgstr "提供创新意念支援"
 
 #: templates/index.html:85
 msgid "認真專業地對待每一份稿件"
-msgstr ""
+msgstr "认真专业地对待每一份稿件"
 
 #: templates/index.html:87
-msgid "Getmewrite樂意撰寫新聞稿、產品簡介、專題文章或其他切合你需要的文體。"
-msgstr ""
+msgid "Getmewrite 樂意撰寫新聞稿、產品簡介、專題文章或其他切合你需要的文體。"
+msgstr "Getmewrite 乐意撰写新闻稿、产品简介、专题文章或其他切合你需要的文体。"
 
 #: templates/index.html:103
 msgid "藝術專題/人訪"
-msgstr ""
+msgstr "艺术专题/人访"
 
 #: templates/index.html:103
-msgid "藝術書寫是一套獨特的語言，對於沒有相關經驗的作者來說，很難掌握。憑著豐富的相關經驗，我們曾經替畫廊和博物館編寫展覽場刊，撰寫藝評、影評、以及藝術家訪談等。部分曾合作機構包括："
-msgstr ""
+#, fuzzy
+msgid "藝術書寫是一套獨特的語言，對於沒有相關經驗的作者來說，很難掌握。憑著豐富的相關經驗，我們曾經替畫廊和博物館編寫展覽場刊，撰寫藝評、影評、以及藝術家訪談等。"
+msgstr "艺术书写是一套独特的语言，对于没有相关经验的作者来说，很难掌握。凭着丰富的相关经验，我们曾经替画廊和博物馆编写展览场刊，撰写艺评、影评、以及艺术家访谈等。"
 
-#: templates/index.html:105 templates/index.html:117
+#: templates/index.html:104 templates/index.html:129
+msgid "部分曾合作機構包括："
+msgstr "部分曾合作机构包括："
+
+#: templates/index.html:106 templates/index.html:134
 msgid "香港藝術中心"
-msgstr ""
+msgstr "香港艺术中心"
 
-#: templates/index.html:106 templates/index.html:114
+#: templates/index.html:107 templates/index.html:131
 msgid "Artshare HK"
 msgstr ""
 
-#: templates/index.html:107
-msgid "品尊雜誌"
-msgstr ""
-
 #: templates/index.html:108
-msgid "藝托邦"
-msgstr ""
+msgid "品尊雜誌"
+msgstr "品尊杂志"
 
 #: templates/index.html:109
+msgid "藝托邦"
+msgstr "艺托邦"
+
+#: templates/index.html:110
 msgid "主場新聞"
-msgstr ""
+msgstr "主场新闻"
 
-#: templates/index.html:112
+#: templates/index.html:128
 msgid "中英文翻譯"
-msgstr ""
+msgstr "中英文翻译"
 
-#: templates/index.html:112
-msgid "提供中譯英及英譯中服務。保證傳譯準確。部分曾合作機構包括："
-msgstr ""
+#: templates/index.html:128
+#, fuzzy
+msgid "提供中譯英及英譯中服務。保證傳譯準確。"
+msgstr "提供中译英及英译中服务。保证传译准确。"
 
-#: templates/index.html:115
+#: templates/index.html:132
 msgid "Intelligence Squared Asia"
 msgstr ""
 
-#: templates/index.html:116
+#: templates/index.html:133
 msgid "何鴻毅家族基金"
-msgstr ""
+msgstr "何鸿毅家族基金"
 
-#: templates/index.html:118
+#: templates/index.html:135
 msgid "測繪香港藝術地形：十二間當代藝術機構訪談"
-msgstr ""
+msgstr "测绘香港艺术地形：十二间当代艺术机构访谈"
 
-#: templates/index.html:119
+#: templates/index.html:136
 msgid "獨立藝術家 Yuni Kim Lang"
-msgstr ""
+msgstr "独立艺术家 Yuni Kim Lang"
 
-#: templates/index.html:136
+#: templates/index.html:153
 msgid "商業/市場推廣及新聞稿"
-msgstr ""
+msgstr "商业/市场推广及新闻稿"
 
-#: templates/index.html:136
+#: templates/index.html:153
 msgid "我們擁有市場推廣及公關經驗，擅於為各類產品服務構思推廣策略，以及撰寫相關文件。"
-msgstr ""
+msgstr "我们拥有市场推广及公关经验，擅于为各类产品服务构思推广策略，以及撰写相关文件。"
 
-#: templates/index.html:138
+#: templates/index.html:155
 msgid "講詞"
-msgstr ""
+msgstr "讲词"
 
-#: templates/index.html:138
-msgid "Mia曾參與多項區域性比賽，及擔任公開演說及辯論導師，對於如何遣詞用字及掌握語調有深入認識，可因應你的需要，提供文稿寫作及演說訓練。曾合作機構包括："
-msgstr ""
+#: templates/index.html:155
+#, fuzzy
+msgid "Mia 曾參與多項區域性比賽，及擔任公開演說及辯論導師，對於如何遣詞用字及掌握語調有深入認識，可因應你的需要，提供文稿寫作及演說訓練。"
+msgstr "Mia 曾参与多项区域性比赛，及担任公开演说及辩论导师，对于如何遣词用字及掌握语调有深入认识，可因应你的需要，提供文稿写作及演说训练。"
 
-#: templates/index.html:140
+#: templates/index.html:156
+msgid "曾合作機構包括："
+msgstr "曾合作机构包括："
+
+#: templates/index.html:158
 msgid "The Standard"
 msgstr ""
 
-#: templates/index.html:141
+#: templates/index.html:159
 msgid "大家樂"
-msgstr ""
+msgstr "大家乐"
 
-#: templates/index.html:142
+#: templates/index.html:160
 msgid "麗澤美鑽"
-msgstr ""
+msgstr "丽泽美钻"
 
-#: templates/index.html:143
+#: templates/index.html:161
 msgid "香港國際機場"
-msgstr ""
+msgstr "香港国际机场"
 
-#: templates/index.html:144
+#: templates/index.html:162
 msgid "L'Oréal Luxe"
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:163
 msgid "第59屆世界統計大會"
-msgstr ""
+msgstr "第59届世界统计大会"
 
-#: templates/index.html:205
+#: templates/index.html:203
 msgid "service"
 msgstr "服务"
 
-#: templates/index.html:213
+#: templates/index.html:211
 msgid "rate"
 msgstr "收费"
 

@@ -267,6 +267,16 @@ footer .privacy a:hover{
 	left:0;
 }
 
+.contact{
+	font:16px/1.2em 'Pathway Gothic One', sans-serif;
+        font-weight:bold;
+        text-transform:uppercase;
+	color:#fff;
+	position:absolute;
+	top:2px;
+	right:0;
+}
+
 .locale a:hover{
 	color:#000;
 }
@@ -542,5 +552,3 @@ dl.address dd span{float:left;}
 
 dl.img-box,.img-box-set dl,dl.img-box dd,.img-box-set dl dd{overflow:hidden;}
 dl.img-box dt,.img-box-set dl dt{float:left;}
-
-.hide { font-size:0; }

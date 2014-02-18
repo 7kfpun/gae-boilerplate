@@ -1,6 +1,7 @@
 <div id="sidr">
   <form id="contact_form" action="/contact/" method="post">
     <fieldset>
+      <p></p>
       <p>{{_("Don't hesitate to mail me for any further information")}}</p>
       <p>{{_("有任何問題，歡迎和我們聯繫！")}}</p>
       <input class="span5" name="name" type="text" required placeholder={{_("Name")}} />
@@ -25,7 +26,7 @@
 
       <div class="form-group">
         <button class="btn btn-success" onclick='submit_contact_form(); return false;'>{{_("Send")}}</button>
-        <button type="reset" class="btn">{{_("Clear")}}</button>
+        <button type="reset" class="btn" onclick='cancel_contact_form(); return false;'>{{_("Cancel")}}</button>
       </div>
       <br /><br /><br />
       <p id="success"></p>

@@ -9,7 +9,8 @@ function submit_contact_form() {
       that.find("#success").html('Your mail has been sent. We will contact you soon.');
       setTimeout(function() {
         $('#simple-menu').click();
-        that.find("input[type=text], input[type=email], textarea").val("");
+        that.find("input[type=text], input[type=email], input[type=tel], textarea").val("");
+        that.find("#success").html('');
       }, 3000)
     },
     error: function(jqXHR, textStatus, errorThrown) {
@@ -22,6 +23,11 @@ function submit_contact_form() {
     }
   });
   return false;
+};
+
+function cancel_contact_form() {
+  $('#simple-menu').click();
+  $("#contact_form").find("input[type=text], input[type=email], textarea").val("");
 };
 
 $(document).ready(function() {

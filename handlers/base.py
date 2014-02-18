@@ -105,7 +105,7 @@ class BaseHandler(webapp2.RequestHandler):
         if cache_time:
             logger.info('cache used for {} s'.format(cache_time))
             # TODO: add session
-            transliterated_text = _template + json.dumps(context.values())
+            transliterated_text = _template + str(context.values())
             signature = get_signiture(transliterated_text)
             cache_key = 'page-{}-{}'.format(
                 context.get('locale', ''), signature)

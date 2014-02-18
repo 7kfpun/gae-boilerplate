@@ -46,3 +46,12 @@ var options = {
   }
 }
 $('#example').bootstrapPaginator(options);
+
+$('#fb-like-box').hover(
+  function() {
+    $(this).removeClass('animated bounce');
+    $(this).addClass('animated bounce');
+  }, function() {
+    $(this).removeClass('animated bounce');
+  }
+);

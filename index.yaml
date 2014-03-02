@@ -1,0 +1,5 @@
+indexes:
+- kind: Contact
+  properties:
+  - name: sent
+  - name: created_date

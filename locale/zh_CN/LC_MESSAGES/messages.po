@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-18 11:11+0000\n"
+"POT-Creation-Date: 2014-02-25 14:49+0000\n"
 "PO-Revision-Date: 2013-07-14 13:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 1.3\n"
 
 #: templates/base.html:10 templates/index.html:19 templates/lesson.html:19
 msgid "拜訪曼谷四面佛、到布吉滑浪、在蘇梅島的長灘上撐一把太陽傘，來一個椰青，遠離城市煩囂，是不少人下個假期的計劃吧？"
@@ -38,11 +38,11 @@ msgstr "跟书本一字一句听说读写？Out 了！学语文，当然要找�
 msgid "想要暢遊泰國，快報名學泰文喇！"
 msgstr "想要畅游泰国，快报名学泰文喇！"
 
-#: templates/base.html:156
+#: templates/base.html:160
 msgid "簡介"
 msgstr "简介"
 
-#: templates/base.html:157
+#: templates/base.html:161
 msgid ""
 "ครูเอก (老師Ek) "
 "80後、泰國出生的華僑，小時受泰國教育，中學回國讀書，因此精通中泰兩語。因為絕大部分泰國朋友也一樣屬80後，所以熟悉當下流行用語，不只會書上『正統』語言。"
@@ -86,79 +86,75 @@ msgstr "发送"
 msgid "Clear form"
 msgstr "清空"
 
-#: templates/index.html:35
+#: templates/index.html:36
 msgid "泰語班"
 msgstr "泰语班"
 
-#: templates/index.html:37
+#: templates/index.html:38
 msgid "個人課程"
 msgstr "个人课程"
 
-#: templates/index.html:38
+#: templates/index.html:39
 msgid "可根據原有的程度調節課程難度和進度，不用怕跟不上其他同學而失去信心. 可以自選上課時間及地點，方便安排課程時間。"
 msgstr "可根据原有的程度调节课程难度和进度，不用怕跟不上其他同学而失去信心. 可以自选上课时间及地点，方便安排课程时间。"
 
-#: templates/index.html:39
+#: templates/index.html:40
 msgid "學費：$ 200/ 小時。"
 msgstr "学费：$ ​​200/ 小时。"
 
-#: templates/index.html:40
+#: templates/index.html:41
 msgid "小組課程(2-5人)"
 msgstr "小组课程(2-5人)"
 
-#: templates/index.html:41
+#: templates/index.html:42
 msgid "有朋友陪伴可以增添樂趣，多些互動，又可以有更多對話練習的機會。"
 msgstr "有朋友陪伴可以增添乐趣，多些互动，又可以有更多对话练习的机会。"
 
-#: templates/index.html:42
+#: templates/index.html:43
 #, fuzzy
 msgid "學費：$ 150/ 小時。"
 msgstr "学费：$ ​​120/ 小时。"
 
-#: templates/index.html:43
+#: templates/index.html:45
 msgid "旅遊泰語課程"
 msgstr "旅游泰语课程"
 
-#: templates/index.html:44
+#: templates/index.html:46
 msgid "跳過讀寫，只學聽讀。專注於旅行日常用語，以備到泰國旅行可派上用場，在陌生的國度沒有後顧之憂。"
 msgstr "跳过读写，只学听读。专注于旅行日常用语，以备到泰国旅行可派上用场，在陌生的国度没有后顾之忧。"
 
-#: templates/index.html:45
+#: templates/index.html:47
 #, fuzzy
 msgid "學費：(個人) $ 200/ 小時, (小組) $ 150/ 小時。"
 msgstr "学费：(个人) $ 200/ 小时, (小组) $ 120/ 小时。"
 
-#: templates/index.html:49 templates/lesson.html:35
+#: templates/index.html:51 templates/lesson.html:36
 msgid "課堂筆記"
 msgstr "课堂笔记"
 
-#: templates/index.html:58
+#: templates/index.html:59
 msgid "其他"
 msgstr "其他"
 
-#: templates/index.html:60
+#: templates/index.html:61
 msgid "泰中傳譯，泰文校對，泰中翻譯。"
 msgstr "泰中传译，泰文校对，泰中翻译。"
 
-#: templates/index.html:61
+#: templates/index.html:62
 msgid "可電郵聯絡，免費報價。"
 msgstr "可电邮联络，免费报价。"
 
-#: templates/lesson.html:35
+#: templates/lesson.html:36
 msgid "不斷更新中..."
 msgstr "不断更新中..."
 
-#: templates/lesson.html:38
+#: templates/lesson.html:39
 msgid "第"
 msgstr "第"
 
-#: templates/lesson.html:38
+#: templates/lesson.html:39
 msgid "課"
 msgstr "课"
-
-#: templates/lesson.html:48
-msgid "提問區"
-msgstr ""
 
 #: templates/modals.html:6
 msgid "電郵已經收到，我們會盡快回复！"
@@ -171,4 +167,7 @@ msgstr "有什么疑问吗？我们很乐意为您解答！"
 #: templates/modals.html:21
 msgid "聯絡我們"
 msgstr "联络我们"
+
+#~ msgid "提問區"
+#~ msgstr ""
 

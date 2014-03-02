@@ -57,7 +57,10 @@ class ContactHandler(BaseHandler):
             )
             logger.info(contact)
             contact.put()
-            send_contact_mail(self)
+            try:
+                send_contact_mail(self)
+            except Exception as err:
+                logger.error(err)
         else:
             self.render_response('contact.html', **params)
 

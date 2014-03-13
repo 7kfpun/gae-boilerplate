@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def send_contact_mail(self):
-    contacts = Contact.query(Contact.sent != True).order(Contact.created_date)
+    contacts = Contact.query(Contact.sent == False).order(Contact.created_date)
     count = contacts.count()
     if count:
         datetime_handler = lambda obj: obj.isoformat() \

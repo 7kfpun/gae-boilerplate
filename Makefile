@@ -1,5 +1,5 @@
 APPLICATION=thaiinhk
-GAE=/opt/google_appengine_1.8.9/
+GAE=/opt/google_appengine_1.9.0/
 APP_PATH=.
 LOCALE=en_US zh_TW zh_CN th_TH
 
@@ -20,7 +20,7 @@ t: clean
 # target: run - Run application server
 .PHONY: run
 run:
-	$(GAE)dev_appserver.py --host 0.0.0.0 --admin_host 0.0.0.0 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH) --skip_sdk_update_check
+	$(GAE)dev_appserver.py --host 0.0.0.0 --port 8080 --admin_host 0.0.0.0 --admin_port 8888 --automatic_restart --log_level=debug --enable_sendmail=yes $(APP_PATH) --skip_sdk_update_check
 
 # target: upload - Upload the App
 .PHONY: update
